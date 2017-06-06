@@ -1,15 +1,15 @@
 //
-//  flyve_mdm_ios_inventoryTests.swift
-//  flyve-mdm-ios-inventoryTests
+//  FlyveMDMInventoryTests.swift
+//  FlyveMDMInventoryTests
 //
 //  Created by Hector Rondon on 06/06/17.
-//  Copyright © 2017 s42. All rights reserved.
+//  Copyright © 2017 Teclib. All rights reserved.
 //
 
 import XCTest
-@testable import flyve_mdm_ios_inventory
+@testable import FlyveMDMInventory
 
-class flyve_mdm_ios_inventoryTests: XCTestCase {
+class FlyveMDMInventoryTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

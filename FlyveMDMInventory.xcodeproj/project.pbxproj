@@ -7,184 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AA4CCC51EE6FF4700E86C24 /* flyve-mdm-ios-inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA4CCBB1EE6FF4600E86C24 /* flyve-mdm-ios-inventory.framework */; };
-		0AA4CCCA1EE6FF4700E86C24 /* flyve_mdm_ios_inventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CCC91EE6FF4700E86C24 /* flyve_mdm_ios_inventoryTests.swift */; };
-		0AA4CCCC1EE6FF4700E86C24 /* flyve-mdm-ios-inventory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA4CCBE1EE6FF4600E86C24 /* flyve-mdm-ios-inventory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AA4CCE91EE70BD400E86C24 /* FlyveMDMInventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA4CCDF1EE70BD400E86C24 /* FlyveMDMInventory.framework */; };
+		0AA4CCEE1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */; };
+		0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0AA4CCC61EE6FF4700E86C24 /* PBXContainerItemProxy */ = {
+		0AA4CCEA1EE70BD400E86C24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0AA4CCB21EE6FF4600E86C24 /* Project object */;
+			containerPortal = 0AA4CCD61EE70BD400E86C24 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0AA4CCBA1EE6FF4600E86C24;
-			remoteInfo = "flyve-mdm-ios-inventory";
+			remoteGlobalIDString = 0AA4CCDE1EE70BD400E86C24;
+			remoteInfo = FlyveMDMInventory;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AA4CCBB1EE6FF4600E86C24 /* flyve-mdm-ios-inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "flyve-mdm-ios-inventory.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AA4CCBE1EE6FF4600E86C24 /* flyve-mdm-ios-inventory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flyve-mdm-ios-inventory.h"; sourceTree = "<group>"; };
-		0AA4CCBF1EE6FF4600E86C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AA4CCC41EE6FF4700E86C24 /* flyve-mdm-ios-inventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flyve-mdm-ios-inventoryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AA4CCC91EE6FF4700E86C24 /* flyve_mdm_ios_inventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flyve_mdm_ios_inventoryTests.swift; sourceTree = "<group>"; };
-		0AA4CCCB1EE6FF4700E86C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA4CCDF1EE70BD400E86C24 /* FlyveMDMInventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlyveMDMInventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyveMDMInventory.h; sourceTree = "<group>"; };
+		0AA4CCE31EE70BD400E86C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA4CCE81EE70BD400E86C24 /* FlyveMDMInventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyveMDMInventoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyveMDMInventoryTests.swift; sourceTree = "<group>"; };
+		0AA4CCEF1EE70BD400E86C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AA4CCB71EE6FF4600E86C24 /* Frameworks */ = {
+		0AA4CCDB1EE70BD400E86C24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AA4CCC11EE6FF4700E86C24 /* Frameworks */ = {
+		0AA4CCE51EE70BD400E86C24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA4CCC51EE6FF4700E86C24 /* flyve-mdm-ios-inventory.framework in Frameworks */,
+				0AA4CCE91EE70BD400E86C24 /* FlyveMDMInventory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AA4CCB11EE6FF4600E86C24 = {
+		0AA4CCD51EE70BD400E86C24 = {
 			isa = PBXGroup;
 			children = (
-				0AA4CCBD1EE6FF4600E86C24 /* flyve-mdm-ios-inventory */,
-				0AA4CCC81EE6FF4700E86C24 /* flyve-mdm-ios-inventoryTests */,
-				0AA4CCBC1EE6FF4600E86C24 /* Products */,
+				0AA4CCE11EE70BD400E86C24 /* FlyveMDMInventory */,
+				0AA4CCEC1EE70BD400E86C24 /* FlyveMDMInventoryTests */,
+				0AA4CCE01EE70BD400E86C24 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0AA4CCBC1EE6FF4600E86C24 /* Products */ = {
+		0AA4CCE01EE70BD400E86C24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AA4CCBB1EE6FF4600E86C24 /* flyve-mdm-ios-inventory.framework */,
-				0AA4CCC41EE6FF4700E86C24 /* flyve-mdm-ios-inventoryTests.xctest */,
+				0AA4CCDF1EE70BD400E86C24 /* FlyveMDMInventory.framework */,
+				0AA4CCE81EE70BD400E86C24 /* FlyveMDMInventoryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AA4CCBD1EE6FF4600E86C24 /* flyve-mdm-ios-inventory */ = {
+		0AA4CCE11EE70BD400E86C24 /* FlyveMDMInventory */ = {
 			isa = PBXGroup;
 			children = (
-				0AA4CCBE1EE6FF4600E86C24 /* flyve-mdm-ios-inventory.h */,
-				0AA4CCBF1EE6FF4600E86C24 /* Info.plist */,
+				0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */,
+				0AA4CCE31EE70BD400E86C24 /* Info.plist */,
 			);
-			path = "flyve-mdm-ios-inventory";
+			path = FlyveMDMInventory;
 			sourceTree = "<group>";
 		};
-		0AA4CCC81EE6FF4700E86C24 /* flyve-mdm-ios-inventoryTests */ = {
+		0AA4CCEC1EE70BD400E86C24 /* FlyveMDMInventoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				0AA4CCC91EE6FF4700E86C24 /* flyve_mdm_ios_inventoryTests.swift */,
-				0AA4CCCB1EE6FF4700E86C24 /* Info.plist */,
+				0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */,
+				0AA4CCEF1EE70BD400E86C24 /* Info.plist */,
 			);
-			path = "flyve-mdm-ios-inventoryTests";
+			path = FlyveMDMInventoryTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0AA4CCB81EE6FF4600E86C24 /* Headers */ = {
+		0AA4CCDC1EE70BD400E86C24 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA4CCCC1EE6FF4700E86C24 /* flyve-mdm-ios-inventory.h in Headers */,
+				0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0AA4CCBA1EE6FF4600E86C24 /* flyve-mdm-ios-inventory */ = {
+		0AA4CCDE1EE70BD400E86C24 /* FlyveMDMInventory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AA4CCCF1EE6FF4700E86C24 /* Build configuration list for PBXNativeTarget "flyve-mdm-ios-inventory" */;
+			buildConfigurationList = 0AA4CCF31EE70BD400E86C24 /* Build configuration list for PBXNativeTarget "FlyveMDMInventory" */;
 			buildPhases = (
-				0AA4CCB61EE6FF4600E86C24 /* Sources */,
-				0AA4CCB71EE6FF4600E86C24 /* Frameworks */,
-				0AA4CCB81EE6FF4600E86C24 /* Headers */,
-				0AA4CCB91EE6FF4600E86C24 /* Resources */,
+				0AA4CCDA1EE70BD400E86C24 /* Sources */,
+				0AA4CCDB1EE70BD400E86C24 /* Frameworks */,
+				0AA4CCDC1EE70BD400E86C24 /* Headers */,
+				0AA4CCDD1EE70BD400E86C24 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "flyve-mdm-ios-inventory";
-			productName = "flyve-mdm-ios-inventory";
-			productReference = 0AA4CCBB1EE6FF4600E86C24 /* flyve-mdm-ios-inventory.framework */;
+			name = FlyveMDMInventory;
+			productName = FlyveMDMInventory;
+			productReference = 0AA4CCDF1EE70BD400E86C24 /* FlyveMDMInventory.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0AA4CCC31EE6FF4700E86C24 /* flyve-mdm-ios-inventoryTests */ = {
+		0AA4CCE71EE70BD400E86C24 /* FlyveMDMInventoryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AA4CCD21EE6FF4700E86C24 /* Build configuration list for PBXNativeTarget "flyve-mdm-ios-inventoryTests" */;
+			buildConfigurationList = 0AA4CCF61EE70BD400E86C24 /* Build configuration list for PBXNativeTarget "FlyveMDMInventoryTests" */;
 			buildPhases = (
-				0AA4CCC01EE6FF4700E86C24 /* Sources */,
-				0AA4CCC11EE6FF4700E86C24 /* Frameworks */,
-				0AA4CCC21EE6FF4700E86C24 /* Resources */,
+				0AA4CCE41EE70BD400E86C24 /* Sources */,
+				0AA4CCE51EE70BD400E86C24 /* Frameworks */,
+				0AA4CCE61EE70BD400E86C24 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0AA4CCC71EE6FF4700E86C24 /* PBXTargetDependency */,
+				0AA4CCEB1EE70BD400E86C24 /* PBXTargetDependency */,
 			);
-			name = "flyve-mdm-ios-inventoryTests";
-			productName = "flyve-mdm-ios-inventoryTests";
-			productReference = 0AA4CCC41EE6FF4700E86C24 /* flyve-mdm-ios-inventoryTests.xctest */;
+			name = FlyveMDMInventoryTests;
+			productName = FlyveMDMInventoryTests;
+			productReference = 0AA4CCE81EE70BD400E86C24 /* FlyveMDMInventoryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0AA4CCB21EE6FF4600E86C24 /* Project object */ = {
+		0AA4CCD61EE70BD400E86C24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = s42;
+				ORGANIZATIONNAME = Teclib;
 				TargetAttributes = {
-					0AA4CCBA1EE6FF4600E86C24 = {
+					0AA4CCDE1EE70BD400E86C24 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = G3UM9C856M;
 						ProvisioningStyle = Automatic;
 					};
-					0AA4CCC31EE6FF4700E86C24 = {
+					0AA4CCE71EE70BD400E86C24 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = G3UM9C856M;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0AA4CCB51EE6FF4600E86C24 /* Build configuration list for PBXProject "flyve-mdm-ios-inventory" */;
+			buildConfigurationList = 0AA4CCD91EE70BD400E86C24 /* Build configuration list for PBXProject "FlyveMDMInventory" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0AA4CCB11EE6FF4600E86C24;
-			productRefGroup = 0AA4CCBC1EE6FF4600E86C24 /* Products */;
+			mainGroup = 0AA4CCD51EE70BD400E86C24;
+			productRefGroup = 0AA4CCE01EE70BD400E86C24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AA4CCBA1EE6FF4600E86C24 /* flyve-mdm-ios-inventory */,
-				0AA4CCC31EE6FF4700E86C24 /* flyve-mdm-ios-inventoryTests */,
+				0AA4CCDE1EE70BD400E86C24 /* FlyveMDMInventory */,
+				0AA4CCE71EE70BD400E86C24 /* FlyveMDMInventoryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0AA4CCB91EE6FF4600E86C24 /* Resources */ = {
+		0AA4CCDD1EE70BD400E86C24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AA4CCC21EE6FF4700E86C24 /* Resources */ = {
+		0AA4CCE61EE70BD400E86C24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,33 +194,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AA4CCB61EE6FF4600E86C24 /* Sources */ = {
+		0AA4CCDA1EE70BD400E86C24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AA4CCC01EE6FF4700E86C24 /* Sources */ = {
+		0AA4CCE41EE70BD400E86C24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA4CCCA1EE6FF4700E86C24 /* flyve_mdm_ios_inventoryTests.swift in Sources */,
+				0AA4CCEE1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0AA4CCC71EE6FF4700E86C24 /* PBXTargetDependency */ = {
+		0AA4CCEB1EE70BD400E86C24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0AA4CCBA1EE6FF4600E86C24 /* flyve-mdm-ios-inventory */;
-			targetProxy = 0AA4CCC61EE6FF4700E86C24 /* PBXContainerItemProxy */;
+			target = 0AA4CCDE1EE70BD400E86C24 /* FlyveMDMInventory */;
+			targetProxy = 0AA4CCEA1EE70BD400E86C24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0AA4CCCD1EE6FF4700E86C24 /* Debug */ = {
+		0AA4CCF11EE70BD400E86C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,7 +274,7 @@
 			};
 			name = Debug;
 		};
-		0AA4CCCE1EE6FF4700E86C24 /* Release */ = {
+		0AA4CCF21EE70BD400E86C24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,7 +321,7 @@
 			};
 			name = Release;
 		};
-		0AA4CCD01EE6FF4700E86C24 /* Debug */ = {
+		0AA4CCF41EE70BD400E86C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -330,17 +330,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "flyve-mdm-ios-inventory/Info.plist";
+				INFOPLIST_FILE = FlyveMDMInventory/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.teclib.flyve-mdm-ios-inventory";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teclib.FlyveMDMInventory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		0AA4CCD11EE6FF4700E86C24 /* Release */ = {
+		0AA4CCF51EE70BD400E86C24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -349,35 +349,35 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "flyve-mdm-ios-inventory/Info.plist";
+				INFOPLIST_FILE = FlyveMDMInventory/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.teclib.flyve-mdm-ios-inventory";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teclib.FlyveMDMInventory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		0AA4CCD31EE6FF4700E86C24 /* Debug */ = {
+		0AA4CCF71EE70BD400E86C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = G3UM9C856M;
-				INFOPLIST_FILE = "flyve-mdm-ios-inventoryTests/Info.plist";
+				INFOPLIST_FILE = FlyveMDMInventoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.teclib.flyve-mdm-ios-inventoryTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teclib.FlyveMDMInventoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		0AA4CCD41EE6FF4700E86C24 /* Release */ = {
+		0AA4CCF81EE70BD400E86C24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = G3UM9C856M;
-				INFOPLIST_FILE = "flyve-mdm-ios-inventoryTests/Info.plist";
+				INFOPLIST_FILE = FlyveMDMInventoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.teclib.flyve-mdm-ios-inventoryTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teclib.FlyveMDMInventoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -386,32 +386,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AA4CCB51EE6FF4600E86C24 /* Build configuration list for PBXProject "flyve-mdm-ios-inventory" */ = {
+		0AA4CCD91EE70BD400E86C24 /* Build configuration list for PBXProject "FlyveMDMInventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AA4CCCD1EE6FF4700E86C24 /* Debug */,
-				0AA4CCCE1EE6FF4700E86C24 /* Release */,
+				0AA4CCF11EE70BD400E86C24 /* Debug */,
+				0AA4CCF21EE70BD400E86C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AA4CCCF1EE6FF4700E86C24 /* Build configuration list for PBXNativeTarget "flyve-mdm-ios-inventory" */ = {
+		0AA4CCF31EE70BD400E86C24 /* Build configuration list for PBXNativeTarget "FlyveMDMInventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AA4CCD01EE6FF4700E86C24 /* Debug */,
-				0AA4CCD11EE6FF4700E86C24 /* Release */,
+				0AA4CCF41EE70BD400E86C24 /* Debug */,
+				0AA4CCF51EE70BD400E86C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		0AA4CCD21EE6FF4700E86C24 /* Build configuration list for PBXNativeTarget "flyve-mdm-ios-inventoryTests" */ = {
+		0AA4CCF61EE70BD400E86C24 /* Build configuration list for PBXNativeTarget "FlyveMDMInventoryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AA4CCD31EE6FF4700E86C24 /* Debug */,
-				0AA4CCD41EE6FF4700E86C24 /* Release */,
+				0AA4CCF71EE70BD400E86C24 /* Debug */,
+				0AA4CCF81EE70BD400E86C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0AA4CCB21EE6FF4600E86C24 /* Project object */;
+	rootObject = 0AA4CCD61EE70BD400E86C24 /* Project object */;
 }

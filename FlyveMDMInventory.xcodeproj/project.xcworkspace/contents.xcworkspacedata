@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:flyve-mdm-ios-inventory.xcodeproj">
+      location = "self:FlyveMDMInventory.xcodeproj">
    </FileRef>
 </Workspace>
