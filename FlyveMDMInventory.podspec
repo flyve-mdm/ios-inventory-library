@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "FlyveMDMInventory"
   s.version      = "1.0.0"
-  s.summary      = "Hardware Inventory client library written in Swift for developing applications on iOS"
+  s.summary      = "Inventory client library written in Swift for developing applications on iOS"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Flyve MDM" => "hectorerb@gmail.com" }
+  s.author             = { "Flyve MDM" => "apple@teclib.com" }
   # Or just: s.author    = "Hector Rondon"
   # s.authors            = { "Hector Rondon" => "hectorerb@gmail.com" }
   # s.social_media_url   = "https://twitter.com/FlyveMDM"
