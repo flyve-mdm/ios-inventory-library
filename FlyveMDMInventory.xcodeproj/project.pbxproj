@@ -10,6 +10,7 @@
 		0AA4CCE91EE70BD400E86C24 /* FlyveMDMInventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA4CCDF1EE70BD400E86C24 /* FlyveMDMInventory.framework */; };
 		0AA4CCEE1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */; };
 		0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AA4CD8C1EE8A77100E86C24 /* DeviceInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CD8B1EE8A77100E86C24 /* DeviceInventory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0AA4CCE81EE70BD400E86C24 /* FlyveMDMInventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyveMDMInventoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyveMDMInventoryTests.swift; sourceTree = "<group>"; };
 		0AA4CCEF1EE70BD400E86C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA4CD8B1EE8A77100E86C24 /* DeviceInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInventory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */,
 				0AA4CCE31EE70BD400E86C24 /* Info.plist */,
+				0AA4CD8B1EE8A77100E86C24 /* DeviceInventory.swift */,
 			);
 			path = FlyveMDMInventory;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					0AA4CCDE1EE70BD400E86C24 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = G3UM9C856M;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					0AA4CCE71EE70BD400E86C24 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4CD8C1EE8A77100E86C24 /* DeviceInventory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +329,7 @@
 		0AA4CCF41EE70BD400E86C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G3UM9C856M;
@@ -336,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teclib.FlyveMDMInventory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +350,7 @@
 		0AA4CCF51EE70BD400E86C24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G3UM9C856M;
@@ -362,6 +370,7 @@
 		0AA4CCF71EE70BD400E86C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = G3UM9C856M;
 				INFOPLIST_FILE = FlyveMDMInventoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +383,7 @@
 		0AA4CCF81EE70BD400E86C24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = G3UM9C856M;
 				INFOPLIST_FILE = FlyveMDMInventoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +412,7 @@
 				0AA4CCF51EE70BD400E86C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AA4CCF61EE70BD400E86C24 /* Build configuration list for PBXNativeTarget "FlyveMDMInventoryTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +421,7 @@
 				0AA4CCF81EE70BD400E86C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
