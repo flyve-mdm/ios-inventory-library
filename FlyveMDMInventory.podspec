@@ -38,8 +38,7 @@ Pod::Spec.new do |s|
 
   # s.license      = "GPLv3"
   s.license      = { :type => "GPLv3", :file => "LICENSE.md" }
-
-
+  
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the authors of the library, with email addresses. Email addresses
@@ -49,10 +48,13 @@ Pod::Spec.new do |s|
   #  Specify a social_media_url where others can refer to, for example a twitter
   #  profile URL.
   #
-
+  
   s.author             = { "Flyve MDM" => "apple@teclib.com" }
   s.social_media_url   = "https://twitter.com/FlyveMDM"
-
+  
+  # Or just: s.author    = "Hector Rondon"
+  # s.authors            = { "Hector Rondon" => "hectorerb@gmail.com" }
+  # s.social_media_url   = "https://twitter.com/FlyveMDM"
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
