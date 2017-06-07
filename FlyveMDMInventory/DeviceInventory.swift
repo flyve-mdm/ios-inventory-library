@@ -30,6 +30,8 @@ import UIKit
 
 public class DeviceInventory: NSObject, XMLParserDelegate {
     
+    var versionClient = "FlyveMDM-Agent_v1.0"
+    
     func createXML() {
         
         let xmlInvetory = createDTD() +
@@ -37,7 +39,7 @@ public class DeviceInventory: NSObject, XMLParserDelegate {
                 tag: "REQUEST",
                 value:
                 createElement(tag: "QUERY", value: "Inventory") +
-                    createElement(tag: "VERSIONCLIENT", value: "FlyveMDM-Agent_v1.0") +
+                    createElement(tag: "VERSIONCLIENT", value: versionClient) +
                     createElement(tag: "DEVICEID", value: "F6D8B883-EDAB-431E-B3E6-F208DCA9E562-440-00000099F84A4798") +
                     createElement(tag: "CONTENT", value:
                         
