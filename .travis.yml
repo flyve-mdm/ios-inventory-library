@@ -4,6 +4,6 @@ xcode_project: FlyveMDMInventory.xcodeproj
 xcode_scheme: FlyveMDMInventory
 xcode_sdk: iphonesimulator10.3
 script:
-- xcodebuild -scheme FlyveMDMInventory -xcodeproj FlyveMDMInventory.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.3' build test
+- xcodebuild -scheme FlyveMDMInventory -project FlyveMDMInventory.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.3' build test
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
