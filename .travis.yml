@@ -2,8 +2,9 @@ language: objective-c
 osx_image: xcode8.3
 xcode_project: FlyveMDMInventory.xcodeproj
 xcode_scheme: FlyveMDMInventory
-xcode_sdk: iphonesimulator10.3
+
 script:
-- xcodebuild -scheme FlyveMDMInventory -project FlyveMDMInventory.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.3' build test
+- xcodebuild clean build test -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory
+
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
