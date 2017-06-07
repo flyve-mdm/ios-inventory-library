@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #
 
   # s.license      = "GPLv3"
-  s.license      = { :type => "GPLv3", :file => "LICENSE" }
+  s.license      = { :type => "GPLv3", :file => "LICENSE.md" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -51,9 +51,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "Flyve MDM" => "apple@teclib.com" }
-  # Or just: s.author    = "Hector Rondon"
-  # s.authors            = { "Hector Rondon" => "hectorerb@gmail.com" }
-  # s.social_media_url   = "https://twitter.com/FlyveMDM"
+  s.social_media_url   = "https://twitter.com/FlyveMDM"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
