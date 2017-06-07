@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode8.3
+xcode_project: FlyveMDMInventory.xcodeproj
+xcode_scheme: FlyveMDMInventory
+
+script:
+- xcodebuild clean build -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory
+
+notifications:
+  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
