@@ -5,6 +5,7 @@ Flyve MDM is a mobile device management software that enables you to secure and 
 To get started, check out <https://flyve-mdm.com/>!
 
 
+
 ## Table of contents
 
 * [Synopsis](#synopsis)
@@ -85,6 +86,7 @@ $ carthage update --platform iOS
 - and add the paths to the frameworks you want to use under “Input Files”, e.g.:
 ```
 $(SRCROOT)/Carthage/Build/iOS/FlyveMDMInventory.framework
+
 ```
 
 ## Code Example
@@ -99,6 +101,7 @@ FlyveMDMInventory.create("Agent_v1.0").responseXML { result in
         print("XML: \(XML)")
     }
 }
+
 ```
 
 ## Contributors
