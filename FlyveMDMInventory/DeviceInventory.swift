@@ -1,4 +1,4 @@
-/*
+/**
  *   Copyright © 2017 Teclib. All rights reserved.
  *
  * DeviceInventory.swift is part of FlyveMDMInventory
@@ -30,6 +30,12 @@ import UIKit
 
 public class DeviceInventory: NSObject, XMLParserDelegate {
     
+    /**
+        Creates an invetory
+        
+        - parameter versionClient: Cliente app identifier
+        - returns: The XML String
+    */
     func create(_ versionClient: String) -> String {
 
         let xmlInvetory: String = createDTD() +
@@ -52,31 +58,43 @@ public class DeviceInventory: NSObject, XMLParserDelegate {
                         )
                 )
         )
-        
+        /// Validate output
         let xmlParser = XMLParser(data: xmlInvetory.data(using: .utf8)!)
         xmlParser.delegate = self
         xmlParser.parse()
         
         return xmlInvetory
     }
-    
+
+    /**
+        Creates the XML DTD
+     
+        - returns: the XML DTD String
+    */
     private func createDTD() -> String {
-        
+
         return "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>"
         
     }
-    
+
+    /**
+        Creates the XML Element
+     
+        - returns: the XML Element String
+    */
     private func createElement(tag: String, value: String) -> String {
         
         return "<\(tag.uppercased())>\(value)</\(tag.uppercased())>"
         
     }
     
+    /// Print the XML start element
     public func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         
         print("Element: \(elementName)")
     }
     
+    /// Print the XML element
     public func parser(_ parser: XMLParser, foundCharacters string: String) {
         
         print("Value: name is \(string)")
@@ -86,6 +104,11 @@ public class DeviceInventory: NSObject, XMLParserDelegate {
 
 extension String {
     
+    /**
+        response the XML
+     
+        - returns: The XML String valid
+    */
     func responseXML(
         completionHandler: @escaping (String?) -> Void)
         -> String
