@@ -4,20 +4,18 @@ Flyve MDM is a mobile device management software that enables you to secure and 
 
 To get started, check out <https://flyve-mdm.com/>!
 
-
 ## Table of contents
 
-* [Synopsis](#Synopsis)
-* [Build Status](#Build-Status)
-* [Installation](#Installation)
-* [Code Example](#Code-Example)
-* [Contributors](#Contributors)
-* [License](#License)
+* [Synopsis](#synopsis)
+* [Build Status](#build-status)
+* [Installation](#installation)
+* [Code Example](#code-example)
+* [Contributors](#contributors)
+* [License](#license)
 
 ## Synopsis
 
-This library help you to create a complete inventory of your iOS devices: both hardware and software informations are collected. You get the data about processor, memory, drives, sensors, etc. and also the list and description of installed application on any devices in a beautifull XML as protocol compatible with FusionInventory for GLPI.
-
+This library help you to create a complete inventory of your Android devices: both hardware and software informations are collected. You get the data about processor, memory, drives, sensors, etc. and also the list and description of installed application on any devices in a beautifull XML as protocol compatible with FusionInventory for GLPI.
 
 You can find more information here:
 <http://fusioninventory.org/documentation/dev/spec/protocol/inventory.html>
@@ -43,74 +41,48 @@ You can find more information here:
 
 ## Build Status
 
-Build with Xcode 8.3.2 / Swift 3.1
-
 | **Release channel** | **Beta channel** |
 |:---:|:---:|
-| [![Build Status](https://travis-ci.org/flyve-mdm/flyve-mdm-ios-inventory.svg?branch=master)](https://travis-ci.org/flyve-mdm/flyve-mdm-ios-inventory) | [![Build Status](https://travis-ci.org/flyve-mdm/flyve-mdm-ios-inventory.svg?branch=develop)](https://travis-ci.org/flyve-mdm/flyve-mdm-ios-inventory) |
-
+| [![Build Status](https://travis-ci.org/flyve-mdm/flyve-mdm-android-inventory.svg?branch=master)](https://travis-ci.org/flyve-mdm/flyve-mdm-android-inventory) | [![Build Status](https://travis-ci.org/flyve-mdm/flyve-mdm-android-inventory.svg?branch=develop)](https://travis-ci.org/flyve-mdm/flyve-mdm-android-inventory) |
 
 ## Installation
 
-### CocoaPods
-
-Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podfile:
-
-````ruby
-use_frameworks! # Add this if you are targeting iOS 8+ or using Swift
-pod 'FlyveMDMInventory'  
-````
-Then, run the following command:
-
-```bash
-$ pod install
+Download the latest JAR or grab via Maven:
+```xml
+<dependency>
+  <groupId>com.flyvemdm</groupId>
+  <artifactId>inventory</artifactId>
+  <version>1.0.1</version>
+  <type>pom</type>
+</dependency>
 ```
-
-### Carthage
-
-Install using [Carthage](https://github.com/Carthage/Carthage) by adding the following lines to your Cartfile:
-
-````
-github "flyve-mdm/flyve-mdm-ios-inventory" "master"
-````
-Then, run the following command:
-
-```bash
-$ carthage update --platform iOS
-```
-
-- On your application targets “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk.
-
-- On your application targets “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script with the following contents:
-`/usr/local/bin/carthage copy-frameworks`
-
-- and add the paths to the frameworks you want to use under “Input Files”, e.g.:
-```
-$(SRCROOT)/Carthage/Build/iOS/FlyveMDMInventory.framework
+or insert on build.gradle at app level:
+```groovy
+compile 'com.flyvemdm:inventory:1.0.1'
 ```
 
 ## Code Example
 
 It's easy to implement in your code
 
-```swift
-import FlyveMDMInventory
+```java
+InventoryTask inventoryTask = new InventoryTask(MainActivity.this, "Agent_v1.0", new InventoryTask.OnTaskCompleted() {
+  @Override
+  public void onTaskCompleted(String data) {
+    Log.d("XML", data);
+  }
+});
 
-FlyveMDMInventory.create("Agent_v1.0").responseXML { result in
-
-    if let XML = result {
-        print("XML: \(XML)")
-    }
-}
+inventoryTask.execute();
 ```
 
 ## Contributors
 
-* [@hectorerb](https://github.com/hectorerb)
+* [@rafaelje](https://github.com/rafaelje)
 * [@ajsb85 ](https://github.com/ajsb85)
 
 ## License
 
-The library is a Free Software under GPLv3 license.
+The library is a Free Software under GPLv3+ license.
 
 ![GPLv3](https://www.gnu.org/graphics/gplv3-88x31.png "GPLv3")
