@@ -30,11 +30,9 @@ import UIKit
 
 public class DeviceInventory: NSObject, XMLParserDelegate {
     
-    var versionClient = "FlyveMDM-Agent_v1.0"
-    
-    func createXML() {
-        
-        let xmlInvetory = createDTD() +
+    func create(_ versionClient: String) -> String {
+
+        let xmlInvetory: String = createDTD() +
             createElement(
                 tag: "REQUEST",
                 value:
@@ -58,6 +56,20 @@ public class DeviceInventory: NSObject, XMLParserDelegate {
         let xmlParser = XMLParser(data: xmlInvetory.data(using: .utf8)!)
         xmlParser.delegate = self
         xmlParser.parse()
+        
+        return xmlInvetory
+    }
+    
+    private func createDTD() -> String {
+        
+        return "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>"
+        
+    }
+    
+    private func createElement(tag: String, value: String) -> String {
+        
+        return "<\(tag.uppercased())>\(value)</\(tag.uppercased())>"
+        
     }
     
     public func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
@@ -69,16 +81,15 @@ public class DeviceInventory: NSObject, XMLParserDelegate {
         
         print("Value: name is \(string)")
     }
+
+}
+
+extension String {
     
-    private func createDTD() -> String {
-        
-        return "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>"
-        
-    }
-    
-    func createElement(tag: String, value: String) -> String {
-        
-        return "<\(tag.uppercased())>\(value)</\(tag.uppercased())>"
-        
+    func responseXML(
+        completionHandler: @escaping (String?) -> Void)
+        -> String
+    {
+        return self
     }
 }
