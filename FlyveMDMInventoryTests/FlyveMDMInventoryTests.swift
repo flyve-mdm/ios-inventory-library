@@ -1,4 +1,4 @@
-/*
+/**
  *   Copyright © 2017 Teclib. All rights reserved.
  *
  * FlyveMDMInventoryTests.swift is part of DeviceInventory
