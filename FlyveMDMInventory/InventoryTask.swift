@@ -1,7 +1,7 @@
-/**
+/*
  *   Copyright © 2017 Teclib. All rights reserved.
  *
- * DeviceInventory.swift is part of FlyveMDMInventory
+ * InventoryTask.swift is part of FlyveMDMInventory
  *
  * FlyveMDMInventory is a subproject of Flyve MDM. Flyve MDM is a mobile
  * device management software.
@@ -17,7 +17,7 @@
  * GNU General Public License for more details.
  * ------------------------------------------------------------------------------
  * @author    Hector Rondon
- * @date      07/06/17
+ * @date      09/06/17
  * @copyright Copyright © 2017 Teclib. All rights reserved.
  * @license   GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
  * @link      https://github.com/flyve-mdm/flyve-mdm-ios
@@ -28,17 +28,30 @@
 import Foundation
 import UIKit
 
-public class DeviceInventory: NSObject, XMLParserDelegate {
+public class InventoryTask {
+    
+    init() {}
     
     /**
-        Creates an invetory
-        
-        - parameter versionClient: Cliente app identifier
-        - returns: The XML String
-    */
-    func create(_ versionClient: String) -> String {
+     Execute generate inventory
+     
+     - parameter versionClient: Cliente app identifier
+     - returns: completion: (_ result: String) -> Void The XML String
+     */
+    func execute(_ versionClient: String, completion: (_ result: String) -> Void) {
 
-        let xmlInvetory: String = createDTD() +
+        completion(self.createXML(versionClient))
+    }
+    
+    /**
+     Creates an invetory
+     
+     - parameter versionClient: Cliente app identifier
+     - returns: The XML String
+     */
+    private func createXML(_ versionClient: String) -> String {
+        
+        return createDTD() +
             createElement(
                 tag: "REQUEST",
                 value:
@@ -58,61 +71,26 @@ public class DeviceInventory: NSObject, XMLParserDelegate {
                         )
                 )
         )
-        /// Validate output
-        let xmlParser = XMLParser(data: xmlInvetory.data(using: .utf8)!)
-        xmlParser.delegate = self
-        xmlParser.parse()
         
-        return xmlInvetory
     }
-
+    
     /**
-        Creates the XML DTD
+     Creates the XML DTD
      
-        - returns: the XML DTD String
-    */
+     - returns: the XML DTD String
+     */
     private func createDTD() -> String {
-
-        return "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>"
         
+        return "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>"
     }
-
+    
     /**
-        Creates the XML Element
+     Creates the XML Element
      
-        - returns: the XML Element String
-    */
+     - returns: the XML Element String
+     */
     private func createElement(tag: String, value: String) -> String {
         
         return "<\(tag.uppercased())>\(value)</\(tag.uppercased())>"
-        
-    }
-    
-    /// Print the XML start element
-    public func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
-        
-        print("Element: \(elementName)")
-    }
-    
-    /// Print the XML element
-    public func parser(_ parser: XMLParser, foundCharacters string: String) {
-        
-        print("Value: name is \(string)")
-    }
-
-}
-
-extension String {
-    
-    /**
-        response the XML
-     
-        - returns: The XML String valid
-    */
-    func responseXML(
-        completionHandler: @escaping (String?) -> Void)
-        -> String
-    {
-        return self
     }
 }
