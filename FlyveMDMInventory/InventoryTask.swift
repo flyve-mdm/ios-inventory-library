@@ -20,7 +20,7 @@
  * @date      09/06/17
  * @copyright Copyright © 2017 Teclib. All rights reserved.
  * @license   GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
- * @link      https://github.com/flyve-mdm/flyve-mdm-ios
+ * @link      https://github.com/flyve-mdm/flyve-mdm-ios-inventory
  * @link      https://flyve-mdm.com
  * ------------------------------------------------------------------------------
  */
@@ -30,7 +30,7 @@ import UIKit
 
 public class InventoryTask {
     
-    init() {}
+    public init() {}
     
     /**
      Execute generate inventory
@@ -38,7 +38,7 @@ public class InventoryTask {
      - parameter versionClient: Cliente app identifier
      - returns: completion: (_ result: String) -> Void The XML String
      */
-    func execute(_ versionClient: String, completion: (_ result: String) -> Void) {
+    public func execute(_ versionClient: String, completion: (_ result: String) -> Void) {
 
         completion(self.createXML(versionClient))
     }
