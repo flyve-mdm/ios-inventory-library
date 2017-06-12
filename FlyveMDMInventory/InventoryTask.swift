@@ -30,6 +30,8 @@ import UIKit
 
 public class InventoryTask {
     
+    private var memory = Memory()
+    
     public init() {}
     
     /**
@@ -66,7 +68,7 @@ public class InventoryTask {
                                 createElement(tag: "ARCHNAME", value: "armv7l") +
                                 createElement(tag: "SDK", value: "22") +
                                 createElement(tag: "UUID", value: "F6D8B883-EDAB-431E-B3E6-F208DCA9E562") +
-                                createElement(tag: "MEMORY", value: "1024") +
+                                createElement(tag: "MEMORY", value: "\(memory.total())") +
                                 createElement(tag: "PROCESSORS", value: "4")
                         )
                 )

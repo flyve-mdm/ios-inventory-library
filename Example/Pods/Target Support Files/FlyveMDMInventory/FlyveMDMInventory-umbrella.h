@@ -11,6 +11,7 @@
 #endif
 
 #import "FlyveMDMInventory.h"
+#import "Memory.h"
 
 FOUNDATION_EXPORT double FlyveMDMInventoryVersionNumber;
 FOUNDATION_EXPORT const unsigned char FlyveMDMInventoryVersionString[];
