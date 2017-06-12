@@ -11,6 +11,8 @@
 		0AA4CCEE1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */; };
 		0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA4CDA71EEAF50600E86C24 /* InventoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CDA61EEAF50600E86C24 /* InventoryTask.swift */; };
+		0AC91A8C1EEEE2F700108E2B /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC91A8A1EEEE2F700108E2B /* Memory.h */; };
+		0AC91A8D1EEEE2F700108E2B /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC91A8B1EEEE2F700108E2B /* Memory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyveMDMInventoryTests.swift; sourceTree = "<group>"; };
 		0AA4CCEF1EE70BD400E86C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA4CDA61EEAF50600E86C24 /* InventoryTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTask.swift; sourceTree = "<group>"; };
+		0AC91A8A1EEEE2F700108E2B /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		0AC91A8B1EEEE2F700108E2B /* Memory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Memory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 			children = (
 				0AA4CDA61EEAF50600E86C24 /* InventoryTask.swift */,
 				0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */,
+				0AC91A8A1EEEE2F700108E2B /* Memory.h */,
+				0AC91A8B1EEEE2F700108E2B /* Memory.m */,
 				0AA4CCE31EE70BD400E86C24 /* Info.plist */,
 			);
 			path = FlyveMDMInventory;
@@ -97,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */,
+				0AC91A8C1EEEE2F700108E2B /* Memory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC91A8D1EEEE2F700108E2B /* Memory.m in Sources */,
 				0AA4CDA71EEAF50600E86C24 /* InventoryTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
