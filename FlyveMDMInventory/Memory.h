@@ -57,4 +57,11 @@
  */
 - (double)active;
 
+/**
+ Inactive Memory Information
+ 
+ - returns: inactive ram memory in the device
+ */
+- (double)inactive;
+
 @end
