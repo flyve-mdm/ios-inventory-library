@@ -11,7 +11,7 @@
 		0AA4CCEE1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */; };
 		0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA4CDA71EEAF50600E86C24 /* InventoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CDA61EEAF50600E86C24 /* InventoryTask.swift */; };
-		0AC91A8C1EEEE2F700108E2B /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC91A8A1EEEE2F700108E2B /* Memory.h */; };
+		0AC91A8C1EEEE2F700108E2B /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC91A8A1EEEE2F700108E2B /* Memory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AC91A8D1EEEE2F700108E2B /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC91A8B1EEEE2F700108E2B /* Memory.m */; };
 /* End PBXBuildFile section */
 
