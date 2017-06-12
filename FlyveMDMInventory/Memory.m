@@ -26,7 +26,8 @@
  */
 
 #import "Memory.h"
-
+#import <sys/stat.h>
+#import <mach/mach.h>
 
 @implementation Memory
 
@@ -67,4 +68,37 @@
 	}
 }
 
+/**
+ Free Memory Information
+ 
+ - returns: free ram memory in the device
+ */
+- (double)free {
+
+    @try {
+
+        double totalMemory = 0.00;
+        vm_statistics_data_t vmStats;
+        mach_msg_type_number_t infoCount = HOST_VM_INFO_COUNT;
+        kern_return_t kernReturn = host_statistics(mach_host_self(), HOST_VM_INFO, (host_info_t)&vmStats, &infoCount);
+        
+        if(kernReturn != KERN_SUCCESS) {
+            return -1;
+        }
+        
+        totalMemory = ((vm_page_size * vmStats.free_count) / 1024.0) / 1024.0;
+        
+        // Check to make sure it's valid
+        if (totalMemory <= 0) {
+            // Error
+            return -1;
+        }
+        
+        return totalMemory;
+    }
+    @catch (NSException *exception) {
+        // Error
+        return -1;
+    }
+}
 @end

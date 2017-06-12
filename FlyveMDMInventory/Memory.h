@@ -36,4 +36,11 @@
  */
 - (double)total;// Error
 
+/**
+ Free Memory Information
+ 
+ - returns: free ram memory in the device
+ */
+- (double)free;
+
 @end
