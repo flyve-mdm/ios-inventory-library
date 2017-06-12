@@ -44,4 +44,11 @@
  */
 - (NSString *)free:(BOOL)inPercent;
 
+/**
+ Total used disk space information
+ 
+ - returns: Total used disk space in the device
+ */
+- (NSString *)used:(BOOL)inPercent;
+
 @end

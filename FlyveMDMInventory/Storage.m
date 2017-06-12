@@ -118,6 +118,66 @@
 }
 
 /**
+ Total Used disk space information
+ 
+ - returns: Total Used disk space in the device
+ */
+- (NSString *)used:(BOOL)inPercent {
+
+    @try {
+
+        long long UDS;
+        long long TDS = [self longDiskSpace];
+        long long FDS = [self longFreeDiskSpace];
+        
+        // Make sure they're valid
+        if (TDS <= 0 || FDS <= 0) {
+            // Error
+            return nil;
+        }
+
+        UDS = TDS - FDS;
+        
+        // Make sure it's valid
+        if (UDS <= 0) {
+            // Error
+            return nil;
+        }
+
+        NSString *usedDiskSpace;
+        
+        // Output in percentage
+        if (inPercent) {
+            
+            float PercentUsedDiskSpace = (UDS * 100) / TDS;
+            // Check it to make sure it's okay
+            if (PercentUsedDiskSpace <= 0) {
+                // Error
+                return nil;
+            }
+
+            usedDiskSpace = [NSString stringWithFormat:@"%.f%%", PercentUsedDiskSpace];
+        } else {
+            // Turn that long long into a string
+            usedDiskSpace = [self formatMemory:UDS];
+        }
+        
+        // Check to make sure it's valid
+        if (usedDiskSpace == nil || usedDiskSpace.length <= 0) {
+            // Error
+            return nil;
+        }
+        
+        return usedDiskSpace;
+        
+    }
+    @catch (NSException *exception) {
+        // Error
+        return nil;
+    }
+}
+
+/**
  Get the total disk space in long format
  
  - returns: Total disk space in long format

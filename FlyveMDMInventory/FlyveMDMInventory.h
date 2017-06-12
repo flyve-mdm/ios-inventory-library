@@ -28,6 +28,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Memory.h"
+#import "Storage.h"
 
 //! Project version number for FlyveMDMInventory.
 FOUNDATION_EXPORT double FlyveMDMInventoryVersionNumber;
@@ -35,7 +36,8 @@ FOUNDATION_EXPORT double FlyveMDMInventoryVersionNumber;
 //! Project version string for FlyveMDMInventory.
 FOUNDATION_EXPORT const unsigned char FlyveMDMInventoryVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <FlyveMDMInventory/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like
+// #import <FlyveMDMInventory/PublicHeader.h>
 
 
 
