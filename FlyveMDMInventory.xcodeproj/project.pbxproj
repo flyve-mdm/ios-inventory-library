@@ -14,6 +14,7 @@
 		0AC91A8C1EEEE2F700108E2B /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC91A8A1EEEE2F700108E2B /* Memory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AC91A8D1EEEE2F700108E2B /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC91A8B1EEEE2F700108E2B /* Memory.m */; };
 		0AC91A8F1EEEFA8A00108E2B /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC91A8E1EEEFA8A00108E2B /* Storage.m */; };
+		0AC91A911EEF2F4A00108E2B /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC91A901EEEFA9F00108E2B /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 			files = (
 				0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */,
 				0AC91A8C1EEEE2F700108E2B /* Memory.h in Headers */,
+				0AC91A911EEF2F4A00108E2B /* Storage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

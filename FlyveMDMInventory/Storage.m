@@ -68,6 +68,56 @@
 }
 
 /**
+ Total Free disk space information
+ 
+ - returns: Total Free disk space in the device
+ */
+- (NSString *)free:(BOOL)inPercent {
+
+    @try {
+
+        long long space = [self longFreeDiskSpace];
+        
+        // Check to make sure it's valid
+        if (space <= 0) {
+            // Error, no disk space found
+            return nil;
+        }
+        
+        NSString *diskSpace;
+        
+        // Output in percentage
+        if (inPercent) {
+
+            long long totalSpace = [self longDiskSpace];
+
+            float percentDiskSpace = (space * 100) / totalSpace;
+            // Check it to make sure it's okay
+            if (percentDiskSpace <= 0) {
+                // Error, invalid percent
+                return nil;
+            }
+
+            diskSpace = [NSString stringWithFormat:@"%.f%%", percentDiskSpace];
+        } else {
+            diskSpace = [self formatMemory:space];
+        }
+        
+        // Check to make sure it's valid
+        if (diskSpace == nil || diskSpace.length <= 0) {
+            // Error
+            return nil;
+        }
+        
+        return diskSpace;
+    }
+    @catch (NSException * ex) {
+        // Error
+        return nil;
+    }
+}
+
+/**
  Get the total disk space in long format
  
  - returns: Total disk space in long format
@@ -80,7 +130,7 @@
         NSError *error = nil;
         NSDictionary *FileAttributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&error];
         
-        // Get the file attributes of the home directory assuming no errors
+        // Get the file attributes of the home directory
         if (error == nil) {
             // Get the size of the filesystem
             diskSpace = [[FileAttributes objectForKey:NSFileSystemSize] longLongValue];
@@ -96,6 +146,41 @@
         }
 
         return diskSpace;
+    }
+    @catch (NSException *exception) {
+        // Error
+        return -1;
+    }
+}
+
+/**
+ Get the total free disk space in long format
+ 
+ - returns: Total free disk space in long format
+ */
+- (long long)longFreeDiskSpace {
+ 
+    @try {
+
+        long long FreeDiskSpace = 0L;
+        NSError *Error = nil;
+        NSDictionary *FileAttributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&Error];
+        
+        // Get the file attributes of the home directory
+        if (Error == nil) {
+            FreeDiskSpace = [[FileAttributes objectForKey:NSFileSystemFreeSize] longLongValue];
+        } else {
+            // There was an error
+            return -1;
+        }
+        
+        // Check for valid size
+        if (FreeDiskSpace <= 0) {
+            // Invalid size
+            return -1;
+        }
+
+        return FreeDiskSpace;
     }
     @catch (NSException *exception) {
         // Error

@@ -37,5 +37,11 @@
  */
 - (NSString *)total;
 
+/**
+ Total free disk space information
+ 
+ - returns: Total disk space in the device
+ */
+- (NSString *)free:(BOOL)inPercent;
 
 @end
