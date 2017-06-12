@@ -43,4 +43,11 @@
  */
 - (double)free;
 
+/**
+ Used Memory Information
+ 
+ - returns: used ram memory in the device
+ */
+- (double)used;
+
 @end

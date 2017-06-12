@@ -101,4 +101,51 @@
         return -1;
     }
 }
+
+/**
+ Used Memory Information
+ 
+ - returns: used ram memory in the device
+ */
+- (double)used {
+
+    @try {
+
+        double totalUsedMemory = 0.00;
+        mach_port_t host_port;
+        mach_msg_type_number_t host_size;
+        vm_size_t pagesize;
+
+        host_port = mach_host_self();
+        host_size = sizeof(vm_statistics_data_t) / sizeof(integer_t);
+        host_page_size(host_port, &pagesize);
+        
+        vm_statistics_data_t vm_stat;
+        
+        // Check for any system errors
+        if (host_statistics(host_port, HOST_VM_INFO, (host_info_t)&vm_stat, &host_size) != KERN_SUCCESS) {
+            // Error, failed to get Virtual memory info
+            return -1;
+        }
+        
+        // Memory statistics in bytes
+        natural_t UsedMemory = (natural_t)((vm_stat.active_count +
+                                            vm_stat.inactive_count +
+                                            vm_stat.wire_count) * pagesize);
+        
+        totalUsedMemory = (UsedMemory / 1024.0) / 1024.0;
+        
+        // Check to make sure it's valid
+        if (totalUsedMemory <= 0) {
+            // Error
+            return -1;
+        }
+        
+        return totalUsedMemory;
+    }
+    @catch (NSException *exception) {
+        // Error
+        return -1;
+    }
+}
 @end
