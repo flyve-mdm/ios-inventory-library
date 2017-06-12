@@ -50,4 +50,11 @@
  */
 - (double)used;
 
+/**
+ Active Memory Information
+ 
+ - returns: active ram memory in the device
+ */
+- (double)active;
+
 @end
