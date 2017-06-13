@@ -66,7 +66,7 @@ public class InventoryTask {
                         
                         createElement(tag: "HARDWARE", value:
                             
-                            createElement(tag: "NAME", value: "iPhone") +
+                            createElement(tag: "NAME", value: "\(hardware.deviceName() ?? "not available")") +
                             createElement(tag: "MODEL", value: "\(hardware.deviceModel() ?? "not available")") +
                             createElement(tag: "OSNAME", value: "10.3.2") +
                             createElement(tag: "ARCHNAME", value: "armv7l") +

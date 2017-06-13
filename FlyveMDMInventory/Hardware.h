@@ -37,6 +37,13 @@
 - (nullable NSString *)deviceID;
 
 /**
+ Device Name
+ 
+ - returns: Device name string
+ */
+- (nullable NSString *)deviceName;
+
+/**
  Model of Device
  
  - returns: Model of Device string

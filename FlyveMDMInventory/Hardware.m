@@ -44,6 +44,16 @@
 }
 
 /**
+ Device Name
+ 
+ - returns: Device name string
+ */
+- (nullable NSString *)deviceName {
+    
+    return [[UIDevice currentDevice] name];
+}
+
+/**
  Model of Device
  
  - returns: Model of Device string
