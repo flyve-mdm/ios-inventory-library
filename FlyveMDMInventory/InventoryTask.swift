@@ -56,7 +56,7 @@ public class InventoryTask {
      */
     private func createXML(_ versionClient: String) -> String {
         
-        print(network.type() ?? "not available")
+        print(network.macAddress() ?? "not available")
         
         return createDTD() +
             createElement(
@@ -79,7 +79,8 @@ public class InventoryTask {
                         ) +
                         createElement(tag: "NETWORK", value:
                             createElement(tag: "TYPE", value: "\(network.type() ?? "not available")") +
-                            createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")")
+                            createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")") +
+                            createElement(tag: "MACADDRESS", value: "\(network.macAddress() ?? "not available")")
                         )
                         
                 )

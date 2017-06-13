@@ -24,4 +24,11 @@
  */
 - (nullable NSString *)localIPAddress;
 
+/**
+ Get MAC Address
+ 
+ - returns: MAC Address
+ */
+- (nullable NSString *)macAddress;
+
 @end
