@@ -34,21 +34,21 @@
  
  - returns: Device ID string
  */
-- (nullable NSString *)deviceID;
+- (nullable NSString *)uuid;
 
 /**
  Device Name
  
  - returns: Device name string
  */
-- (nullable NSString *)deviceName;
+- (nullable NSString *)name;
 
 /**
  Model of Device
  
  - returns: Model of Device string
  */
-- (nullable NSString *)deviceModel;
+- (nullable NSString *)model;
 
 /**
  Operating System Name
@@ -63,6 +63,13 @@
  - returns: Operating system version of Device string
  */
 - (nullable NSString *)osVersion;
+
+/**
+ System architecture name
+ 
+ - returns: System architecture name of Device string
+ */
+- (nullable NSString *)archName;
 
 
 @end

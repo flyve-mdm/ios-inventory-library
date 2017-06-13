@@ -30,6 +30,7 @@
 #import <UIKit/UIKit.h>
 
 #include <sys/sysctl.h>
+#include <mach/machine.h>
 
 /// Hardware Information
 @implementation Hardware
@@ -39,7 +40,7 @@
  
  - returns: UUIDString
  */
-- (NSString *)deviceID {
+- (NSString *)uuid {
     return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 }
 
@@ -48,7 +49,7 @@
  
  - returns: Device name string
  */
-- (nullable NSString *)deviceName {
+- (nullable NSString *)name {
     
     return [[UIDevice currentDevice] name];
 }
@@ -58,7 +59,7 @@
  
  - returns: Model of Device string
  */
-- (NSString *)deviceModel {
+- (NSString *)model {
     return [self getSystemInfoWith:"hw.model"];
 }
 
@@ -80,6 +81,90 @@
 - (nullable NSString *)osVersion {
     
     return [[NSProcessInfo processInfo] operatingSystemVersionString];
+}
+
+/**
+ System architecture name
+ 
+ - returns: System architecture name of Device string
+ */
+- (nullable NSString *)archName {
+    
+    NSMutableString *cpu = [[NSMutableString alloc] init];
+    
+    size_t size;
+    cpu_type_t type;
+    cpu_subtype_t subtype;
+    
+    size = sizeof(type);
+    sysctlbyname("hw.cputype", &type, &size, NULL, 0);
+    
+    size = sizeof(subtype);
+    sysctlbyname("hw.cpusubtype", &subtype, &size, NULL, 0);
+    
+    if (type == CPU_TYPE_X86)
+    {
+        [cpu appendString:@"x86"];
+        
+    }
+    else if (type == CPU_TYPE_ARM)
+    {
+        [cpu appendString:@"ARM"];
+        
+        switch(subtype) {
+            
+            case CPU_SUBTYPE_ARM_V4T:
+                [cpu appendString:@"_V4T"];
+                break;
+            case CPU_SUBTYPE_ARM_V6:
+                [cpu appendString:@"_V6"];
+                break;
+            case CPU_SUBTYPE_ARM_V5TEJ:
+                [cpu appendString:@"_V5TEJ"];
+                break;
+            case CPU_SUBTYPE_ARM_XSCALE:
+                [cpu appendString:@"_XSCALE"];
+                break;
+            case CPU_SUBTYPE_ARM_V7:
+                [cpu appendString:@"_V7"];
+                break;
+            case CPU_SUBTYPE_ARM_V7F:
+                [cpu appendString:@"_V7F"];
+                break;
+            case CPU_SUBTYPE_ARM_V7S:
+                [cpu appendString:@"_V7S"];
+                break;
+            case CPU_SUBTYPE_ARM_V7K:
+                [cpu appendString:@"_V7K"];
+                break;
+            case CPU_SUBTYPE_ARM_V6M:
+                [cpu appendString:@"_V6M"];
+                break;
+            case CPU_SUBTYPE_ARM_V7M:
+                [cpu appendString:@"_V7M"];
+                break;
+            case CPU_SUBTYPE_ARM_V7EM:
+                [cpu appendString:@"_V7EM"];
+                break;
+            case CPU_SUBTYPE_ARM_V8:
+                [cpu appendString:@"_V8"];
+                break;
+      
+        }
+    } else if(type == CPU_TYPE_ARM64) {
+        
+        [cpu appendString:@"ARM64"];
+        
+        switch(subtype) {
+
+            case CPU_SUBTYPE_ARM64_V8:
+                [cpu appendString:@"_V8"];
+                break;
+        
+        }
+    }
+    
+    return [NSString stringWithString:cpu];
 }
 
 /**

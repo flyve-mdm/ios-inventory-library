@@ -55,7 +55,7 @@ public class InventoryTask {
      */
     private func createXML(_ versionClient: String) -> String {
         
-        print(hardware.osVersion() ?? "not available")
+        print(hardware.archName() ?? "not available")
         
         return createDTD() +
             createElement(
@@ -63,17 +63,16 @@ public class InventoryTask {
                 value:
                 createElement(tag: "QUERY", value: "Inventory") +
                     createElement(tag: "VERSIONCLIENT", value: versionClient) +
-                    createElement(tag: "DEVICEID", value: "\(hardware.deviceID() ?? "not available")") +
+                    createElement(tag: "DEVICEID", value: "\(hardware.uuid() ?? "not available")") +
                     createElement(tag: "CONTENT", value:
                         
                         createElement(tag: "HARDWARE", value:
-                            createElement(tag: "NAME", value: "\(hardware.deviceName() ?? "not available")") +
-                            createElement(tag: "MODEL", value: "\(hardware.deviceModel() ?? "not available")") +
+                            createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
+                            createElement(tag: "MODEL", value: "\(hardware.model() ?? "not available")") +
                             createElement(tag: "OSNAME", value: "\(hardware.osName() ?? "not available")") +
                             createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
-                            createElement(tag: "ARCHNAME", value: "armv7l") +
-                            createElement(tag: "SDK", value: "22") +
-                            createElement(tag: "UUID", value: "F6D8B883-EDAB-431E-B3E6-F208DCA9E562") +
+                            createElement(tag: "ARCHNAME", value: "\(hardware.archName() ?? "not available")") +
+                            createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
                             createElement(tag: "MEMORY", value: "\(memory.total())") +
                             createElement(tag: "PROCESSORS", value: "4")
                         )
