@@ -31,6 +31,8 @@ import UIKit
 public class InventoryTask {
     
     private var memory = Memory()
+    private var storage = Storage()
+    private var hardware = Hardware()
     
     public init() {}
     
@@ -59,17 +61,19 @@ public class InventoryTask {
                 value:
                 createElement(tag: "QUERY", value: "Inventory") +
                     createElement(tag: "VERSIONCLIENT", value: versionClient) +
-                    createElement(tag: "DEVICEID", value: "F6D8B883-EDAB-431E-B3E6-F208DCA9E562-440-00000099F84A4798") +
+                    createElement(tag: "DEVICEID", value: "\(hardware.deviceID() ?? "not available")") +
                     createElement(tag: "CONTENT", value:
                         
                         createElement(tag: "HARDWARE", value:
+                            
                             createElement(tag: "NAME", value: "iPhone") +
-                                createElement(tag: "OSNAME", value: "10.3.2") +
-                                createElement(tag: "ARCHNAME", value: "armv7l") +
-                                createElement(tag: "SDK", value: "22") +
-                                createElement(tag: "UUID", value: "F6D8B883-EDAB-431E-B3E6-F208DCA9E562") +
-                                createElement(tag: "MEMORY", value: "\(memory.total())") +
-                                createElement(tag: "PROCESSORS", value: "4")
+                            createElement(tag: "MODEL", value: "\(hardware.deviceModel() ?? "not available")") +
+                            createElement(tag: "OSNAME", value: "10.3.2") +
+                            createElement(tag: "ARCHNAME", value: "armv7l") +
+                            createElement(tag: "SDK", value: "22") +
+                            createElement(tag: "UUID", value: "F6D8B883-EDAB-431E-B3E6-F208DCA9E562") +
+                            createElement(tag: "MEMORY", value: "\(memory.total())") +
+                            createElement(tag: "PROCESSORS", value: "4")
                         )
                 )
         )

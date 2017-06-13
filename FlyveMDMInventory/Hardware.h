@@ -30,10 +30,17 @@
 @interface Hardware : NSObject
 
 /**
+ Device ID
+ 
+ - returns: Device ID string
+ */
+- (nullable NSString *)deviceID;
+
+/**
  Model of Device
  
  - returns: Model of Device string
  */
-- (NSString *)deviceModel;
+- (nullable NSString *)deviceModel;
 
 @end

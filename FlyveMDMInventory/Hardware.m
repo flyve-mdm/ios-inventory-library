@@ -26,12 +26,22 @@
  */
 
 #import "Hardware.h"
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 #include <sys/sysctl.h>
 
 /// Hardware Information
 @implementation Hardware
+
+/**
+ Device ID
+ 
+ - returns: UUIDString
+ */
+- (NSString *)deviceID {
+    return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+}
 
 /**
  Model of Device
