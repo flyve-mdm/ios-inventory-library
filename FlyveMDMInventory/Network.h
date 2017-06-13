@@ -12,6 +12,12 @@
 @interface Network: NSObject
 
 /**
+ Get Type Network
+ 
+ - returns: Type Network
+ */
+- (nullable NSString *)type;
+/**
  Get Local IP Address
  
  - returns: Local IP Address

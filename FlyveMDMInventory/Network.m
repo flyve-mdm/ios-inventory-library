@@ -14,6 +14,59 @@
 @implementation Network
 
 /**
+ Get Type Network
+ 
+ - returns: Type Network
+ */
+-(NSString *)type {
+    
+    NSString *networkType;
+    NSArray *subviews = [[[[UIApplication sharedApplication] valueForKey:@"statusBar"] valueForKey:@"foregroundView"]subviews];
+    NSNumber *dataNetworkItemView = nil;
+    
+    for (id subview in subviews) {
+        if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
+            dataNetworkItemView = subview;
+            break;
+        }
+    }
+    
+    switch ([[dataNetworkItemView valueForKey:@"dataNetworkType"]integerValue]) {
+        case 0:
+            networkType = @"Not Connected";
+            break;
+            
+        case 1:
+            networkType =  @"2G";
+            break;
+            
+        case 2:
+            networkType = @"3G";
+            break;
+            
+        case 3:
+            networkType = @"4G";
+            break;
+            
+        case 4:
+            networkType = @"LTE";
+            break;
+            
+        case 5:
+            networkType = @"WIFI";
+            break;
+            
+            
+        default:
+            networkType = @"Not Connected";
+            break;
+    }
+    
+    return networkType;
+    
+}
+
+/**
  Get Local IP Address
  
  - returns: Local IP Address
