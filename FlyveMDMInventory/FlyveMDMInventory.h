@@ -30,6 +30,7 @@
 #import "Memory.h"
 #import "Storage.h"
 #import "Hardware.h"
+#import "Network.h"
 
 //! Project version number for FlyveMDMInventory.
 FOUNDATION_EXPORT double FlyveMDMInventoryVersionNumber;

@@ -13,6 +13,7 @@
 #import "FlyveMDMInventory.h"
 #import "Hardware.h"
 #import "Memory.h"
+#import "Network.h"
 #import "Storage.h"
 
 FOUNDATION_EXPORT double FlyveMDMInventoryVersionNumber;

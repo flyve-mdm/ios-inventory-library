@@ -33,6 +33,7 @@ public class InventoryTask {
     private var memory = Memory()
     private var storage = Storage()
     private var hardware = Hardware()
+    private var network = Network()
     
     public init() {}
     
@@ -55,7 +56,7 @@ public class InventoryTask {
      */
     private func createXML(_ versionClient: String) -> String {
         
-        print(hardware.archName() ?? "not available")
+        print(network.localIPAddress() ?? "not available")
         
         return createDTD() +
             createElement(
@@ -75,7 +76,11 @@ public class InventoryTask {
                             createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
                             createElement(tag: "MEMORY", value: "\(memory.total())") +
                             createElement(tag: "PROCESSORS", value: "4")
+                        ) +
+                        createElement(tag: "NETWORK", value:
+                            createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")")
                         )
+                        
                 )
         )
         
