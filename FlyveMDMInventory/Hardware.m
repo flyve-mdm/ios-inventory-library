@@ -106,6 +106,11 @@
     {
         [cpu appendString:@"x86"];
         
+        if(sizeof(int*) == 8) {
+            //system is 64-bit
+            [cpu appendString:@"_64"];
+        }
+        
     }
     else if (type == CPU_TYPE_ARM)
     {
