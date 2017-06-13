@@ -1,7 +1,7 @@
 /*
  *   Copyright © 2017 Teclib. All rights reserved.
  *
- * Storage.h is part of FlyveMDMInventory
+ * Hardware.h is part of FlyveMDMInventory
  *
  * FlyveMDMInventory is a subproject of Flyve MDM. Flyve MDM is a mobile
  * device management software.
@@ -17,7 +17,7 @@
  * GNU General Public License for more details.
  * ------------------------------------------------------------------------------
  * @author    Hector Rondon
- * @date      07/06/17
+ * @date      13/06/17
  * @copyright Copyright © 2017 Teclib. All rights reserved.
  * @license   GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
  * @link      https://github.com/flyve-mdm/flyve-mdm-ios-inventory
@@ -26,28 +26,14 @@
  */
 
 #import <Foundation/Foundation.h>
-/// Disk space information
-@interface Storage: NSObject
+/// Hardware Information
+@interface Hardware : NSObject
 
 /**
- Total disk space information
+ Model of Device
  
- - returns: Total disk space in the device
+ - returns: Model of Device string
  */
-- (NSString *)total;
-
-/**
- Total free disk space information
- 
- - returns: Total disk space in the device
- */
-- (NSString *)free:(BOOL)inPercent;
-
-/**
- Total used disk space information
- 
- - returns: Total used disk space in the device
- */
-- (NSString *)used:(BOOL)inPercent;
+- (NSString *)deviceModel;
 
 @end

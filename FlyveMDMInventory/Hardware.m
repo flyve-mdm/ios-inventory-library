@@ -1,7 +1,7 @@
 /*
  *   Copyright © 2017 Teclib. All rights reserved.
  *
- * Storage.h is part of FlyveMDMInventory
+ * Hardware.m is part of FlyveMDMInventory
  *
  * FlyveMDMInventory is a subproject of Flyve MDM. Flyve MDM is a mobile
  * device management software.
@@ -17,7 +17,7 @@
  * GNU General Public License for more details.
  * ------------------------------------------------------------------------------
  * @author    Hector Rondon
- * @date      07/06/17
+ * @date      13/06/17
  * @copyright Copyright © 2017 Teclib. All rights reserved.
  * @license   GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
  * @link      https://github.com/flyve-mdm/flyve-mdm-ios-inventory
@@ -25,29 +25,40 @@
  * ------------------------------------------------------------------------------
  */
 
-#import <Foundation/Foundation.h>
-/// Disk space information
-@interface Storage: NSObject
+#import "Hardware.h"
+#import <UIKit/UIKit.h>
+
+#include <sys/sysctl.h>
+
+/// Hardware Information
+@implementation Hardware
 
 /**
- Total disk space information
+ Model of Device
  
- - returns: Total disk space in the device
+ - returns: Model of Device string
  */
-- (NSString *)total;
+- (NSString *)deviceModel {
+    return [self getSystemInfoWith:"hw.model"];
+}
 
 /**
- Total free disk space information
+ Information Hardware by name
  
- - returns: Total disk space in the device
+ - returns: Information Hardware by name in string
  */
-- (NSString *)free:(BOOL)inPercent;
-
-/**
- Total used disk space information
- 
- - returns: Total used disk space in the device
- */
-- (NSString *)used:(BOOL)inPercent;
+- (NSString *) getSystemInfoWith:(char *)name
+{
+    size_t size;
+    sysctlbyname(name, NULL, &size, NULL, 0);
+    
+    char *answer = malloc(size);
+    sysctlbyname(name, answer, &size, NULL, 0);
+    
+    NSString *result = [NSString stringWithCString:answer encoding: NSUTF8StringEncoding];
+    free(answer);
+    
+    return result;
+}
 
 @end

@@ -29,6 +29,7 @@
 #import <UIKit/UIKit.h>
 #import "Memory.h"
 #import "Storage.h"
+#import "Hardware.h"
 
 //! Project version number for FlyveMDMInventory.
 FOUNDATION_EXPORT double FlyveMDMInventoryVersionNumber;
