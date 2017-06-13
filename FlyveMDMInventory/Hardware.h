@@ -50,4 +50,19 @@
  */
 - (nullable NSString *)deviceModel;
 
+/**
+ Operating System Name
+ 
+ - returns: Operating system name of Device string
+ */
+- (nullable NSString *)osName;
+
+/**
+ Operating System Version
+ 
+ - returns: Operating system version of Device string
+ */
+- (nullable NSString *)osVersion;
+
+
 @end

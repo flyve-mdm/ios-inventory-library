@@ -55,6 +55,8 @@ public class InventoryTask {
      */
     private func createXML(_ versionClient: String) -> String {
         
+        print(hardware.osVersion() ?? "not available")
+        
         return createDTD() +
             createElement(
                 tag: "REQUEST",
@@ -65,10 +67,10 @@ public class InventoryTask {
                     createElement(tag: "CONTENT", value:
                         
                         createElement(tag: "HARDWARE", value:
-                            
                             createElement(tag: "NAME", value: "\(hardware.deviceName() ?? "not available")") +
                             createElement(tag: "MODEL", value: "\(hardware.deviceModel() ?? "not available")") +
-                            createElement(tag: "OSNAME", value: "10.3.2") +
+                            createElement(tag: "OSNAME", value: "\(hardware.osName() ?? "not available")") +
+                            createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
                             createElement(tag: "ARCHNAME", value: "armv7l") +
                             createElement(tag: "SDK", value: "22") +
                             createElement(tag: "UUID", value: "F6D8B883-EDAB-431E-B3E6-F208DCA9E562") +

@@ -63,6 +63,26 @@
 }
 
 /**
+ Operating System Name
+ 
+ - returns: Operating system name of Device string
+ */
+- (nullable NSString *)osName {
+    
+    return [[UIDevice currentDevice] systemName];
+}
+
+/**
+ Operating System Version
+ 
+ - returns: Operating system version of Device string
+ */
+- (nullable NSString *)osVersion {
+    
+    return [[NSProcessInfo processInfo] operatingSystemVersionString];
+}
+
+/**
  Information Hardware by name
  
  - returns: Information Hardware by name in string
