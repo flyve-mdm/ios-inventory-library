@@ -40,6 +40,13 @@
 - (nullable NSString *)localIPAddress;
 
 /**
+ Get Broadcast Address
+ 
+ - returns: Broadcast Address
+ */
+- (nullable NSString *)broadcastAddress;
+
+/**
  Get MAC Address
  
  - returns: MAC Address
