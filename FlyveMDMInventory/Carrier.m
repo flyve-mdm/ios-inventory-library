@@ -35,9 +35,16 @@
  
  - returns: Carrier Name
  */
-- (nullable NSString *)name {
+- (NSString *)name {
     
-    return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].carrierName;
+    @try {
+        
+        return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].carrierName;
+    }
+    @catch (NSException *exception) {
+        // Failed
+        return nil;
+    }
 }
 
 /**
@@ -45,13 +52,30 @@
  
  - returns: Carrier Country
  */
-- (nullable NSString *)country {
+- (NSString *)country {
     
     @try {
 
         NSLocale *currentCountry = [NSLocale currentLocale];
 
         return [currentCountry objectForKey:NSLocaleCountryCode];
+    }
+    @catch (NSException *exception) {
+        // Failed
+        return nil;
+    }
+}
+
+/**
+ Get containing the carrier mobile country code
+ 
+ - returns: Carrier Mobile Country Code
+ */
++ (NSString *)mobileCountryCode {
+
+    @try {
+        
+        return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].mobileCountryCode;
     }
     @catch (NSException *exception) {
         // Failed
