@@ -78,6 +78,7 @@ public class InventoryTask {
                         createElement(tag: "NETWORK", value:
                             createElement(tag: "TYPE", value: "\(network.type() ?? "not available")") +
                             createElement(tag: "SSID", value: "\(network.ssid() ?? "not available")") +
+                            createElement(tag: "BSSID", value: "\(network.bssid() ?? "not available")") +
                             createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")") +
                             createElement(tag: "MACADDRESS", value: "\(network.macAddress() ?? "not available")")
                         )

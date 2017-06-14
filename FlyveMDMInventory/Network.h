@@ -26,6 +26,13 @@
 - (nullable NSString *)ssid;
 
 /**
+ Get Basic Service Set Identifier (BSSID)
+ 
+ - returns: Basic Service Set Identifier string
+ */
+- (nullable NSString *)bssid;
+
+/**
  Get Local IP Address
  
  - returns: Local IP Address
