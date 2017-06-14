@@ -9,7 +9,7 @@
 #import "Network.h"
 
 #import <UIKit/UIKit.h>
-
+#import <SystemConfiguration/CaptiveNetwork.h>
 #include <sys/sysctl.h>
 #include <net/if.h>
 #include <net/if_dl.h>
@@ -72,13 +72,42 @@
 }
 
 /**
+ Get Service Set Identifier (SSID)
+ 
+ - returns: Service Set Identifier string
+ */
+- (NSString *)ssid {
+    
+    NSArray *interfaceNames = CFBridgingRelease(CNCopySupportedInterfaces());
+    
+    NSDictionary *SSIDInfo;
+    for (NSString *interfaceName in interfaceNames) {
+        
+        SSIDInfo = CFBridgingRelease(CNCopyCurrentNetworkInfo((__bridge CFStringRef)interfaceName));
+        
+        BOOL isNotEmpty = (SSIDInfo.count > 0);
+        
+        if (isNotEmpty) {
+            break;
+        }
+    }
+    
+    if(SSIDInfo != nil) {
+        return SSIDInfo[@"SSID"];
+    } else {
+        return nil;
+    }
+}
+
+/**
  Get Local IP Address
  
  - returns: Local IP Address
  */
-- (nullable NSString *)localIPAddress {
+- (NSString *)localIPAddress {
     
     NSString *address;
+    NSString *broadcastAddress;
     struct ifaddrs *interfaces = NULL;
     struct ifaddrs *temp_addr = NULL;
     int success = 0;
@@ -93,13 +122,15 @@
                 if([[NSString stringWithUTF8String:temp_addr->ifa_name] isEqualToString:@"en0"]) {
                     
                     address = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_addr)->sin_addr)];
-                    
+                    broadcastAddress = [NSString stringWithUTF8String:inet_ntoa(((struct sockaddr_in *)temp_addr->ifa_dstaddr)->sin_addr)];
+        
                 }
             }
             
             temp_addr = temp_addr->ifa_next;
         }
     }
+    
     // Free memory
     freeifaddrs(interfaces);
     return address;

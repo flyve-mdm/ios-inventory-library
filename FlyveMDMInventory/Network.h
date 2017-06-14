@@ -17,6 +17,14 @@
  - returns: Type Network
  */
 - (nullable NSString *)type;
+
+/**
+ Get Service Set Identifier (SSID)
+ 
+ - returns: Service Set Identifier string
+ */
+- (nullable NSString *)ssid;
+
 /**
  Get Local IP Address
  
