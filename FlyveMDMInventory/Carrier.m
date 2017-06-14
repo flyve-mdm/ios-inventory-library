@@ -31,6 +31,23 @@
 @implementation Carrier
 
 /**
+ Get The current radio access technology is registered with
+ 
+ - returns: Radio Access Technology
+ */
+- (NSString *)radio {
+    
+    @try {
+        
+        return [CTTelephonyNetworkInfo new].currentRadioAccessTechnology;
+    }
+    @catch (NSException *exception) {
+        // Failed
+        return nil;
+    }
+}
+
+/**
  Get containing the name of the subscriber's cellular service provider
  
  - returns: Carrier Name

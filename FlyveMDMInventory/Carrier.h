@@ -33,6 +33,13 @@
 @interface Carrier: NSObject
 
 /**
+ Get The current radio access technology is registered with
+ 
+ - returns: Radio Access Technology
+ */
+- (nullable NSString *)radio;
+
+/**
  Get containing the name of the subscriber's cellular service provider
  
  - returns: Carrier Name
