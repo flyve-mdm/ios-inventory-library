@@ -34,20 +34,20 @@
  
  - returns: Total disk space in the device
  */
-- (NSString *)total;
+- (nullable NSString *)total;
 
 /**
  Total free disk space information
  
  - returns: Total disk space in the device
  */
-- (NSString *)free:(BOOL)inPercent;
+- (nullable NSString *)free:(BOOL)inPercent;
 
 /**
  Total used disk space information
  
  - returns: Total used disk space in the device
  */
-- (NSString *)used:(BOOL)inPercent;
+- (nullable NSString *)used:(BOOL)inPercent;
 
 @end

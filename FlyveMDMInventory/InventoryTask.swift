@@ -75,6 +75,18 @@ public class InventoryTask {
                             createElement(tag: "MEMORY", value: "\(memory.total())") +
                             createElement(tag: "PROCESSORS", value: "4")
                         ) +
+                        createElement(tag: "STORAGE", value:
+                            createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
+                                createElement(tag: "FREE", value: "\(storage.free(false) ?? "not available")") +
+                                createElement(tag: "USED", value: "\(storage.used(false) ?? "not available")")
+                        ) +
+                        createElement(tag: "MEMORY", value:
+                            createElement(tag: "TOTAL", value: "\(memory.total())") +
+                            createElement(tag: "FREE", value: "\(memory.free())") +
+                            createElement(tag: "USED", value: "\(memory.used())") +
+                            createElement(tag: "ACTIVE", value: "\(memory.active())") +
+                            createElement(tag: "INACTIVE", value: "\(memory.inactive())")
+                        ) +
                         createElement(tag: "NETWORK", value:
                             createElement(tag: "TYPE", value: "\(network.type() ?? "not available")") +
                             createElement(tag: "SSID", value: "\(network.ssid() ?? "not available")") +

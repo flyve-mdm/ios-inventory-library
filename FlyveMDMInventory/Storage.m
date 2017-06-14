@@ -48,7 +48,7 @@
         // Check to make sure it's valid
         if (space <= 0) {
             // Error
-            return @"not available";
+            return nil;
         }
 
         NSString *diskSpace = [self formatMemory:space];
@@ -56,14 +56,14 @@
         // Check to make sure it's valid
         if (diskSpace == nil || diskSpace.length <= 0) {
             // Error
-            return @"not available";
+            return nil;
         }
         
         return diskSpace;
     }
     @catch (NSException * ex) {
         // Error
-        return @"not available";
+        return nil;
     }
 }
 
