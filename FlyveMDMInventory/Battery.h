@@ -37,4 +37,11 @@
  */
 - (NSString *)state;
 
+/**
+ Get Battery Level
+ 
+ - returns: Battery Level
+ */
+- (float)level;
+
 @end

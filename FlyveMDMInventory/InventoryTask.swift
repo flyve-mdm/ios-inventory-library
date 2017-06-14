@@ -97,7 +97,8 @@ public class InventoryTask {
                             createElement(tag: "MACADDRESS", value: "\(network.macAddress() ?? "not available")")
                         ) +
                         createElement(tag: "BATTERY", value:
-                            createElement(tag: "STATE", value: "\(battery.state() ?? "not available")")
+                            createElement(tag: "STATE", value: "\(battery.state() ?? "not available")") +
+                            createElement(tag: "LEVEL", value: "\(battery.level())%")
                         )
                 )
         )

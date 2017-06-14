@@ -65,4 +65,31 @@
     return batteryState;
 }
 
+/**
+ Get Battery Level
+ 
+ - returns: Battery Level
+ */
+- (float)level {
+    
+    @try {
+        
+        [[UIDevice currentDevice] setBatteryMonitoringEnabled:YES];
+        
+        float batteryLevel = [[UIDevice currentDevice] batteryLevel];
+        
+        if (batteryLevel > 0.0f) {
+            batteryLevel = batteryLevel * 100;
+        } else {
+            return -1;
+        }
+        
+        return batteryLevel;
+    }
+    @catch (NSException *exception) {
+        // Error
+        return -1;
+    }
+}
+
 @end
