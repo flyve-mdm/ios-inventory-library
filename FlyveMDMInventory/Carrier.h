@@ -60,4 +60,12 @@
  */
 - (nullable NSString *)isoCountryCode;
 
+// Carrier Mobile Network Code
+/**
+ Get the  mobile network code for the subscriber's cellular service provider, in its numeric representation
+ 
+ - returns: Mobile Network Code
+ */
+- (nullable NSString *)mobileNetworkCode;
+
 @end

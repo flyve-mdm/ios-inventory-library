@@ -99,4 +99,22 @@
         return nil;
     }
 }
+
+// Carrier Mobile Network Code
+/**
+ Get the  mobile network code for the subscriber's cellular service provider, in its numeric representation
+ 
+ - returns: Mobile Network Code
+ */
+- (NSString *)mobileNetworkCode {
+    
+    @try {
+        
+        return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].mobileNetworkCode;
+    }
+    @catch (NSException *exception) {
+        // Failed
+        return nil;
+    }
+}
 @end
