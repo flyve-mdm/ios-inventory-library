@@ -39,4 +39,11 @@
  */
 - (nullable NSString *)name;
 
+/**
+ Get containing the name of the carrier country
+ 
+ - returns: Carrier Country
+ */
+- (nullable NSString *)country;
+
 @end

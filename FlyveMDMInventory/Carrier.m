@@ -40,4 +40,22 @@
     return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].carrierName;
 }
 
+/**
+ Get containing the name of the carrier country
+ 
+ - returns: Carrier Country
+ */
+- (nullable NSString *)country {
+    
+    @try {
+
+        NSLocale *currentCountry = [NSLocale currentLocale];
+
+        return [currentCountry objectForKey:NSLocaleCountryCode];
+    }
+    @catch (NSException *exception) {
+        // Failed
+        return nil;
+    }
+}
 @end
