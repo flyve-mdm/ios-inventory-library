@@ -80,6 +80,6 @@
  
  - returns: Carrier Allows VOIP
  */
-- (BOOL)isAllowsVOIP;
+- (nullable NSString *)isAllowsVOIP;
 
 @end

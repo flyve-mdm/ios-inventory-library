@@ -35,6 +35,7 @@ public class InventoryTask {
     private let hardware = Hardware()
     private let network = Network()
     private let battery = Battery()
+    private let carrier = Carrier()
     
     public init() {}
     
@@ -68,38 +69,47 @@ public class InventoryTask {
                         
                         createElement(tag: "HARDWARE", value:
                             createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
-                                createElement(tag: "MODEL", value: "\(hardware.model() ?? "not available")") +
-                                createElement(tag: "OSNAME", value: "\(hardware.osName() ?? "not available")") +
-                                createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
-                                createElement(tag: "ARCHNAME", value: "\(hardware.archName() ?? "not available")") +
-                                createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
-                                createElement(tag: "MEMORY", value: "\(memory.total())") +
-                                createElement(tag: "PROCESSORS", value: "4")
-                            ) +
-                            createElement(tag: "STORAGE", value:
-                                createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
-                                    createElement(tag: "FREE", value: "\(storage.free(false) ?? "not available")") +
-                                    createElement(tag: "USED", value: "\(storage.used(false) ?? "not available")")
-                            ) +
-                            createElement(tag: "MEMORY", value:
-                                createElement(tag: "TOTAL", value: "\(memory.total())") +
-                                    createElement(tag: "FREE", value: "\(memory.free())") +
-                                    createElement(tag: "USED", value: "\(memory.used())") +
-                                    createElement(tag: "ACTIVE", value: "\(memory.active())") +
-                                    createElement(tag: "INACTIVE", value: "\(memory.inactive())")
-                            ) +
-                            createElement(tag: "NETWORK", value:
-                                createElement(tag: "TYPE", value: "\(network.type() ?? "not available")") +
-                                    createElement(tag: "SSID", value: "\(network.ssid() ?? "not available")") +
-                                    createElement(tag: "BSSID", value: "\(network.bssid() ?? "not available")") +
-                                    createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")") +
-                                    createElement(tag: "BADDRESS", value: "\(network.broadcastAddress() ?? "not available")") +
-                                    createElement(tag: "MACADDRESS", value: "\(network.macAddress() ?? "not available")")
-                            ) +
-                            createElement(tag: "BATTERY", value:
-                                createElement(tag: "STATE", value: "\(battery.state() ?? "not available")") +
-                                    createElement(tag: "LEVEL", value: "\(battery.level())%")
-                        )
+                            createElement(tag: "MODEL", value: "\(hardware.model() ?? "not available")") +
+                            createElement(tag: "OSNAME", value: "\(hardware.osName() ?? "not available")") +
+                            createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
+                            createElement(tag: "ARCHNAME", value: "\(hardware.archName() ?? "not available")") +
+                            createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
+                            createElement(tag: "MEMORY", value: "\(memory.total())") +
+                            createElement(tag: "PROCESSORS", value: "4")
+                        ) +
+                        createElement(tag: "STORAGE", value:
+                            createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
+                            createElement(tag: "FREE", value: "\(storage.free(false) ?? "not available")") +
+                            createElement(tag: "USED", value: "\(storage.used(false) ?? "not available")")
+                        ) +
+                        createElement(tag: "MEMORY", value:
+                            createElement(tag: "TOTAL", value: "\(memory.total())") +
+                            createElement(tag: "FREE", value: "\(memory.free())") +
+                            createElement(tag: "USED", value: "\(memory.used())") +
+                            createElement(tag: "ACTIVE", value: "\(memory.active())") +
+                            createElement(tag: "INACTIVE", value: "\(memory.inactive())")
+                        ) +
+                        createElement(tag: "NETWORK", value:
+                            createElement(tag: "TYPE", value: "\(network.type() ?? "not available")") +
+                            createElement(tag: "SSID", value: "\(network.ssid() ?? "not available")") +
+                            createElement(tag: "BSSID", value: "\(network.bssid() ?? "not available")") +
+                            createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")") +
+                            createElement(tag: "BADDRESS", value: "\(network.broadcastAddress() ?? "not available")") +
+                            createElement(tag: "MACADDRESS", value: "\(network.macAddress() ?? "not available")")
+                        ) +
+                        createElement(tag: "SIMCARD", value:
+                            createElement(tag: "RADIO", value: "\(carrier.radio() ?? "not available")") +
+                            createElement(tag: "CARRIER", value: "\(carrier.name() ?? "not available")") +
+                            createElement(tag: "COUNTRY", value: "\(carrier.country() ?? "not available")") +
+                            createElement(tag: "COUNTRYCODE", value: "\(carrier.mobileCountryCode() ?? "not available")") +
+                            createElement(tag: "IOSCOUNTRYCODE", value: "\(carrier.isoCountryCode() ?? "not available")") +
+                            createElement(tag: "NETWORKCODE", value: "\(carrier.mobileNetworkCode() ?? "not available")") +
+                            createElement(tag: "ALLOWVOIP", value: "\(carrier.isAllowsVOIP() ?? "not available")")
+                        ) +
+                        createElement(tag: "BATTERY", value:
+                            createElement(tag: "STATE", value: "\(battery.state() ?? "not available")") +
+                            createElement(tag: "LEVEL", value: "\(battery.level())%")
+                    )
                 )
         )
     }

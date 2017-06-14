@@ -7,30 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00560ABC138BF717499D80269C25FB00 /* Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C9C883BAA6447D5158D5EE2D435A4C /* Hardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0170D362849E918F2481D115997C9669 /* Pods-ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E47265EB6FA6DD4F40CD496F613370B /* Pods-ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02534D6A86E2DFA05F924902D3D128B7 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0131DBE6895E27B42BEFBED5B1A2C61 /* Storage.m */; };
 		02FC8F31D7C93146E252193879237173 /* Pods-ExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A01DA5EE78439C3D5078724BA45513D5 /* Pods-ExampleUITests-dummy.m */; };
-		0E2A861A1F7FA59618C8E8C47EAF771C /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932C4B7414F46F0CFB5745B07A05E15 /* Network.m */; };
 		13CE8CBC7F164B38AFC707ABFC1FDF25 /* Pods-ExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A59E7231873C248546DF7541EF613BE /* Pods-ExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A55B387FF2B7A7DBD0A76117CF15A98 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = FF5A11D0A53D617E5DFFBAAB378A2D1D /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BD9C18B939E3AAFA21A7F8DDAE21428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		20CF48C5CBD821EF688B504B0A5F5B6E /* FlyveMDMInventory-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58536538EAA4EE42F790D3021A37DBDF /* FlyveMDMInventory-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30E3FBA1389B1B133C9A8D99A1F19E27 /* FlyveMDMInventory.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A0FC6167AE8522C16F1FDD422BC328 /* FlyveMDMInventory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C8AC22D51FA1A9784ACF64EAE93576 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		26B3C01C324C16B92BBAB75EC27F0472 /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8670ED22AE0EA69E5B6B45B509B3C164 /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AAB38E5B7E117E9605A12DB6D815DD5 /* Carrier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9B8AB3422C56B3EEE0C6C92076E84 /* Carrier.m */; };
 		424313FA2A5E72FF90C8410ECA902D51 /* Pods-ExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B277E581ACCADAC536AF2C2FB2E8E /* Pods-ExampleTests-dummy.m */; };
-		5BFCF39370FE885D9FBB81993E18288E /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = A48D33A4592B51503CD431E8D892C75D /* Memory.m */; };
+		4E8934E6FE93B67E9EA2047A7905733A /* InventoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB7DAE9614110B8F60A5BAA181FC5A0 /* InventoryTask.swift */; };
 		60773FDE5FF1CBE569DBD816E32B901A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		607B55814157CE0FA8D56A9387A421C5 /* Carrier.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A8EC1CF6E573EB4FD536C182C10B14 /* Carrier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6495D2700E782F19E2D3C0B688EEA9F3 /* FlyveMDMInventory-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F90D754EAF771B46C13AE4B5EE97886E /* FlyveMDMInventory-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6640FEC8C5F37EDB80179797DC563D8D /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C18D00EE1A286D362D3FFCE4B28449A /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68CD5FE0AE12A260013364C0410C3D82 /* Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 300F912AE098433FCBEC70B3E5D1AFFE /* Hardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C1DE4A7EDD1AF65E08838C4F933FBD0 /* Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = 402276AC0F352F3DD950575978BE9FA5 /* Battery.m */; };
-		7453873F012CF0442767A648F8E8464A /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C47D9219CFAAB27385E1943053379 /* Storage.m */; };
-		819934810649BA8F9AD501A604948A2C /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD08735874862AB203B938CEC71E112 /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74EB099E4124843E6E8FADB3FFD41B2B /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = E31B47C4C16682271E0F8077930DFB1F /* Network.m */; };
+		751C2E1329AA9C279F2DDDA091D74A00 /* Battery.h in Headers */ = {isa = PBXBuildFile; fileRef = 668DB2C628A016C8F4FE1100F150A223 /* Battery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ED242469E0833301085289F24CAE029 /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3D1D5CEAD86265DADC5ECC0C9C561D /* Memory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EFA6B24AB34AC3D9F0318FD6F465D87 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D91FBC663348E1AAF7A56C51664F3C /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A6657E80D4A4D36FE39A26203DE0A46 /* FlyveMDMInventory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E754BA0D072302CEC28EC3703C49CA9 /* FlyveMDMInventory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900026886407DBEE2D005A7CF36FAE47 /* Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6C06179AAC2E01D55400ECA431CB72 /* Battery.m */; };
+		AA393EE0E58C746C4E95DEB4F856AB66 /* FlyveMDMInventory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4404EA6C14E88474D5A88D39158C27BF /* FlyveMDMInventory-dummy.m */; };
 		AF88F826E9063CED88F8A2EB09D3634D /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FED35CACB70238519C94E6D828288C /* Pods-Example-dummy.m */; };
-		B5C132D86EEDCC308A4D0068C95A3BBB /* Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 695E94DB2860FFAE01E89DB0A4A40269 /* Hardware.m */; };
-		CD3820B1CEDB3DBBE4E1E3FADEDED7F1 /* InventoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5255E2FB9916CB4A9BB5DB1815059B39 /* InventoryTask.swift */; };
 		D3F596A145452CD076DC67E4FF058116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D7D04F7588AC3EC6C5EF4F6BDF4EAF1B /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B65D14060F548B99AC3204138C21C0 /* Memory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEB917D5831973ADDEA32F66EEFCE4CC /* Battery.h in Headers */ = {isa = PBXBuildFile; fileRef = A9DB0FBBA0B9D2B9A623E96CC39AD491 /* Battery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F766BFF97BC14EDF7875FFB2CAA0DAD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		FE4599A6A0F8F132472B0DA7E6FEB507 /* FlyveMDMInventory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AB39B43118555A2F50ECA05E9EC49A /* FlyveMDMInventory-dummy.m */; };
+		EBFB58D1EB7B5A98BDEB97A52CAA6CA6 /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB51AA3921569B636FE2ABA71957113 /* Memory.m */; };
+		FF8081D96F6AAD40BA8F41882ECC00E2 /* Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FABB8B18AB103875F4537525D4A0E13 /* Hardware.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,66 +40,68 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E5A03B1FA95B246FEAE1DC130611AB10;
+			remoteGlobalIDString = 53F977B992053B4E2EFCA574C5B693A8;
 			remoteInfo = FlyveMDMInventory;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03BA8A8ED2716CACFCA4A4776FBBF4BC /* FlyveMDMInventory.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlyveMDMInventory.xcconfig; sourceTree = "<group>"; };
 		0E47265EB6FA6DD4F40CD496F613370B /* Pods-ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleTests-umbrella.h"; sourceTree = "<group>"; };
 		0F8D18467982723D0F655F367F9FEE53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB51AA3921569B636FE2ABA71957113 /* Memory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Memory.m; sourceTree = "<group>"; };
 		123AFCD997708967B068BFFAAAD458AA /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
 		129F822B0E9F28AF90FEA5465593A604 /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		14B69BBCD903081A01A699CD1673DE07 /* Pods-ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		15D91FBC663348E1AAF7A56C51664F3C /* Network.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		1CA9B8AB3422C56B3EEE0C6C92076E84 /* Carrier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Carrier.m; sourceTree = "<group>"; };
 		1CEC4D75ECA6563D3F2B41F876B83BDC /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1FABB8B18AB103875F4537525D4A0E13 /* Hardware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Hardware.m; sourceTree = "<group>"; };
 		23DA4229182952157F660961614DA7CB /* FlyveMDMInventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlyveMDMInventory.framework; path = FlyveMDMInventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB6FB3F7D1CA5DD6E3412C874B52D34 /* Pods-ExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ExampleUITests.modulemap"; sourceTree = "<group>"; };
-		300F912AE098433FCBEC70B3E5D1AFFE /* Hardware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Hardware.h; sourceTree = "<group>"; };
+		2EB7DAE9614110B8F60A5BAA181FC5A0 /* InventoryTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InventoryTask.swift; sourceTree = "<group>"; };
 		3162C403ECAC781F96215C18329418A8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A59E7231873C248546DF7541EF613BE /* Pods-ExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleUITests-umbrella.h"; sourceTree = "<group>"; };
-		402276AC0F352F3DD950575978BE9FA5 /* Battery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Battery.m; sourceTree = "<group>"; };
 		42B1187D245E965E468F78B94A45DC81 /* Pods-ExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4404EA6C14E88474D5A88D39158C27BF /* FlyveMDMInventory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlyveMDMInventory-dummy.m"; sourceTree = "<group>"; };
+		4E754BA0D072302CEC28EC3703C49CA9 /* FlyveMDMInventory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FlyveMDMInventory.h; sourceTree = "<group>"; };
 		4FC17AC9FDAD70746C704A4A40F3C34A /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
 		5022179D9AEBF4FB31479748982AA1E7 /* Pods-ExampleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleUITests-resources.sh"; sourceTree = "<group>"; };
-		5255E2FB9916CB4A9BB5DB1815059B39 /* InventoryTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InventoryTask.swift; sourceTree = "<group>"; };
 		5495FFE06EAF97ED060762F18022E9BB /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		58536538EAA4EE42F790D3021A37DBDF /* FlyveMDMInventory-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlyveMDMInventory-umbrella.h"; sourceTree = "<group>"; };
 		6097FA4D4E6B177FC4A85E0F5C14B754 /* Pods-ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		60C1F2558C33674E30C3C7E077BBC606 /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
-		62B65D14060F548B99AC3204138C21C0 /* Memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
 		647CE3BDEFC7BF59784EA91FECD82A75 /* Pods_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExampleUITests.framework; path = "Pods-ExampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		695E94DB2860FFAE01E89DB0A4A40269 /* Hardware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Hardware.m; sourceTree = "<group>"; };
+		668DB2C628A016C8F4FE1100F150A223 /* Battery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Battery.h; sourceTree = "<group>"; };
 		72442580FBD1FDAB015827CEB3AA475F /* Pods-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7932C4B7414F46F0CFB5745B07A05E15 /* Network.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		85C9C883BAA6447D5158D5EE2D435A4C /* Hardware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Hardware.h; sourceTree = "<group>"; };
+		8670ED22AE0EA69E5B6B45B509B3C164 /* Storage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
 		8B6350F0C528B9D23082C28E5A4E032C /* Pods-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C18D00EE1A286D362D3FFCE4B28449A /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CD1A0A31D2C13B6F6B6072A32B7DACF /* FlyveMDMInventory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlyveMDMInventory-prefix.pch"; sourceTree = "<group>"; };
+		93A8EC1CF6E573EB4FD536C182C10B14 /* Carrier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Carrier.h; sourceTree = "<group>"; };
+		A0131DBE6895E27B42BEFBED5B1A2C61 /* Storage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
 		A01DA5EE78439C3D5078724BA45513D5 /* Pods-ExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleUITests-dummy.m"; sourceTree = "<group>"; };
 		A1A1442B3E92D2BBA9CC96F50CB2215D /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A48D33A4592B51503CD431E8D892C75D /* Memory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Memory.m; sourceTree = "<group>"; };
 		A5CA73F9E125EA31B5A7544B71054427 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExampleTests.framework; path = "Pods-ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A926868FCB44F5101A71260E6EA3250E /* FlyveMDMInventory.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlyveMDMInventory.xcconfig; sourceTree = "<group>"; };
-		A9DB0FBBA0B9D2B9A623E96CC39AD491 /* Battery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Battery.h; sourceTree = "<group>"; };
-		AF8C47D9219CFAAB27385E1943053379 /* Storage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
 		B90113490902940BCC0DAA245BBC5F51 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BBD08735874862AB203B938CEC71E112 /* Storage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
+		BC6C06179AAC2E01D55400ECA431CB72 /* Battery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Battery.m; sourceTree = "<group>"; };
 		C084E61E539C92D677AF7463F28562FB /* Pods-ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ExampleTests.modulemap"; sourceTree = "<group>"; };
 		C14F585D55D8F48BEE2E757CF3548934 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7A0FC6167AE8522C16F1FDD422BC328 /* FlyveMDMInventory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FlyveMDMInventory.h; sourceTree = "<group>"; };
+		C5A718A8E05A9D2673D72B4DA6757A63 /* FlyveMDMInventory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlyveMDMInventory-prefix.pch"; sourceTree = "<group>"; };
+		C6FA9483EE8C35DDF1FC2F4E957E6C73 /* FlyveMDMInventory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FlyveMDMInventory.modulemap; sourceTree = "<group>"; };
 		D4B4DA19F20B6EAE568F5C3ACBCB4609 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4D4F198FD28BC1C89ED9CD21E4F5A0F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D5C6F1432A5363523D7D193025092649 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D628618CD0EFF403DE21EC5E37292CD2 /* Pods-ExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleTests-resources.sh"; sourceTree = "<group>"; };
 		D66B277E581ACCADAC536AF2C2FB2E8E /* Pods-ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleTests-dummy.m"; sourceTree = "<group>"; };
+		D875AF926A5AA2572F1756A665605A9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA988F74DDE82FA26DBF31F55E009FE2 /* Pods-ExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E136BDA243D87BF4170DDD43C29CCD06 /* FlyveMDMInventory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FlyveMDMInventory.modulemap; sourceTree = "<group>"; };
-		E8AB39B43118555A2F50ECA05E9EC49A /* FlyveMDMInventory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlyveMDMInventory-dummy.m"; sourceTree = "<group>"; };
+		E31B47C4C16682271E0F8077930DFB1F /* Network.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		EC3D1D5CEAD86265DADC5ECC0C9C561D /* Memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
 		F2115B22D10BE2BE4B8B5B296D357EED /* Pods-ExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F6070578FB2F0F256AA9D559091BB912 /* Pods-ExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleTests-frameworks.sh"; sourceTree = "<group>"; };
 		F7FED35CACB70238519C94E6D828288C /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		FF5A11D0A53D617E5DFFBAAB378A2D1D /* Network.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		F90D754EAF771B46C13AE4B5EE97886E /* FlyveMDMInventory-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlyveMDMInventory-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,14 +121,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DDF29F593463810C9806FBFD3719B7F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F766BFF97BC14EDF7875FFB2CAA0DAD3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AF0A9E3F2F07C0ED8515EA8A3A5BF827 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,23 +129,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C63B5D2725B6F03E1A0AE657AC77DE24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C8AC22D51FA1A9784ACF64EAE93576 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12AABAED719C940DD4CCD018269CB63E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E136BDA243D87BF4170DDD43C29CCD06 /* FlyveMDMInventory.modulemap */,
-				A926868FCB44F5101A71260E6EA3250E /* FlyveMDMInventory.xcconfig */,
-				E8AB39B43118555A2F50ECA05E9EC49A /* FlyveMDMInventory-dummy.m */,
-				9CD1A0A31D2C13B6F6B6072A32B7DACF /* FlyveMDMInventory-prefix.pch */,
-				58536538EAA4EE42F790D3021A37DBDF /* FlyveMDMInventory-umbrella.h */,
-				D5C6F1432A5363523D7D193025092649 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FlyveMDMInventory";
-			sourceTree = "<group>";
-		};
 		140B82E0711F97F819141E52825699BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,10 +151,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		153E34BD06A4784D3508B523F1827FBA /* FlyveMDMInventory */ = {
+			isa = PBXGroup;
+			children = (
+				93AB277164CACE3EFA178BA541C01700 /* FlyveMDMInventory */,
+				249897FA6B4DD66A4549F395CB2AE3A8 /* Support Files */,
+			);
+			name = FlyveMDMInventory;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		249897FA6B4DD66A4549F395CB2AE3A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA9483EE8C35DDF1FC2F4E957E6C73 /* FlyveMDMInventory.modulemap */,
+				03BA8A8ED2716CACFCA4A4776FBBF4BC /* FlyveMDMInventory.xcconfig */,
+				4404EA6C14E88474D5A88D39158C27BF /* FlyveMDMInventory-dummy.m */,
+				C5A718A8E05A9D2673D72B4DA6757A63 /* FlyveMDMInventory-prefix.pch */,
+				F90D754EAF771B46C13AE4B5EE97886E /* FlyveMDMInventory-umbrella.h */,
+				D875AF926A5AA2572F1756A665605A9A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FlyveMDMInventory";
+			sourceTree = "<group>";
+		};
 		50ADC589D34555BC9639241AA5280936 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6CEC60443773DACCF149CB777C5404F6 /* FlyveMDMInventory */,
+				153E34BD06A4784D3508B523F1827FBA /* FlyveMDMInventory */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -215,16 +229,6 @@
 			path = "Target Support Files/Pods-ExampleTests";
 			sourceTree = "<group>";
 		};
-		6CEC60443773DACCF149CB777C5404F6 /* FlyveMDMInventory */ = {
-			isa = PBXGroup;
-			children = (
-				AD7050FE80879AA99ED4BCA179793FD5 /* FlyveMDMInventory */,
-				12AABAED719C940DD4CCD018269CB63E /* Support Files */,
-			);
-			name = FlyveMDMInventory;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		7B29973C77120EC8A1E61478E5C382AC /* Pods-Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,21 +258,23 @@
 			);
 			sourceTree = "<group>";
 		};
-		AD7050FE80879AA99ED4BCA179793FD5 /* FlyveMDMInventory */ = {
+		93AB277164CACE3EFA178BA541C01700 /* FlyveMDMInventory */ = {
 			isa = PBXGroup;
 			children = (
-				A9DB0FBBA0B9D2B9A623E96CC39AD491 /* Battery.h */,
-				402276AC0F352F3DD950575978BE9FA5 /* Battery.m */,
-				C7A0FC6167AE8522C16F1FDD422BC328 /* FlyveMDMInventory.h */,
-				300F912AE098433FCBEC70B3E5D1AFFE /* Hardware.h */,
-				695E94DB2860FFAE01E89DB0A4A40269 /* Hardware.m */,
-				5255E2FB9916CB4A9BB5DB1815059B39 /* InventoryTask.swift */,
-				62B65D14060F548B99AC3204138C21C0 /* Memory.h */,
-				A48D33A4592B51503CD431E8D892C75D /* Memory.m */,
-				FF5A11D0A53D617E5DFFBAAB378A2D1D /* Network.h */,
-				7932C4B7414F46F0CFB5745B07A05E15 /* Network.m */,
-				BBD08735874862AB203B938CEC71E112 /* Storage.h */,
-				AF8C47D9219CFAAB27385E1943053379 /* Storage.m */,
+				668DB2C628A016C8F4FE1100F150A223 /* Battery.h */,
+				BC6C06179AAC2E01D55400ECA431CB72 /* Battery.m */,
+				93A8EC1CF6E573EB4FD536C182C10B14 /* Carrier.h */,
+				1CA9B8AB3422C56B3EEE0C6C92076E84 /* Carrier.m */,
+				4E754BA0D072302CEC28EC3703C49CA9 /* FlyveMDMInventory.h */,
+				85C9C883BAA6447D5158D5EE2D435A4C /* Hardware.h */,
+				1FABB8B18AB103875F4537525D4A0E13 /* Hardware.m */,
+				2EB7DAE9614110B8F60A5BAA181FC5A0 /* InventoryTask.swift */,
+				EC3D1D5CEAD86265DADC5ECC0C9C561D /* Memory.h */,
+				0FB51AA3921569B636FE2ABA71957113 /* Memory.m */,
+				15D91FBC663348E1AAF7A56C51664F3C /* Network.h */,
+				E31B47C4C16682271E0F8077930DFB1F /* Network.m */,
+				8670ED22AE0EA69E5B6B45B509B3C164 /* Storage.h */,
+				A0131DBE6895E27B42BEFBED5B1A2C61 /* Storage.m */,
 			);
 			name = FlyveMDMInventory;
 			path = FlyveMDMInventory;
@@ -293,20 +299,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2CCEC2AF5CF04B91155E6F7D80C720A6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEB917D5831973ADDEA32F66EEFCE4CC /* Battery.h in Headers */,
-				20CF48C5CBD821EF688B504B0A5F5B6E /* FlyveMDMInventory-umbrella.h in Headers */,
-				30E3FBA1389B1B133C9A8D99A1F19E27 /* FlyveMDMInventory.h in Headers */,
-				68CD5FE0AE12A260013364C0410C3D82 /* Hardware.h in Headers */,
-				D7D04F7588AC3EC6C5EF4F6BDF4EAF1B /* Memory.h in Headers */,
-				1A55B387FF2B7A7DBD0A76117CF15A98 /* Network.h in Headers */,
-				819934810649BA8F9AD501A604948A2C /* Storage.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4809D7F6A7EF63C94F23E8F59BA52BA0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +312,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6640FEC8C5F37EDB80179797DC563D8D /* Pods-Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777CF30838AE37993B67A3ADAAAD9F62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751C2E1329AA9C279F2DDDA091D74A00 /* Battery.h in Headers */,
+				607B55814157CE0FA8D56A9387A421C5 /* Carrier.h in Headers */,
+				6495D2700E782F19E2D3C0B688EEA9F3 /* FlyveMDMInventory-umbrella.h in Headers */,
+				8A6657E80D4A4D36FE39A26203DE0A46 /* FlyveMDMInventory.h in Headers */,
+				00560ABC138BF717499D80269C25FB00 /* Hardware.h in Headers */,
+				7ED242469E0833301085289F24CAE029 /* Memory.h in Headers */,
+				7EFA6B24AB34AC3D9F0318FD6F465D87 /* Network.h in Headers */,
+				26B3C01C324C16B92BBAB75EC27F0472 /* Storage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +358,23 @@
 			productReference = 647CE3BDEFC7BF59784EA91FECD82A75 /* Pods_ExampleUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		53F977B992053B4E2EFCA574C5B693A8 /* FlyveMDMInventory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 023D7471BBC18D7AE33642E98961F21E /* Build configuration list for PBXNativeTarget "FlyveMDMInventory" */;
+			buildPhases = (
+				215458B8EC8DECE91AAD61B3DD090C04 /* Sources */,
+				C63B5D2725B6F03E1A0AE657AC77DE24 /* Frameworks */,
+				777CF30838AE37993B67A3ADAAAD9F62 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyveMDMInventory;
+			productName = FlyveMDMInventory;
+			productReference = 23DA4229182952157F660961614DA7CB /* FlyveMDMInventory.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		CBB4EB89245F1CA0291FC81BF2390E2D /* Pods-ExampleTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 351B782ED1D28A8BB05F0604649FCF84 /* Build configuration list for PBXNativeTarget "Pods-ExampleTests" */;
@@ -366,23 +390,6 @@
 			name = "Pods-ExampleTests";
 			productName = "Pods-ExampleTests";
 			productReference = A5CA73F9E125EA31B5A7544B71054427 /* Pods_ExampleTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E5A03B1FA95B246FEAE1DC130611AB10 /* FlyveMDMInventory */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 46E306E3F298779A492658894C4ABE1F /* Build configuration list for PBXNativeTarget "FlyveMDMInventory" */;
-			buildPhases = (
-				EF9C3C246CE49ABC92D3623E9BF1F063 /* Sources */,
-				8DDF29F593463810C9806FBFD3719B7F /* Frameworks */,
-				2CCEC2AF5CF04B91155E6F7D80C720A6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FlyveMDMInventory;
-			productName = FlyveMDMInventory;
-			productReference = 23DA4229182952157F660961614DA7CB /* FlyveMDMInventory.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E91B4BDFAE3C3DFC295CEA2BCAF11107 /* Pods-Example */ = {
@@ -424,7 +431,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E5A03B1FA95B246FEAE1DC130611AB10 /* FlyveMDMInventory */,
+				53F977B992053B4E2EFCA574C5B693A8 /* FlyveMDMInventory */,
 				E91B4BDFAE3C3DFC295CEA2BCAF11107 /* Pods-Example */,
 				CBB4EB89245F1CA0291FC81BF2390E2D /* Pods-ExampleTests */,
 				2CF55AF6CEF7FB76A5BFEF2DC397D751 /* Pods-ExampleUITests */,
@@ -433,6 +440,21 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		215458B8EC8DECE91AAD61B3DD090C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900026886407DBEE2D005A7CF36FAE47 /* Battery.m in Sources */,
+				3AAB38E5B7E117E9605A12DB6D815DD5 /* Carrier.m in Sources */,
+				AA393EE0E58C746C4E95DEB4F856AB66 /* FlyveMDMInventory-dummy.m in Sources */,
+				FF8081D96F6AAD40BA8F41882ECC00E2 /* Hardware.m in Sources */,
+				4E8934E6FE93B67E9EA2047A7905733A /* InventoryTask.swift in Sources */,
+				EBFB58D1EB7B5A98BDEB97A52CAA6CA6 /* Memory.m in Sources */,
+				74EB099E4124843E6E8FADB3FFD41B2B /* Network.m in Sources */,
+				02534D6A86E2DFA05F924902D3D128B7 /* Storage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		260E0B7E91B032D1C5C8EC72B2552A35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -457,27 +479,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF9C3C246CE49ABC92D3623E9BF1F063 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C1DE4A7EDD1AF65E08838C4F933FBD0 /* Battery.m in Sources */,
-				FE4599A6A0F8F132472B0DA7E6FEB507 /* FlyveMDMInventory-dummy.m in Sources */,
-				B5C132D86EEDCC308A4D0068C95A3BBB /* Hardware.m in Sources */,
-				CD3820B1CEDB3DBBE4E1E3FADEDED7F1 /* InventoryTask.swift in Sources */,
-				5BFCF39370FE885D9FBB81993E18288E /* Memory.m in Sources */,
-				0E2A861A1F7FA59618C8E8C47EAF771C /* Network.m in Sources */,
-				7453873F012CF0442767A648F8E8464A /* Storage.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		D10228ED3927CBF92C88168548F43030 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlyveMDMInventory;
-			target = E5A03B1FA95B246FEAE1DC130611AB10 /* FlyveMDMInventory */;
+			target = 53F977B992053B4E2EFCA574C5B693A8 /* FlyveMDMInventory */;
 			targetProxy = 11818D92E203CCCD2EE09A583C9C88F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -641,16 +649,16 @@
 			};
 			name = Release;
 		};
-		48FBDBA9FB2D26F4011E9D4301B21272 /* Release */ = {
+		6836141313CCFB576E60B43DB0D110A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A926868FCB44F5101A71260E6EA3250E /* FlyveMDMInventory.xcconfig */;
+			baseConfigurationReference = 03BA8A8ED2716CACFCA4A4776FBBF4BC /* FlyveMDMInventory.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -663,17 +671,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FlyveMDMInventory/FlyveMDMInventory.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = FlyveMDMInventory;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		707B86CFB21B645E37109F39754D4051 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -755,41 +764,6 @@
 			};
 			name = Release;
 		};
-		8C0A92C3F5AE314B24231D82730B269E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A926868FCB44F5101A71260E6EA3250E /* FlyveMDMInventory.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FlyveMDMInventory/FlyveMDMInventory-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlyveMDMInventory/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlyveMDMInventory/FlyveMDMInventory.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FlyveMDMInventory;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		AB90A84CB6D1E4A3C0201A4E80A6FB80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 129F822B0E9F28AF90FEA5465593A604 /* Pods-ExampleTests.release.xcconfig */;
@@ -820,6 +794,40 @@
 				PRODUCT_NAME = Pods_ExampleTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B83580D9AA68E027901DD0CE62AB6EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03BA8A8ED2716CACFCA4A4776FBBF4BC /* FlyveMDMInventory.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FlyveMDMInventory/FlyveMDMInventory-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlyveMDMInventory/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlyveMDMInventory/FlyveMDMInventory.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FlyveMDMInventory;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -868,6 +876,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		023D7471BBC18D7AE33642E98961F21E /* Build configuration list for PBXNativeTarget "FlyveMDMInventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6836141313CCFB576E60B43DB0D110A5 /* Debug */,
+				B83580D9AA68E027901DD0CE62AB6EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -882,15 +899,6 @@
 			buildConfigurations = (
 				1DC102389CDD77EF90F56FF9CE4B435B /* Debug */,
 				AB90A84CB6D1E4A3C0201A4E80A6FB80 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		46E306E3F298779A492658894C4ABE1F /* Build configuration list for PBXNativeTarget "FlyveMDMInventory" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8C0A92C3F5AE314B24231D82730B269E /* Debug */,
-				48FBDBA9FB2D26F4011E9D4301B21272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

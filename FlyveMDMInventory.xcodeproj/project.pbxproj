@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A00D9051EF1D131009377A6 /* Carrier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A00D9031EF1D131009377A6 /* Carrier.h */; };
+		0A00D9051EF1D131009377A6 /* Carrier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A00D9031EF1D131009377A6 /* Carrier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A00D9061EF1D131009377A6 /* Carrier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A00D9041EF1D131009377A6 /* Carrier.m */; };
 		0A12FD451EF01847006B5B6E /* Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A12FD431EF01847006B5B6E /* Hardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A12FD461EF01847006B5B6E /* Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A12FD441EF01847006B5B6E /* Hardware.m */; };

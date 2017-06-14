@@ -139,15 +139,19 @@
  
  - returns: Carrier Allows VOIP
  */
-- (BOOL)isAllowsVOIP {
+- (NSString *)isAllowsVOIP {
     
     @try {
         
-        return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].allowsVOIP;
+        if ([[CTTelephonyNetworkInfo new] subscriberCellularProvider].allowsVOIP) {
+            return @"TRUE";
+        } else {
+            return @"FALSE";
+        }
     }
     @catch (NSException *exception) {
         // Failed
-        return NO;
+        return @"FALSE";
     }
     
 }
