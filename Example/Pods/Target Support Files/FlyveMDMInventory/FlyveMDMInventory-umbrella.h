@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Battery.h"
 #import "FlyveMDMInventory.h"
 #import "Hardware.h"
 #import "Memory.h"

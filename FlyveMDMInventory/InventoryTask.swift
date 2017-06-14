@@ -30,10 +30,11 @@ import UIKit
 
 public class InventoryTask {
     
-    private var memory = Memory()
-    private var storage = Storage()
-    private var hardware = Hardware()
-    private var network = Network()
+    private let memory = Memory()
+    private let storage = Storage()
+    private let hardware = Hardware()
+    private let network = Network()
+    private let battery = Battery()
     
     public init() {}
     
@@ -94,11 +95,12 @@ public class InventoryTask {
                             createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")") +
                             createElement(tag: "BADDRESS", value: "\(network.broadcastAddress() ?? "not available")") +
                             createElement(tag: "MACADDRESS", value: "\(network.macAddress() ?? "not available")")
+                        ) +
+                        createElement(tag: "BATTERY", value:
+                            createElement(tag: "STATE", value: "\(battery.state() ?? "not available")")
                         )
-                        
                 )
         )
-        
     }
     
     /**
