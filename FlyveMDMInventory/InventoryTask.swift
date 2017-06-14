@@ -61,44 +61,44 @@ public class InventoryTask {
             createElement(
                 tag: "REQUEST",
                 value:
-                createElement(tag: "QUERY", value: "Inventory") +
+                createElement(tag: "QUERY", value: "INVENTORY") +
                     createElement(tag: "VERSIONCLIENT", value: versionClient) +
                     createElement(tag: "DEVICEID", value: "\(hardware.uuid() ?? "not available")") +
                     createElement(tag: "CONTENT", value:
                         
                         createElement(tag: "HARDWARE", value:
                             createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
-                            createElement(tag: "MODEL", value: "\(hardware.model() ?? "not available")") +
-                            createElement(tag: "OSNAME", value: "\(hardware.osName() ?? "not available")") +
-                            createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
-                            createElement(tag: "ARCHNAME", value: "\(hardware.archName() ?? "not available")") +
-                            createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
-                            createElement(tag: "MEMORY", value: "\(memory.total())") +
-                            createElement(tag: "PROCESSORS", value: "4")
-                        ) +
-                        createElement(tag: "STORAGE", value:
-                            createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
-                                createElement(tag: "FREE", value: "\(storage.free(false) ?? "not available")") +
-                                createElement(tag: "USED", value: "\(storage.used(false) ?? "not available")")
-                        ) +
-                        createElement(tag: "MEMORY", value:
-                            createElement(tag: "TOTAL", value: "\(memory.total())") +
-                            createElement(tag: "FREE", value: "\(memory.free())") +
-                            createElement(tag: "USED", value: "\(memory.used())") +
-                            createElement(tag: "ACTIVE", value: "\(memory.active())") +
-                            createElement(tag: "INACTIVE", value: "\(memory.inactive())")
-                        ) +
-                        createElement(tag: "NETWORK", value:
-                            createElement(tag: "TYPE", value: "\(network.type() ?? "not available")") +
-                            createElement(tag: "SSID", value: "\(network.ssid() ?? "not available")") +
-                            createElement(tag: "BSSID", value: "\(network.bssid() ?? "not available")") +
-                            createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")") +
-                            createElement(tag: "BADDRESS", value: "\(network.broadcastAddress() ?? "not available")") +
-                            createElement(tag: "MACADDRESS", value: "\(network.macAddress() ?? "not available")")
-                        ) +
-                        createElement(tag: "BATTERY", value:
-                            createElement(tag: "STATE", value: "\(battery.state() ?? "not available")") +
-                            createElement(tag: "LEVEL", value: "\(battery.level())%")
+                                createElement(tag: "MODEL", value: "\(hardware.model() ?? "not available")") +
+                                createElement(tag: "OSNAME", value: "\(hardware.osName() ?? "not available")") +
+                                createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
+                                createElement(tag: "ARCHNAME", value: "\(hardware.archName() ?? "not available")") +
+                                createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
+                                createElement(tag: "MEMORY", value: "\(memory.total())") +
+                                createElement(tag: "PROCESSORS", value: "4")
+                            ) +
+                            createElement(tag: "STORAGE", value:
+                                createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
+                                    createElement(tag: "FREE", value: "\(storage.free(false) ?? "not available")") +
+                                    createElement(tag: "USED", value: "\(storage.used(false) ?? "not available")")
+                            ) +
+                            createElement(tag: "MEMORY", value:
+                                createElement(tag: "TOTAL", value: "\(memory.total())") +
+                                    createElement(tag: "FREE", value: "\(memory.free())") +
+                                    createElement(tag: "USED", value: "\(memory.used())") +
+                                    createElement(tag: "ACTIVE", value: "\(memory.active())") +
+                                    createElement(tag: "INACTIVE", value: "\(memory.inactive())")
+                            ) +
+                            createElement(tag: "NETWORK", value:
+                                createElement(tag: "TYPE", value: "\(network.type() ?? "not available")") +
+                                    createElement(tag: "SSID", value: "\(network.ssid() ?? "not available")") +
+                                    createElement(tag: "BSSID", value: "\(network.bssid() ?? "not available")") +
+                                    createElement(tag: "IPADDRESS", value: "\(network.localIPAddress() ?? "not available")") +
+                                    createElement(tag: "BADDRESS", value: "\(network.broadcastAddress() ?? "not available")") +
+                                    createElement(tag: "MACADDRESS", value: "\(network.macAddress() ?? "not available")")
+                            ) +
+                            createElement(tag: "BATTERY", value:
+                                createElement(tag: "STATE", value: "\(battery.state() ?? "not available")") +
+                                    createElement(tag: "LEVEL", value: "\(battery.level())%")
                         )
                 )
         )
