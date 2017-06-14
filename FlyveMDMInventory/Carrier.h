@@ -68,4 +68,11 @@
  */
 - (nullable NSString *)mobileNetworkCode;
 
+/**
+ Get if this carrier allows VOIP calls to be made on its network
+ 
+ - returns: Carrier Allows VOIP
+ */
+- (BOOL)isAllowsVOIP;
+
 @end

@@ -100,7 +100,6 @@
     }
 }
 
-// Carrier Mobile Network Code
 /**
  Get the  mobile network code for the subscriber's cellular service provider, in its numeric representation
  
@@ -117,4 +116,24 @@
         return nil;
     }
 }
+
+/**
+ Get if this carrier allows VOIP calls to be made on its network
+ 
+ - returns: Carrier Allows VOIP
+ */
+- (BOOL)isAllowsVOIP {
+    
+    @try {
+        
+        return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].allowsVOIP;
+    }
+    @catch (NSException *exception) {
+        // Failed
+        return NO;
+    }
+    
+}
+
+
 @end
