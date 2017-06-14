@@ -71,11 +71,28 @@
  
  - returns: Carrier Mobile Country Code
  */
-+ (NSString *)mobileCountryCode {
+- (NSString *)mobileCountryCode {
 
     @try {
         
         return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].mobileCountryCode;
+    }
+    @catch (NSException *exception) {
+        // Failed
+        return nil;
+    }
+}
+
+/**
+ Get country code for the subscriber's cellular service provider, represented as an ISO 3166-1
+ 
+ - returns: Country Code as ISO 3166-1
+ */
+- (NSString *)isoCountryCode {
+    
+    @try {
+        
+        return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].isoCountryCode;
     }
     @catch (NSException *exception) {
         // Failed

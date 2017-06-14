@@ -51,6 +51,13 @@
  
  - returns: Carrier Mobile Country Code
  */
-+ (nullable NSString *)mobileCountryCode;
+- (nullable NSString *)mobileCountryCode;
+
+/**
+ Get country code for the subscriber's cellular service provider, represented as an ISO 3166-1
+ 
+ - returns: Country Code as ISO 3166-1
+ */
+- (nullable NSString *)isoCountryCode;
 
 @end
