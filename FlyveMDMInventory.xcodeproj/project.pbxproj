@@ -11,6 +11,8 @@
 		0A00D9061EF1D131009377A6 /* Carrier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A00D9041EF1D131009377A6 /* Carrier.m */; };
 		0A12FD451EF01847006B5B6E /* Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A12FD431EF01847006B5B6E /* Hardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A12FD461EF01847006B5B6E /* Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A12FD441EF01847006B5B6E /* Hardware.m */; };
+		0A3BCD301EF317B4008EEC9B /* OperatingSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3BCD2E1EF317B4008EEC9B /* OperatingSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A3BCD311EF317B4008EEC9B /* OperatingSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */; };
 		0A49CF951EF09AF0006B353E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A49CF931EF09AF0006B353E /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A49CF961EF09AF0006B353E /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A49CF941EF09AF0006B353E /* Network.m */; };
 		0A972ED61EF18CEB009A9780 /* Battery.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A972ED41EF18CEB009A9780 /* Battery.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +42,8 @@
 		0A00D9041EF1D131009377A6 /* Carrier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Carrier.m; sourceTree = "<group>"; };
 		0A12FD431EF01847006B5B6E /* Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hardware.h; sourceTree = "<group>"; };
 		0A12FD441EF01847006B5B6E /* Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hardware.m; sourceTree = "<group>"; };
+		0A3BCD2E1EF317B4008EEC9B /* OperatingSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatingSystem.h; sourceTree = "<group>"; };
+		0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatingSystem.m; sourceTree = "<group>"; };
 		0A49CF931EF09AF0006B353E /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		0A49CF941EF09AF0006B353E /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		0A972ED41EF18CEB009A9780 /* Battery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battery.h; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				0A972ED51EF18CEB009A9780 /* Battery.m */,
 				0A00D9031EF1D131009377A6 /* Carrier.h */,
 				0A00D9041EF1D131009377A6 /* Carrier.m */,
+				0A3BCD2E1EF317B4008EEC9B /* OperatingSystem.h */,
+				0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */,
 				0AA4CCE31EE70BD400E86C24 /* Info.plist */,
 			);
 			path = FlyveMDMInventory;
@@ -133,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */,
+				0A3BCD301EF317B4008EEC9B /* OperatingSystem.h in Headers */,
 				0A49CF951EF09AF0006B353E /* Network.h in Headers */,
 				0AC91A8C1EEEE2F700108E2B /* Memory.h in Headers */,
 				0A12FD451EF01847006B5B6E /* Hardware.h in Headers */,
@@ -250,6 +257,7 @@
 				0AA4CDA71EEAF50600E86C24 /* InventoryTask.swift in Sources */,
 				0AC91A8F1EEEFA8A00108E2B /* Storage.m in Sources */,
 				0A12FD461EF01847006B5B6E /* Hardware.m in Sources */,
+				0A3BCD311EF317B4008EEC9B /* OperatingSystem.m in Sources */,
 				0A972ED71EF18CEB009A9780 /* Battery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

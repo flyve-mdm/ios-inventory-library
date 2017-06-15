@@ -51,13 +51,6 @@
 - (nullable NSString *)model;
 
 /**
- Operating System Name
- 
- - returns: Operating system name of Device string
- */
-- (nullable NSString *)osName;
-
-/**
  Operating System Type
  
  - returns: Operating system type of Device string

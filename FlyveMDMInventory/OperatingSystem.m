@@ -1,23 +1,23 @@
-/**
+/*
  *   Copyright © 2017 Teclib. All rights reserved.
  *
- * FlyveMDMInventory.h is part of DeviceInventory
+ * OperatingSystem.m is part of FlyveMDMInventory
  *
- * DeviceInventory is a subproject of Flyve MDM. Flyve MDM is a mobile
+ * FlyveMDMInventory is a subproject of Flyve MDM. Flyve MDM is a mobile
  * device management software.
  *
- * DeviceInventory is free software: you can redistribute it and/or
+ * FlyveMDMInventory is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 3
  * of the License, or (at your option) any later version.
  *
- * DeviceInventory is distributed in the hope that it will be useful,
+ * FlyveMDMInventory is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * ------------------------------------------------------------------------------
  * @author    Hector Rondon
- * @date      06/06/17
+ * @date      15/06/17
  * @copyright Copyright © 2017 Teclib. All rights reserved.
  * @license   GPLv3 https://www.gnu.org/licenses/gpl-3.0.html
  * @link      https://github.com/flyve-mdm/flyve-mdm-ios-inventory
@@ -25,24 +25,18 @@
  * ------------------------------------------------------------------------------
  */
 
-
-#import <UIKit/UIKit.h>
-#import "Memory.h"
-#import "Storage.h"
-#import "Hardware.h"
 #import "OperatingSystem.h"
-#import "Network.h"
-#import "Battery.h"
-#import "Carrier.h"
 
-//! Project version number for FlyveMDMInventory.
-FOUNDATION_EXPORT double FlyveMDMInventoryVersionNumber;
+@implementation OperatingSystem
 
-//! Project version string for FlyveMDMInventory.
-FOUNDATION_EXPORT const unsigned char FlyveMDMInventoryVersionString[];
+/**
+ Operating System Name
+ 
+ - returns: Operating system name of Device string
+ */
+- (nullable NSString *)name {
+    
+    return [[UIDevice currentDevice] systemName];
+}
 
-// In this header, you should import all the public headers of your framework using statements like
-// #import <FlyveMDMInventory/PublicHeader.h>
-
-
-
+@end

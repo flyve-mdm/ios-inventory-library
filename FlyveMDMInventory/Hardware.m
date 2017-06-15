@@ -65,16 +65,6 @@
 }
 
 /**
- Operating System Name
- 
- - returns: Operating system name of Device string
- */
-- (nullable NSString *)osName {
-    
-    return [[UIDevice currentDevice] systemName];
-}
-
-/**
  Operating System Type
  
  - returns: Operating system type of Device string

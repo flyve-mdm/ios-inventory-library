@@ -33,6 +33,7 @@ public class InventoryTask {
     private let memory = Memory()
     private let storage = Storage()
     private let hardware = Hardware()
+    private let os = OperatingSystem()
     private let network = Network()
     private let battery = Battery()
     private let carrier = Carrier()
@@ -78,13 +79,15 @@ public class InventoryTask {
                         createElement(tag: "HARDWARE", value:
                             createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
                             createElement(tag: "MODEL", value: "\(hardware.model() ?? "not available")") +
-                            createElement(tag: "OSNAME", value: "\(hardware.osName() ?? "not available")") +
                             createElement(tag: "OSTYPE", value: "\(hardware.osType() ?? "not available")") +
                             createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
                             createElement(tag: "ARCHNAME", value: "\(hardware.archName() ?? "not available")") +
                             createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
                             createElement(tag: "MEMORY", value: "\(memory.total())") +
                             createElement(tag: "PROCESSORS", value: "4")
+                        ) +
+                        createElement(tag: "OPERATINGSYSTEM", value:
+                            createElement(tag: "OSNAME", value: "\(os.name() ?? "not available")")
                         ) +
                         createElement(tag: "STORAGE", value:
                             createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
