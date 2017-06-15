@@ -42,6 +42,18 @@
 }
 
 /**
+ Operating System Version
+ 
+ - returns: Operating system version of Device string
+ */
+- (nullable NSString *)version {
+    
+    NSOperatingSystemVersion version = [[NSProcessInfo processInfo] operatingSystemVersion];
+    
+    return [NSString stringWithFormat:@"%d.%d.%d", version.majorVersion, version.minorVersion, version.patchVersion];
+}
+
+/**
  Operating System Kernel Name
  
  - returns: Operating system kernel name of Device string
