@@ -38,6 +38,13 @@
 - (nullable NSString *)name;
 
 /**
+ Operating System Full Name
+ 
+ - returns: Operating system full name of Device string
+ */
+- (nullable NSString *)fullName;
+
+/**
  Operating System Version
  
  - returns: Operating system version of Device string

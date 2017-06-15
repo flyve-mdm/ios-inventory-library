@@ -91,7 +91,8 @@ public class InventoryTask {
                             createElement(tag: "OSVERSION", value: "\(os.version() ?? "not available")") +
                             createElement(tag: "OSBUILD", value: "\(os.build() ?? "not available")") +
                             createElement(tag: "KERNEL_NAME", value: "\(os.kernelName() ?? "not available")") +
-                            createElement(tag: "KERNEL_VERSION", value: "\(os.kernelVersion() ?? "not available")")
+                            createElement(tag: "KERNEL_VERSION", value: "\(os.kernelVersion() ?? "not available")") +
+                            createElement(tag: "FULL_NAME", value: "\(os.fullName() ?? "not available")")
                         ) +
                         createElement(tag: "STORAGE", value:
                             createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +

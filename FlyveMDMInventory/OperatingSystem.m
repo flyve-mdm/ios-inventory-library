@@ -42,6 +42,16 @@
 }
 
 /**
+ Operating System Full Name
+ 
+ - returns: Operating system full name of Device string
+ */
+- (nullable NSString *)fullName {
+    
+    return [self getSystemInfoWith:"kern.version"];
+}
+
+/**
  Operating System Version
  
  - returns: Operating system version of Device string
