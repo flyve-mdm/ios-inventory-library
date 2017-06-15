@@ -42,6 +42,13 @@
  
  - returns: Operating system kernel name of Device string
  */
-- (nullable NSString *)kernelname;
+- (nullable NSString *)kernelName;
+
+/**
+ Operating System Kernel Version
+ 
+ - returns: Operating system kernel version of Device string
+ */
+- (nullable NSString *)kernelVersion;
 
 @end

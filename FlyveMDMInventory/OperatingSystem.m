@@ -46,9 +46,19 @@
  
  - returns: Operating system kernel name of Device string
  */
-- (nullable NSString *)kernelname {
+- (nullable NSString *)kernelName {
     
     return [self getSystemInfoWith:"kern.ostype"];
+}
+
+/**
+ Operating System Kernel Version
+ 
+ - returns: Operating system kernel version of Device string
+ */
+- (nullable NSString *)kernelVersion {
+    
+    return [self getSystemInfoWith:"kern.osrelease"];
 }
 
 /**
