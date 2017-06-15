@@ -60,8 +60,13 @@
  
  - returns: Model of Device string
  */
-- (NSString *)model {
-    return [self getSystemInfoWith:"hw.model"];
+- (nullable NSString *)model {
+    
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    
+    return [NSString stringWithCString:systemInfo.machine
+                              encoding:NSUTF8StringEncoding];
 }
 
 /**
