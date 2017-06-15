@@ -31,6 +31,7 @@
 
 #include <sys/sysctl.h>
 #include <mach/machine.h>
+#import <sys/utsname.h>
 
 /// Hardware Information
 @implementation Hardware
@@ -71,6 +72,22 @@
 - (nullable NSString *)osName {
     
     return [[UIDevice currentDevice] systemName];
+}
+
+/**
+ Operating System Type
+ 
+ - returns: Operating system type of Device string
+ */
+- (nullable NSString *)osType {
+    
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    
+    return [NSString stringWithCString:systemInfo.sysname
+                              encoding:NSUTF8StringEncoding];
+    
+    
 }
 
 /**

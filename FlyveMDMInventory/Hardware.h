@@ -58,6 +58,13 @@
 - (nullable NSString *)osName;
 
 /**
+ Operating System Type
+ 
+ - returns: Operating system type of Device string
+ */
+- (nullable NSString *)osType;
+
+/**
  Operating System Version
  
  - returns: Operating system version of Device string
