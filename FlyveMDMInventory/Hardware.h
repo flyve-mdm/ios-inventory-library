@@ -51,6 +51,13 @@
 - (nullable NSString *)model;
 
 /**
+ Identifier of Device
+ 
+ - returns: Identifier of Device string
+ */
+- (nullable NSString *)identifier;
+
+/**
  Operating System Type
  
  - returns: Operating system type of Device string

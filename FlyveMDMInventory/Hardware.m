@@ -62,9 +62,19 @@
  */
 - (nullable NSString *)model {
     
+    return [self getSystemInfoWith:"hw.model"];
+}
+
+/**
+ Identifier of Device
+ 
+ - returns: Identifier of Device string
+ */
+- (nullable NSString *)identifier {
+    
     struct utsname systemInfo;
     uname(&systemInfo);
-    
+
     return [NSString stringWithCString:systemInfo.machine
                               encoding:NSUTF8StringEncoding];
 }
