@@ -50,4 +50,11 @@
  */
 - (nullable NSString *)used:(BOOL)inPercent;
 
+/**
+ Partitions disk information
+ 
+ - returns: Partitions disk in the device
+ */
+- (nullable NSString *)partitions;
+
 @end

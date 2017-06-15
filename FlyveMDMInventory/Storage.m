@@ -27,6 +27,8 @@
 
 #import "Storage.h"
 
+#include <sys/mount.h>
+
 #define MB (1024*1024)
 #define GB (MB*1024)
 
@@ -313,6 +315,39 @@
         return formattedBytes;
     }
     @catch (NSException *exception) {
+        // Error
+        return nil;
+    }
+}
+
+/**
+ Partitions disk information
+ 
+ - returns: Partitions disk in the device
+ */
+- (NSString *)partitions {
+    
+    @try {
+        
+        NSMutableString *partitionsDisk = [[NSMutableString alloc] init];
+        struct statfs *mntbufp;
+        int num_of_mnts = 0;
+        int i;
+        
+        num_of_mnts = getmntinfo(&mntbufp, MNT_WAIT);
+        
+        if(num_of_mnts == 0) {
+            return nil;
+        }
+        
+        for(i = 0; i < num_of_mnts; i++) {
+            
+            [partitionsDisk appendString:[NSString stringWithFormat:@"<PARTITION>%s on %s</PARTITION>", mntbufp[i].f_mntfromname, mntbufp[i].f_mntonname]];
+        }
+        
+        return partitionsDisk;
+        
+    } @catch (NSException *exception) {
         // Error
         return nil;
     }

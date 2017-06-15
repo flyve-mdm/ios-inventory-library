@@ -80,7 +80,8 @@ public class InventoryTask {
                         createElement(tag: "STORAGE", value:
                             createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
                             createElement(tag: "FREE", value: "\(storage.free(false) ?? "not available")") +
-                            createElement(tag: "USED", value: "\(storage.used(false) ?? "not available")")
+                            createElement(tag: "USED", value: "\(storage.used(false) ?? "not available")") +
+                            createElement(tag: "PARTITIONS", value: "\(storage.partitions() ?? "not available")")
                         ) +
                         createElement(tag: "MEMORY", value:
                             createElement(tag: "TOTAL", value: "\(memory.total())") +
