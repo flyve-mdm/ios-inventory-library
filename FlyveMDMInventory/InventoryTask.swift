@@ -58,6 +58,10 @@ public class InventoryTask {
      */
     private func createXML(_ versionClient: String) -> String {
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd H:mm:ss"
+        let dateLog = dateFormatter.string(from: Date())
+        
         return createDTD() +
             createElement(
                 tag: "REQUEST",
@@ -66,7 +70,11 @@ public class InventoryTask {
                     createElement(tag: "VERSIONCLIENT", value: versionClient) +
                     createElement(tag: "DEVICEID", value: "\(hardware.uuid() ?? "not available")") +
                     createElement(tag: "CONTENT", value:
-                        
+
+                        createElement(tag: "ACCESSLOG", value:
+                            createElement(tag: "LOGDATE", value: "\(dateLog)") +
+                            createElement(tag: "USERID", value: "N/A")
+                        ) +
                         createElement(tag: "HARDWARE", value:
                             createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
                             createElement(tag: "MODEL", value: "\(hardware.model() ?? "not available")") +
