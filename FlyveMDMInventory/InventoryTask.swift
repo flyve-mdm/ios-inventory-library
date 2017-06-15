@@ -84,8 +84,7 @@ public class InventoryTask {
                             createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
                             createElement(tag: "ARCHNAME", value: "\(hardware.archName() ?? "not available")") +
                             createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
-                            createElement(tag: "MEMORY", value: "\(memory.total())") +
-                            createElement(tag: "PROCESSORS", value: "4")
+                            createElement(tag: "MEMORY", value: "\(memory.total())")
                         ) +
                         createElement(tag: "OPERATINGSYSTEM", value:
                             createElement(tag: "NAME", value: "\(os.name() ?? "not available")") +
