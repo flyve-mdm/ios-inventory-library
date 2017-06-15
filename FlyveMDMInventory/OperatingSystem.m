@@ -54,6 +54,16 @@
 }
 
 /**
+ Operating System Build
+ 
+ - returns: Operating system build of Device string
+ */
+- (nullable NSString *)build {
+    
+    return [self getSystemInfoWith:"kern.osversion"];
+}
+
+/**
  Operating System Kernel Name
  
  - returns: Operating system kernel name of Device string
