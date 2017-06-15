@@ -27,6 +27,8 @@
 
 #import "OperatingSystem.h"
 
+#include <sys/sysctl.h>
+
 @implementation OperatingSystem
 
 /**
@@ -37,6 +39,35 @@
 - (nullable NSString *)name {
     
     return [[UIDevice currentDevice] systemName];
+}
+
+/**
+ Operating System Kernel Name
+ 
+ - returns: Operating system kernel name of Device string
+ */
+- (nullable NSString *)kernelname {
+    
+    return [self getSystemInfoWith:"kern.ostype"];
+}
+
+/**
+ Information Hardware by name
+ 
+ - returns: Information Hardware by name in string
+ */
+- (NSString *) getSystemInfoWith:(char *)name
+{
+    size_t size;
+    sysctlbyname(name, NULL, &size, NULL, 0);
+    
+    char *answer = malloc(size);
+    sysctlbyname(name, answer, &size, NULL, 0);
+    
+    NSString *result = [NSString stringWithCString:answer encoding: NSUTF8StringEncoding];
+    free(answer);
+    
+    return result;
 }
 
 @end

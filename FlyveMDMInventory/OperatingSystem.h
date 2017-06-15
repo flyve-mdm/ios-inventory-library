@@ -37,4 +37,11 @@
  */
 - (nullable NSString *)name;
 
+/**
+ Operating System Kernel Name
+ 
+ - returns: Operating system kernel name of Device string
+ */
+- (nullable NSString *)kernelname;
+
 @end
