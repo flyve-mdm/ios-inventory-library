@@ -34,8 +34,9 @@ public class InventoryTask {
     private let storage = Storage()
     private let hardware = Hardware()
     private let os = OperatingSystem()
-    private let network = Network()
     private let battery = Battery()
+    private let cpu = Cpu()
+    private let network = Network()
     private let carrier = Carrier()
     
     public init() {}
@@ -93,6 +94,9 @@ public class InventoryTask {
                             createElement(tag: "KERNEL_NAME", value: "\(os.kernelName() ?? "not available")") +
                             createElement(tag: "KERNEL_VERSION", value: "\(os.kernelVersion() ?? "not available")") +
                             createElement(tag: "FULL_NAME", value: "\(os.fullName() ?? "not available")")
+                        ) +
+                        createElement(tag: "CPUS", value:
+                            createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")")
                         ) +
                         createElement(tag: "STORAGE", value:
                             createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +

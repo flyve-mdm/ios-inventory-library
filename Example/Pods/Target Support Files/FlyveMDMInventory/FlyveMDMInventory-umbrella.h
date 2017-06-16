@@ -12,6 +12,7 @@
 
 #import "Battery.h"
 #import "Carrier.h"
+#import "Cpu.h"
 #import "FlyveMDMInventory.h"
 #import "Hardware.h"
 #import "Memory.h"
