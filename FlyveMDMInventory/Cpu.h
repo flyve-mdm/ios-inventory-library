@@ -37,4 +37,11 @@
  */
 - (NSString *)physicalCpu;
 
+/**
+ Get number of logical cpus
+ 
+ - returns: number of logical cpus
+ */
+- (NSString *)logicalCpu;
+
 @end

@@ -42,6 +42,16 @@
 }
 
 /**
+ Get number of logical cpus
+ 
+ - returns: number of logical cpus
+ */
+- (NSString *)logicalCpu {
+    
+    return [NSString stringWithFormat:@"%llu", [self getSystemInfoIntWith:"hw.logicalcpu"]];
+}
+
+/**
  Information Hardware by name
  
  - returns: Information Hardware by name in string

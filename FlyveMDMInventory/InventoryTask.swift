@@ -96,7 +96,8 @@ public class InventoryTask {
                             createElement(tag: "FULL_NAME", value: "\(os.fullName() ?? "not available")")
                         ) +
                         createElement(tag: "CPUS", value:
-                            createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")")
+                            createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")") +
+                            createElement(tag: "LOGICALCORE", value: "\(cpu.logicalCpu() ?? "not available")")
                         ) +
                         createElement(tag: "STORAGE", value:
                             createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
