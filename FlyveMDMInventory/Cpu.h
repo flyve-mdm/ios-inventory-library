@@ -51,4 +51,11 @@
  */
 - (NSString *)frequency;
 
+/**
+ Get bus frequency
+ 
+ - returns: bus frequency
+ */
+- (NSString *)busFrequency;
+
 @end

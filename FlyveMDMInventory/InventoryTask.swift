@@ -98,7 +98,8 @@ public class InventoryTask {
                         createElement(tag: "CPUS", value:
                             createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")") +
                             createElement(tag: "LOGICALCORE", value: "\(cpu.logicalCpu() ?? "not available")") +
-                            createElement(tag: "FREQUENCY", value: "\(cpu.frequency() ?? "not available")")
+                            createElement(tag: "FREQUENCY", value: "\(cpu.frequency() ?? "not available")") +
+                            createElement(tag: "BUSFREQUENCY", value: "\(cpu.busFrequency() ?? "not available")")
                         ) +
                         createElement(tag: "STORAGE", value:
                             createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +

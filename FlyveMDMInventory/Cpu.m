@@ -62,6 +62,16 @@
 }
 
 /**
+ Get bus frequency
+ 
+ - returns: bus frequency
+ */
+- (NSString *)busFrequency {
+    
+    return [NSString stringWithFormat:@"%llu", [self getSystemInfoIntWith:"hw.busfrequency"]];
+}
+
+/**
  Information Hardware by name
  
  - returns: Information Hardware by name in string
