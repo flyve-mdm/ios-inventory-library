@@ -42,6 +42,15 @@
 }
 
 /**
+ Get vendor string of cpus
+ 
+ - returns: vendor string of cpus
+ */
+- (NSString *)vendor {
+    return [self getSystemInfoWith:"machdep.cpu.vendor"];
+}
+
+/**
  Get number of cpus
  
  - returns: number of cpus
@@ -120,7 +129,7 @@
         
         return value;
     } @catch (NSException *exception) {
-        return nil
+        return -1;
     }
     
     

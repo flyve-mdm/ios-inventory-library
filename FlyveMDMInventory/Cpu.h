@@ -35,34 +35,41 @@
  
  - returns: branch string of cpus
  */
-- (NSString *)branch;
+- (nullable NSString *)branch;
+
+/**
+ Get vendor string of cpus
+ 
+ - returns: vendor string of cpus
+ */
+- (nullable NSString *)vendor;
 
 /**
  Get number of cpus
  
  - returns: number of cpus
  */
-- (NSString *)physicalCpu;
+- (nullable NSString *)physicalCpu;
 
 /**
  Get number of logical cpus
  
  - returns: number of logical cpus
  */
-- (NSString *)logicalCpu;
+- (nullable NSString *)logicalCpu;
 
 /**
  Get CPU frequency
  
  - returns: CPU frequency
  */
-- (NSString *)frequency;
+- (nullable NSString *)frequency;
 
 /**
  Get bus frequency
  
  - returns: bus frequency
  */
-- (NSString *)busFrequency;
+- (nullable NSString *)busFrequency;
 
 @end
