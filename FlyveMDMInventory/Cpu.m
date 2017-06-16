@@ -100,7 +100,20 @@
  */
 - (NSString *)busFrequency {
     
-    return [NSString stringWithFormat:@"%llu", [self getSystemInfoIntWith:"hw.busfrequency"]];
+    int hertz;
+    size_t size = sizeof(int);
+    int mib[2] = {CTL_HW, HW_BUS_FREQ};
+    
+    sysctl(mib, 2, &hertz, &size, NULL, 0);
+    
+    if (hertz < 1) {
+        // Invalid value
+        return nil;
+    }
+    
+    hertz /= 1000000;
+    
+    return [NSString stringWithFormat:@"%d", hertz];
 }
 
 /**
