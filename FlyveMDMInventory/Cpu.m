@@ -32,6 +32,16 @@
 @implementation Cpu
 
 /**
+ Get branch string of cpus
+ 
+ - returns: branch string of cpus
+ */
+- (NSString *)branch {
+    
+    return [self getSystemInfoWith:"machdep.cpu.brand_string"];
+}
+
+/**
  Get number of cpus
  
  - returns: number of cpus
@@ -78,16 +88,20 @@
  */
 - (NSString *) getSystemInfoWith:(char *)name
 {
-    size_t size = -1;
-    sysctlbyname(name, NULL, &size, NULL, 0);
-    
-    char *value = malloc(size);
-    sysctlbyname(name, value, &size, NULL, 0);
-    
-    NSString *result = [NSString stringWithCString:value encoding: NSUTF8StringEncoding];
-    free(value);
-    
-    return result;
+    @try {
+        size_t size = -1;
+        sysctlbyname(name, NULL, &size, NULL, 0);
+        
+        char *value = malloc(size);
+        sysctlbyname(name, value, &size, NULL, 0);
+        
+        NSString *result = [NSString stringWithCString:value encoding: NSUTF8StringEncoding];
+        free(value);
+        
+        return result;
+    } @catch (NSException *exception) {
+        return nil;
+    }
 }
 
 /**
@@ -97,12 +111,18 @@
  */
 - (uint64_t) getSystemInfoIntWith:(char *)name
 {
-    size_t size = -1;
-    sysctlbyname(name, NULL, &size, NULL, 0);
+    @try {
+        size_t size = -1;
+        sysctlbyname(name, NULL, &size, NULL, 0);
+        
+        uint64_t value = 0;
+        sysctlbyname(name, &value, &size, NULL, 0);
+        
+        return value;
+    } @catch (NSException *exception) {
+        return nil
+    }
     
-    uint64_t value = 0;
-    sysctlbyname(name, &value, &size, NULL, 0);
     
-    return value;
 }
 @end

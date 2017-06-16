@@ -31,6 +31,13 @@
 @interface Cpu: NSObject
 
 /**
+ Get branch string of cpus
+ 
+ - returns: branch string of cpus
+ */
+- (NSString *)branch;
+
+/**
  Get number of cpus
  
  - returns: number of cpus

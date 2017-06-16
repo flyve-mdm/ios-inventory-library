@@ -100,16 +100,20 @@
  */
 - (NSString *) getSystemInfoWith:(char *)name
 {
-    size_t size = -1;
-    sysctlbyname(name, NULL, &size, NULL, 0);
-    
-    char *value = malloc(size);
-    sysctlbyname(name, value, &size, NULL, 0);
-    
-    NSString *result = [NSString stringWithCString:value encoding: NSUTF8StringEncoding];
-    free(value);
-    
-    return result;
+    @try {
+        size_t size = -1;
+        sysctlbyname(name, NULL, &size, NULL, 0);
+        
+        char *value = malloc(size);
+        sysctlbyname(name, value, &size, NULL, 0);
+        
+        NSString *result = [NSString stringWithCString:value encoding: NSUTF8StringEncoding];
+        free(value);
+        
+        return result;
+    } @catch (NSException *exception) {
+        return nil;
+    }
 }
 
 @end
