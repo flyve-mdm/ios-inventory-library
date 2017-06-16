@@ -52,6 +52,16 @@
 }
 
 /**
+ Get CPU frequency
+ 
+ - returns: CPU frequency
+ */
+- (NSString *)frequency {
+    
+    return [NSString stringWithFormat:@"%llu", [self getSystemInfoIntWith:"hw.cpufrequency"]];
+}
+
+/**
  Information Hardware by name
  
  - returns: Information Hardware by name in string

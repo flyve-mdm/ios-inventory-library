@@ -44,4 +44,11 @@
  */
 - (NSString *)logicalCpu;
 
+/**
+ Get CPU frequency
+ 
+ - returns: CPU frequency
+ */
+- (NSString *)frequency;
+
 @end
