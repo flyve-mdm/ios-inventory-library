@@ -127,6 +127,16 @@
 }
 
 /**
+ Get L1 D cache
+ 
+ - returns: L1 D cache
+ */
+- (nullable NSString *)l1dcache {
+    
+    return [NSString stringWithFormat:@"%llu", [self getSystemInfoIntWith:"hw.l1dcachesize"]];
+}
+
+/**
  Information Hardware by name
  
  - returns: Information Hardware by name in string
