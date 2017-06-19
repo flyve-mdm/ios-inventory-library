@@ -53,14 +53,6 @@
  */
 - (nullable NSString *)countryCode;
 
-/**
- Get containing the carrier mobile country code
- 
- - returns: Carrier Mobile Country Code
- */
-- (nullable NSString *)mobileCountryCode;
-
-
 // Carrier Mobile Network Code
 /**
  Get the  mobile network code for the subscriber's cellular service provider, in its numeric representation

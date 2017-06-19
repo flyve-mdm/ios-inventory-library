@@ -82,23 +82,6 @@
 }
 
 /**
- Get containing the carrier mobile country code
- 
- - returns: Carrier Mobile Country Code
- */
-- (NSString *)mobileCountryCode {
-
-    @try {
-        
-        return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].mobileCountryCode;
-    }
-    @catch (NSException *exception) {
-        // Failed
-        return nil;
-    }
-}
-
-/**
  Get the  mobile network code for the subscriber's cellular service provider, in its numeric representation
  
  - returns: Mobile Network Code
