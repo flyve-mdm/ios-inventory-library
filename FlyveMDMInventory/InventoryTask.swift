@@ -133,7 +133,7 @@ public class InventoryTask {
                         createElement(tag: "SIMCARD", value:
                             createElement(tag: "RADIO", value: "\(carrier.radio() ?? "not available")") +
                             createElement(tag: "OPERATOR_NAME", value: "\(carrier.name() ?? "not available")") +
-                            createElement(tag: "COUNTRY", value: "\(carrier.isoCountryCode() ?? "not available")") +
+                            createElement(tag: "COUNTRY_CODE", value: "\(carrier.countryCode() ?? "not available")") +
                             createElement(tag: "COUNTRYCODE", value: "\(carrier.mobileCountryCode() ?? "not available")") +
                             createElement(tag: "NETWORKCODE", value: "\(carrier.mobileNetworkCode() ?? "not available")") +
                             createElement(tag: "ALLOWVOIP", value: "\(carrier.isAllowsVOIP() ?? "not available")")
