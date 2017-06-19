@@ -86,4 +86,11 @@
  */
 - (nullable NSString *)l1dcache;
 
+/**
+ Get L2 cache
+ 
+ - returns: L2 cache
+ */
+- (nullable NSString *)l2cache;
+
 @end

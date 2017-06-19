@@ -137,6 +137,16 @@
 }
 
 /**
+ Get L2 cache
+ 
+ - returns: L2 cache
+ */
+- (nullable NSString *)l2cache {
+    
+    return [NSString stringWithFormat:@"%llu", [self getSystemInfoIntWith:"hw.l2cachesize"]];
+}
+
+/**
  Information Hardware by name
  
  - returns: Information Hardware by name in string

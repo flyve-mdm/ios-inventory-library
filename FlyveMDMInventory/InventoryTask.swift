@@ -106,7 +106,8 @@ public class InventoryTask {
                             createElement(tag: "FREQUENCY", value: "\(cpu.frequency() ?? "not available")") +
                             createElement(tag: "BUSFREQUENCY", value: "\(cpu.busFrequency() ?? "not available")") +
                             createElement(tag: "L1ICACHE", value: "\(cpu.l1icache() ?? "not available")") +
-                            createElement(tag: "L1DCACHE", value: "\(cpu.l1dcache() ?? "not available")")
+                            createElement(tag: "L1DCACHE", value: "\(cpu.l1dcache() ?? "not available")") +
+                            createElement(tag: "L2CACHE", value: "\(cpu.l2cache() ?? "not available")")
                         ) +
                         createElement(tag: "STORAGE", value:
                             createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
