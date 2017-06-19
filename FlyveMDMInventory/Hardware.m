@@ -28,6 +28,7 @@
 #import "Hardware.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
 
 #include <sys/sysctl.h>
 #include <mach/machine.h>
@@ -192,6 +193,19 @@
     }
     
     return [NSString stringWithString:cpu];
+}
+
+/**
+ GPU Vendor name
+ 
+ - returns: GPU Vendor of Device string
+ */
+- (nullable NSString *)gpuVendor {
+    
+    EAGLContext *ctx = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    [EAGLContext setCurrentContext:ctx];
+    
+    return [NSString stringWithCString:(const char*)glGetString(GL_VENDOR) encoding:NSASCIIStringEncoding];
 }
 
 /**

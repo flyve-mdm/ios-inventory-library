@@ -78,5 +78,12 @@
  */
 - (nullable NSString *)archName;
 
+/**
+ GPU Vendor name
+ 
+ - returns: GPU Vendor of Device string
+ */
+- (nullable NSString *)gpuVendor;
+
 
 @end
