@@ -85,5 +85,11 @@
  */
 - (nullable NSString *)gpuVendor;
 
+/**
+ GPU Version name
+ 
+ - returns: GPU Version of Device string
+ */
+- (nullable NSString *)gpuVersion;
 
 @end

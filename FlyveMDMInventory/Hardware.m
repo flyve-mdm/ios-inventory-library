@@ -209,6 +209,19 @@
 }
 
 /**
+ GPU Version name
+ 
+ - returns: GPU Version of Device string
+ */
+- (nullable NSString *)gpuVersion {
+    
+    EAGLContext *ctx = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    [EAGLContext setCurrentContext:ctx];
+    
+    return [NSString stringWithCString:(const char*)glGetString(GL_VERSION) encoding:NSASCIIStringEncoding];
+}
+
+/**
  Information Hardware by name
  
  - returns: Information Hardware by name in string
