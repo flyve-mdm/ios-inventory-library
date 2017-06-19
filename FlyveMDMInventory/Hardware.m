@@ -222,6 +222,20 @@
 }
 
 /**
+ Screen Resolution size
+ 
+ - returns: Screen Resolution size of Device string
+ */
+- (nullable NSString *)screenResolution {
+    
+    CGRect dimension = [UIScreen mainScreen].bounds;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    NSString *resolution = [NSString stringWithFormat:@"%0.0fx%0.0f", dimension.size.height * scale, dimension.size.width * scale];
+    
+    return resolution;
+}
+
+/**
  Information Hardware by name
  
  - returns: Information Hardware by name in string

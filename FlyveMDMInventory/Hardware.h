@@ -92,4 +92,11 @@
  */
 - (nullable NSString *)gpuVersion;
 
+/**
+ Screen Resolution size
+ 
+ - returns: Screen Resolution size of Device string
+ */
+- (nullable NSString *)screenResolution;
+
 @end
