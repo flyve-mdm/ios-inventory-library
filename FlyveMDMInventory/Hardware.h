@@ -99,4 +99,18 @@
  */
 - (nullable NSString *)screenResolution;
 
+/**
+ Front Camera Resolution size
+ 
+ - returns: Front Camera Resolution size of Device string
+ */
+- (nullable NSString *)frontCamera;
+
+/**
+ Back Camera Resolution size
+ 
+ - returns: Back Camera Resolution size of Device string
+ */
+- (nullable NSString *)backCamera;
+
 @end

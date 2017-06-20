@@ -27,6 +27,7 @@
 
 #import "Hardware.h"
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 
@@ -231,8 +232,52 @@
     CGRect dimension = [UIScreen mainScreen].bounds;
     CGFloat scale = [UIScreen mainScreen].scale;
     NSString *resolution = [NSString stringWithFormat:@"%0.0fx%0.0f", dimension.size.height * scale, dimension.size.width * scale];
-    
+
     return resolution;
+}
+
+/**
+ Front Camera Resolution size
+ 
+ - returns: Front Camera Resolution size of Device string
+ */
+- (nullable NSString *)frontCamera {
+    
+    AVCaptureDevice *captureDevice = [self cameraWithPosition:AVCaptureDevicePositionFront];
+    
+    NSArray* availFormat=captureDevice.formats;
+    AVCaptureDeviceFormat *format = [[AVCaptureDeviceFormat alloc] init];
+    format = availFormat[availFormat.count-1];
+
+    return [NSString stringWithFormat:@"%dx%d", format.highResolutionStillImageDimensions.width, format.highResolutionStillImageDimensions.height];
+}
+
+/**
+ Back Camera Resolution size
+ 
+ - returns: Back Camera Resolution size of Device string
+ */
+- (nullable NSString *)backCamera {
+    
+    AVCaptureDevice *captureDevice = [self cameraWithPosition:AVCaptureDevicePositionBack];
+
+    NSArray* availFormat=captureDevice.formats;
+    AVCaptureDeviceFormat *format = [[AVCaptureDeviceFormat alloc] init];
+    format = availFormat[availFormat.count-1];
+    
+    return [NSString stringWithFormat:@"%dx%d", format.highResolutionStillImageDimensions.width, format.highResolutionStillImageDimensions.height];
+}
+
+- (AVCaptureDevice *)cameraWithPosition:(AVCaptureDevicePosition) position
+{
+    NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+
+    for (AVCaptureDevice *device in devices) {
+        if ([device position] == position) {
+            return device;
+        }
+    }
+    return nil;
 }
 
 /**
