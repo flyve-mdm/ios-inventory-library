@@ -79,16 +79,13 @@ public class InventoryTask {
                         ) +
                         createElement(tag: "HARDWARE", value:
                             createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
-                            createElement(tag: "IDENTIFIER", value: "\(hardware.identifier() ?? "not available")") +
-                            createElement(tag: "MODEL", value: "\(hardware.model() ?? "not available")") +
-                            createElement(tag: "OSTYPE", value: "\(hardware.osType() ?? "not available")") +
-                            createElement(tag: "VERSION", value: "\(hardware.osVersion() ?? "not available")") +
+                            createElement(tag: "TYPE", value: "\(hardware.identifier() ?? "not available")") +
+                            createElement(tag: "OSNAME", value: "\(os.name() ?? "not available")") +
+                            createElement(tag: "OSVERSION", value: "\(os.version() ?? "not available")") +
+                            createElement(tag: "OSCOMMENTS", value: "\(hardware.osVersion() ?? "not available")") +
                             createElement(tag: "ARCHNAME", value: "\(hardware.archName() ?? "not available")") +
-                            createElement(tag: "GPUVENDOR", value: "\(hardware.gpuVendor() ?? "not available")") +
-                            createElement(tag: "GPUVERSION", value: "\(hardware.gpuVersion() ?? "not available")") +
                             createElement(tag: "UUID", value: "\(hardware.uuid() ?? "not available")") +
-                            createElement(tag: "MEMORY", value: "\(memory.total())") +
-                            createElement(tag: "RESOLUTION", value: "\(hardware.screenResolution() ?? "not available")")
+                            createElement(tag: "MEMORY", value: "\(memory.total())")
                         ) +
                         createElement(tag: "OPERATINGSYSTEM", value:
                             createElement(tag: "NAME", value: "\(os.name() ?? "not available")") +
