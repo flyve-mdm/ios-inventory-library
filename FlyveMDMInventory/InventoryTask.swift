@@ -119,6 +119,11 @@ public class InventoryTask {
                         createElement(tag: "STORAGES", value:
                             createElement(tag: "DISKSIZE", value: "\(storage.total() ?? "not available")")
                         ) +
+                        createElement(tag: "VIDEOS", value:
+                            createElement(tag: "CHIPSET", value: "\(hardware.gpuVersion() ?? "not available")") +
+                            createElement(tag: "NAME", value: "\(hardware.gpuVendor() ?? "not available")") +
+                            createElement(tag: "RESOLUTION", value: "\(hardware.screenResolution() ?? "not available")"
+                        ) +
                         createElement(tag: "SIMCARD", value:
                             createElement(tag: "RADIO", value: "\(carrier.radio() ?? "not available")") +
                             createElement(tag: "OPERATOR_NAME", value: "\(carrier.name() ?? "not available")") +
