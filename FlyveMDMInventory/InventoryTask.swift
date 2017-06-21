@@ -88,11 +88,10 @@ public class InventoryTask {
                             createElement(tag: "MEMORY", value: "\(memory.total())")
                         ) +
                         createElement(tag: "OPERATINGSYSTEM", value:
-                            createElement(tag: "NAME", value: "\(os.name() ?? "not available")") +
-                            createElement(tag: "OSVERSION", value: "\(os.version() ?? "not available")") +
-                            createElement(tag: "OSBUILD", value: "\(os.build() ?? "not available")") +
                             createElement(tag: "KERNEL_NAME", value: "\(os.kernelName() ?? "not available")") +
                             createElement(tag: "KERNEL_VERSION", value: "\(os.kernelVersion() ?? "not available")") +
+                            createElement(tag: "NAME", value: "\(os.name() ?? "not available")") +
+                            createElement(tag: "VERSION", value: "\(os.version() ?? "not available")") +
                             createElement(tag: "FULL_NAME", value: "\(os.fullName() ?? "not available")")
                         ) +
                         createElement(tag: "CPUS", value:
