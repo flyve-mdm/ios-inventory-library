@@ -77,6 +77,9 @@ public class InventoryTask {
                             createElement(tag: "LOGDATE", value: "\(dateLog)") +
                             createElement(tag: "USERID", value: "N/A")
                         ) +
+                        createElement(tag: "BIOS", value:
+                            createElement(tag: "SMODEL", value: "\(os.kernelName() ?? "not available")")
+                        ) +
                         createElement(tag: "HARDWARE", value:
                             createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
                             createElement(tag: "TYPE", value: "\(hardware.identifier() ?? "not available")") +
