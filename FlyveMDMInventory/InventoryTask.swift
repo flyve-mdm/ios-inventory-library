@@ -125,11 +125,9 @@ public class InventoryTask {
                             createElement(tag: "RESOLUTION", value: "\(hardware.screenResolution() ?? "not available")"
                         ) +
                         createElement(tag: "SIMCARD", value:
-                            createElement(tag: "RADIO", value: "\(carrier.radio() ?? "not available")") +
                             createElement(tag: "OPERATOR_NAME", value: "\(carrier.name() ?? "not available")") +
                             createElement(tag: "COUNTRY_CODE", value: "\(carrier.countryCode() ?? "not available")") +
-                            createElement(tag: "NETWORKCODE", value: "\(carrier.mobileNetworkCode() ?? "not available")") +
-                            createElement(tag: "ALLOWVOIP", value: "\(carrier.isAllowsVOIP() ?? "not available")")
+                            createElement(tag: "OPERATOR_CODE", value: "\(carrier.mobileNetworkCode() ?? "not available")")
                         ) +
                         createElement(tag: "BATTERY", value:
                             createElement(tag: "STATE", value: "\(battery.state() ?? "not available")") +
