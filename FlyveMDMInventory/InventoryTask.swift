@@ -122,7 +122,7 @@ public class InventoryTask {
                         createElement(tag: "VIDEOS", value:
                             createElement(tag: "CHIPSET", value: "\(hardware.gpuVersion() ?? "not available")") +
                             createElement(tag: "NAME", value: "\(hardware.gpuVendor() ?? "not available")") +
-                            createElement(tag: "RESOLUTION", value: "\(hardware.screenResolution() ?? "not available")"
+                            createElement(tag: "RESOLUTION", value: "\(hardware.screenResolution() ?? "not available")")
                         ) +
                         createElement(tag: "SIMCARD", value:
                             createElement(tag: "OPERATOR_NAME", value: "\(carrier.name() ?? "not available")") +
@@ -130,12 +130,10 @@ public class InventoryTask {
                             createElement(tag: "OPERATOR_CODE", value: "\(carrier.mobileNetworkCode() ?? "not available")")
                         ) +
                         createElement(tag: "CAMERAS", value:
-                            createElement(tag: "CAMERA", value:
-                                createElement(tag: "RESOLUTION", value: "\(hardware.backCamera() ?? "not available")")
-                            ) +
-                            createElement(tag: "CAMERA", value:
-                                createElement(tag: "RESOLUTION", value: "\(hardware.frontCamera() ?? "not available")")
-                            )
+                            createElement(tag: "RESOLUTION", value: "\(hardware.backCamera() ?? "not available")")
+                        ) +
+                        createElement(tag: "CAMERAS", value:
+                            createElement(tag: "RESOLUTION", value: "\(hardware.frontCamera() ?? "not available")")
                         )
                 )
         )
