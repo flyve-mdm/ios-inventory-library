@@ -105,12 +105,6 @@ public class InventoryTask {
                             createElement(tag: "SPEED", value: "\(cpu.frequency() ?? "not available")") +
                             createElement(tag: "ARCH", value: "\(hardware.archName() ?? "not available")")
                         ) +
-                        createElement(tag: "STORAGE", value:
-                            createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
-                            createElement(tag: "FREE", value: "\(storage.free(false) ?? "not available")") +
-                            createElement(tag: "USED", value: "\(storage.used(false) ?? "not available")") +
-                            createElement(tag: "PARTITIONS", value: "\(storage.partitions() ?? "not available")")
-                        ) +
                         createElement(tag: "MEMORIES", value:
                             createElement(tag: "CAPACITY", value: "\(memory.total())")
                         ) +
@@ -121,6 +115,9 @@ public class InventoryTask {
                             createElement(tag: "IPSUBNET", value: "\(network.broadcastAddress() ?? "not available")") +
                             createElement(tag: "WIFI_SSID", value: "\(network.ssid() ?? "not available")") +
                             createElement(tag: "WIFI_BSSID", value: "\(network.bssid() ?? "not available")")
+                        ) +
+                        createElement(tag: "STORAGES", value:
+                            createElement(tag: "DISKSIZE", value: "\(storage.total() ?? "not available")")
                         ) +
                         createElement(tag: "SIMCARD", value:
                             createElement(tag: "RADIO", value: "\(carrier.radio() ?? "not available")") +
