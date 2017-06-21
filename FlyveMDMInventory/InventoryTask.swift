@@ -95,15 +95,12 @@ public class InventoryTask {
                             createElement(tag: "FULL_NAME", value: "\(os.fullName() ?? "not available")")
                         ) +
                         createElement(tag: "CPUS", value:
+                            createElement(tag: "L1ICACHE", value: "\(cpu.l1icache() ?? "not available")") +
+                            createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")") +
                             createElement(tag: "BRANCH", value: "\(cpu.branch() ?? "not available")") +
                             createElement(tag: "VENDOR", value: "\(cpu.vendor() ?? "not available")") +
-                            createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")") +
-                            createElement(tag: "LOGICALCORE", value: "\(cpu.logicalCpu() ?? "not available")") +
-                            createElement(tag: "FREQUENCY", value: "\(cpu.frequency() ?? "not available")") +
-                            createElement(tag: "BUSFREQUENCY", value: "\(cpu.busFrequency() ?? "not available")") +
-                            createElement(tag: "L1ICACHE", value: "\(cpu.l1icache() ?? "not available")") +
-                            createElement(tag: "L1DCACHE", value: "\(cpu.l1dcache() ?? "not available")") +
-                            createElement(tag: "L2CACHE", value: "\(cpu.l2cache() ?? "not available")")
+                            createElement(tag: "SPEED", value: "\(cpu.frequency() ?? "not available")") +
+                            createElement(tag: "ARCH", value: "\(hardware.archName() ?? "not available")")
                         ) +
                         createElement(tag: "STORAGE", value:
                             createElement(tag: "TOTAL", value: "\(storage.total() ?? "not available")") +
