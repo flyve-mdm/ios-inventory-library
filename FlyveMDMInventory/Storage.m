@@ -342,7 +342,7 @@
         
         for(i = 0; i < num_of_mnts; i++) {
             
-            [partitionsDisk appendString:[NSString stringWithFormat:@"<PARTITION>%s on %s</PARTITION>", mntbufp[i].f_mntfromname, mntbufp[i].f_mntonname]];
+            [partitionsDisk appendString:[NSString stringWithFormat:@"<DRIVES><LABEL>%s</LABEL><VOLUMN>%s</VOLUMN></DRIVES>", mntbufp[i].f_mntfromname, mntbufp[i].f_mntonname]];
         }
         
         return partitionsDisk;

@@ -64,7 +64,7 @@ public class InventoryTask {
         dateFormatter.dateFormat = "yyyy-MM-dd H:mm:ss"
         let dateLog = dateFormatter.string(from: Date())
         
-        return createDTD() +
+        return "\(createDTD())" +
             createElement(
                 tag: "REQUEST",
                 value:
@@ -102,7 +102,7 @@ public class InventoryTask {
                             createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")") +
                             createElement(tag: "SPEED", value: "\(cpu.frequency() ?? "not available")") +
                             createElement(tag: "ARCH", value: "\(hardware.archName() ?? "not available")")
-                        ) +
+                        ) + "\(storage.partitions() ?? "")" +
                         createElement(tag: "MEMORIES", value:
                             createElement(tag: "CAPACITY", value: "\(memory.total())")
                         ) +
