@@ -129,10 +129,6 @@ public class InventoryTask {
                             createElement(tag: "COUNTRY_CODE", value: "\(carrier.countryCode() ?? "not available")") +
                             createElement(tag: "OPERATOR_CODE", value: "\(carrier.mobileNetworkCode() ?? "not available")")
                         ) +
-                        createElement(tag: "BATTERY", value:
-                            createElement(tag: "STATE", value: "\(battery.state() ?? "not available")") +
-                            createElement(tag: "LEVEL", value: "\(battery.level())%")
-                        ) +
                         createElement(tag: "CAMERAS", value:
                             createElement(tag: "CAMERA", value:
                                 createElement(tag: "RESOLUTION", value: "\(hardware.backCamera() ?? "not available")")
