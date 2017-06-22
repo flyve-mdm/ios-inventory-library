@@ -78,7 +78,9 @@ public class InventoryTask {
                             createElement(tag: "USERID", value: "N/A")
                         ) +
                         createElement(tag: "BIOS", value:
-                            createElement(tag: "SMODEL", value: "\(os.kernelName() ?? "not available")")
+                            createElement(tag: "BMANUFACTURER", value: "\(hardware.gpuVendor() ?? "not available")") +
+                            createElement(tag: "MMODEL", value: "\(hardware.identifier() ?? "not available")") +
+                            createElement(tag: "SMODEL", value: "\(hardware.model() ?? "not available")")
                         ) +
                         createElement(tag: "HARDWARE", value:
                             createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
