@@ -281,6 +281,7 @@
 }
 
 /**
+
  Information Hardware by name
  
  - returns: Information Hardware by name in string
