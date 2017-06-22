@@ -100,10 +100,12 @@ public class InventoryTask {
                             createElement(tag: "FULL_NAME", value: "\(os.fullName() ?? "not available")")
                         ) +
                         createElement(tag: "CPUS", value:
+                            createElement(tag: "NAME", value: "\(hardware.archName() ?? "not available")") +
+                            createElement(tag: "MANUFACTURER", value: "\(hardware.gpuVendor() ?? "not available")") +
                             createElement(tag: "CACHE", value: "\(cpu.l1icache() ?? "not available")") +
                             createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")") +
                             createElement(tag: "SPEED", value: "\(cpu.frequency() ?? "not available")") +
-                            createElement(tag: "ARCH", value: "\(hardware.archName() ?? "not available")")
+                            createElement(tag: "THREAD", value: "\(cpu.logicalCpu() ?? "not available")")
                         ) + "\(storage.partitions() ?? "")" +
                         createElement(tag: "MEMORIES", value:
                             createElement(tag: "CAPACITY", value: "\(memory.total())")
