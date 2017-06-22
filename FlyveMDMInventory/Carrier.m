@@ -65,47 +65,11 @@
 }
 
 /**
- Get containing the name of the carrier country
+ Get containing the name of the carrier country code
  
- - returns: Carrier Country
+ - returns: Carrier Country Code
  */
-- (NSString *)country {
-    
-    @try {
-
-        NSLocale *currentCountry = [NSLocale currentLocale];
-
-        return [currentCountry objectForKey:NSLocaleCountryCode];
-    }
-    @catch (NSException *exception) {
-        // Failed
-        return nil;
-    }
-}
-
-/**
- Get containing the carrier mobile country code
- 
- - returns: Carrier Mobile Country Code
- */
-- (NSString *)mobileCountryCode {
-
-    @try {
-        
-        return [[CTTelephonyNetworkInfo new] subscriberCellularProvider].mobileCountryCode;
-    }
-    @catch (NSException *exception) {
-        // Failed
-        return nil;
-    }
-}
-
-/**
- Get country code for the subscriber's cellular service provider, represented as an ISO 3166-1
- 
- - returns: Country Code as ISO 3166-1
- */
-- (NSString *)isoCountryCode {
+- (NSString *)countryCode {
     
     @try {
         

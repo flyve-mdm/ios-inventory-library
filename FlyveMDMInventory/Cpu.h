@@ -72,4 +72,25 @@
  */
 - (nullable NSString *)busFrequency;
 
+/**
+ Get L1 I cache
+ 
+ - returns: L1 I cache
+ */
+- (nullable NSString *)l1icache;
+
+/**
+ Get L1 D cache
+ 
+ - returns: L1 D cache
+ */
+- (nullable NSString *)l1dcache;
+
+/**
+ Get L2 cache
+ 
+ - returns: L2 cache
+ */
+- (nullable NSString *)l2cache;
+
 @end
