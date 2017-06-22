@@ -47,25 +47,12 @@
 - (nullable NSString *)name;
 
 /**
- Get containing the name of the carrier country
+ Get containing the name of the carrier country code
  
- - returns: Carrier Country
+ - returns: Carrier Country Code
  */
-- (nullable NSString *)country;
+- (nullable NSString *)countryCode;
 
-/**
- Get containing the carrier mobile country code
- 
- - returns: Carrier Mobile Country Code
- */
-- (nullable NSString *)mobileCountryCode;
-
-/**
- Get country code for the subscriber's cellular service provider, represented as an ISO 3166-1
- 
- - returns: Country Code as ISO 3166-1
- */
-- (nullable NSString *)isoCountryCode;
 
 // Carrier Mobile Network Code
 /**
