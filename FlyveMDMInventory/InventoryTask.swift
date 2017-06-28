@@ -47,9 +47,9 @@ public class InventoryTask {
      - parameter versionClient: Cliente app identifier
      - returns: completion: (_ result: String) -> Void The XML String
      */
-    public func execute(_ versionClient: String, completion: (_ result: String) -> Void) {
+    public func execute(_ versionClient: String, tag: String = "", completion: (_ result: String) -> Void) {
 
-        completion(self.createXML(versionClient))
+        completion(self.createXML(versionClient, tag: tag))
     }
     
     /**
@@ -58,7 +58,7 @@ public class InventoryTask {
      - parameter versionClient: Cliente app identifier
      - returns: The XML String
      */
-    private func createXML(_ versionClient: String, tag: String = "") -> String {
+    private func createXML(_ versionClient: String, tag: String) -> String {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd H:mm:ss"
@@ -79,7 +79,7 @@ public class InventoryTask {
                         ) +
                         createElement(tag: "ACCOUNTINFO", value:
                             createElement(tag: "KEYNAME", value: "TAG") +
-                            createElement(tag: "KEYVALUE", value: "\(tag)")
+                            createElement(tag: "KEYVALUE", value: "\(tag != "" ? tag : "N/A" )")
                         ) +
                         createElement(tag: "BIOS", value:
                             createElement(tag: "BMANUFACTURER", value: "\(hardware.gpuVendor() ?? "not available")") +
