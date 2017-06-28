@@ -87,7 +87,7 @@ public class InventoryTask {
                             createElement(tag: "SMODEL", value: "\(hardware.model() ?? "not available")")
                         ) +
                         createElement(tag: "HARDWARE", value:
-                            createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
+                            createElement(tag: "NAME", value: "\(hardware.model() ?? "not available")") +
                             createElement(tag: "TYPE", value: "\(hardware.identifier() ?? "not available")") +
                             createElement(tag: "OSNAME", value: "\(os.name() ?? "not available")") +
                             createElement(tag: "OSVERSION", value: "\(os.version() ?? "not available")") +
