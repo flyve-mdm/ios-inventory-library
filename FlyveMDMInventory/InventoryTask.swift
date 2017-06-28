@@ -58,7 +58,7 @@ public class InventoryTask {
      - parameter versionClient: Cliente app identifier
      - returns: The XML String
      */
-    private func createXML(_ versionClient: String) -> String {
+    private func createXML(_ versionClient: String, tag: String = "") -> String {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd H:mm:ss"
@@ -76,6 +76,10 @@ public class InventoryTask {
                         createElement(tag: "ACCESSLOG", value:
                             createElement(tag: "LOGDATE", value: "\(dateLog)") +
                             createElement(tag: "USERID", value: "N/A")
+                        ) +
+                        createElement(tag: "ACCOUNTINFO", value:
+                            createElement(tag: "KEYNAME", value: "TAG") +
+                            createElement(tag: "KEYVALUE", value: "\(tag)")
                         ) +
                         createElement(tag: "BIOS", value:
                             createElement(tag: "BMANUFACTURER", value: "\(hardware.gpuVendor() ?? "not available")") +
