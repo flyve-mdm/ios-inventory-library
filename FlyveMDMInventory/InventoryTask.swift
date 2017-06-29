@@ -47,9 +47,9 @@ public class InventoryTask {
      - parameter versionClient: Cliente app identifier
      - returns: completion: (_ result: String) -> Void The XML String
      */
-    public func execute(_ versionClient: String, completion: (_ result: String) -> Void) {
+    public func execute(_ versionClient: String, tag: String = "", completion: (_ result: String) -> Void) {
 
-        completion(self.createXML(versionClient))
+        completion(self.createXML(versionClient, tag: tag))
     }
     
     /**
@@ -58,7 +58,7 @@ public class InventoryTask {
      - parameter versionClient: Cliente app identifier
      - returns: The XML String
      */
-    private func createXML(_ versionClient: String) -> String {
+    private func createXML(_ versionClient: String, tag: String) -> String {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd H:mm:ss"
@@ -77,11 +77,17 @@ public class InventoryTask {
                             createElement(tag: "LOGDATE", value: "\(dateLog)") +
                             createElement(tag: "USERID", value: "N/A")
                         ) +
+                        createElement(tag: "ACCOUNTINFO", value:
+                            createElement(tag: "KEYNAME", value: "TAG") +
+                            createElement(tag: "KEYVALUE", value: "\(tag != "" ? tag : "N/A" )")
+                        ) +
                         createElement(tag: "BIOS", value:
-                            createElement(tag: "SMODEL", value: "\(os.kernelName() ?? "not available")")
+                            createElement(tag: "BMANUFACTURER", value: "\(hardware.gpuVendor() ?? "not available")") +
+                            createElement(tag: "MMODEL", value: "\(hardware.identifier() ?? "not available")") +
+                            createElement(tag: "SMODEL", value: "\(hardware.model() ?? "not available")")
                         ) +
                         createElement(tag: "HARDWARE", value:
-                            createElement(tag: "NAME", value: "\(hardware.name() ?? "not available")") +
+                            createElement(tag: "NAME", value: "\(hardware.model() ?? "not available")") +
                             createElement(tag: "TYPE", value: "\(hardware.identifier() ?? "not available")") +
                             createElement(tag: "OSNAME", value: "\(os.name() ?? "not available")") +
                             createElement(tag: "OSVERSION", value: "\(os.version() ?? "not available")") +
@@ -98,10 +104,12 @@ public class InventoryTask {
                             createElement(tag: "FULL_NAME", value: "\(os.fullName() ?? "not available")")
                         ) +
                         createElement(tag: "CPUS", value:
+                            createElement(tag: "NAME", value: "\(hardware.archName() ?? "not available")") +
+                            createElement(tag: "MANUFACTURER", value: "\(hardware.gpuVendor() ?? "not available")") +
                             createElement(tag: "CACHE", value: "\(cpu.l1icache() ?? "not available")") +
                             createElement(tag: "CORE", value: "\(cpu.physicalCpu() ?? "not available")") +
                             createElement(tag: "SPEED", value: "\(cpu.frequency() ?? "not available")") +
-                            createElement(tag: "ARCH", value: "\(hardware.archName() ?? "not available")")
+                            createElement(tag: "THREAD", value: "\(cpu.logicalCpu() ?? "not available")")
                         ) + "\(storage.partitions() ?? "")" +
                         createElement(tag: "MEMORIES", value:
                             createElement(tag: "CAPACITY", value: "\(memory.total())")
