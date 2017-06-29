@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/flyve-mdm/flyve-mdm-web-ui/compare/1.0.0...v1.1.0) (2017-06-29)
+
+
+### Features
+
+* **spec:** add new elements  ([#32](https://github.com/flyve-mdm/flyve-mdm-web-ui/issues/32)) ([68475a7](https://github.com/flyve-mdm/flyve-mdm-web-ui/commit/68475a7))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2017-06-22)
 

@@ -1,46 +1,46 @@
 {
-    "name": "@teclib/flyve-mdm-ios-inventory",
-    "version": "1.0.0",
-    "description": "Inventory client library written in Swift for developing applications on iOS",
-    "homepage": "https://flyve-mdm.com/",
-    "devDependencies": {
-        "standard-version": "^4.2.0"
+  "name": "@teclib/flyve-mdm-ios-inventory",
+  "version": "1.1.0",
+  "description": "Inventory client library written in Swift for developing applications on iOS",
+  "homepage": "https://flyve-mdm.com/",
+  "devDependencies": {
+    "standard-version": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "release": "standard-version --message 'chore(release): bump to %s and new CHANGELOG'"
+  },
+  "keywords": [
+    "flyve",
+    "uhuru",
+    "mdm",
+    "mobile",
+    "device",
+    "management"
+  ],
+  "authors": [
+    {
+      "name": "Hector Rondon",
+      "email": "hrondon@teclib.com"
     },
-    "engines": {
-        "node": ">=0.10.0"
-    },
-    "scripts": {
-        "release": "standard-version --message 'chore(release): bump to %s and new CHANGELOG'"
-    },
-    "keywords": [
-        "flyve",
-        "uhuru",
-        "mdm",
-        "mobile",
-        "device",
-        "management"
-    ],
-    "authors": [
-        {
-            "name": "Hector Rondon",
-            "email": "hrondon@teclib.com"
-        },
-        {
-            "name": "Alexander Salas Bastidas",
-            "email": "asalas@teclib.com"
-        }
-    ],
-    "license": "AGPL-3.0",
-    "ignore": [
-        "**/.*"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/flyve-mdm/flyve-mdm-web-ui.git"
-    },
-    "bugs": {
-        "url": "https://github.com/flyve-mdm/flyve-mdm-web-ui/issues"
-    },
-    "private": true,
-    "dependencies": {}
+    {
+      "name": "Alexander Salas Bastidas",
+      "email": "asalas@teclib.com"
+    }
+  ],
+  "license": "AGPL-3.0",
+  "ignore": [
+    "**/.*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyve-mdm/flyve-mdm-web-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flyve-mdm/flyve-mdm-web-ui/issues"
+  },
+  "private": true,
+  "dependencies": {}
 }
