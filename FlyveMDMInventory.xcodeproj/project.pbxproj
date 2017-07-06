@@ -13,6 +13,7 @@
 		0A12FD461EF01847006B5B6E /* Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A12FD441EF01847006B5B6E /* Hardware.m */; };
 		0A2B26131F0E8DBB001497E7 /* MemoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B26121F0E8DBB001497E7 /* MemoryTest.swift */; };
 		0A2B26151F0E9154001497E7 /* StorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B26141F0E9154001497E7 /* StorageTest.swift */; };
+		0A2B26171F0E93CF001497E7 /* HardwareTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B26161F0E93CF001497E7 /* HardwareTest.swift */; };
 		0A3BCD301EF317B4008EEC9B /* OperatingSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3BCD2E1EF317B4008EEC9B /* OperatingSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3BCD311EF317B4008EEC9B /* OperatingSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */; };
 		0A49CF951EF09AF0006B353E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A49CF931EF09AF0006B353E /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,6 +49,7 @@
 		0A12FD441EF01847006B5B6E /* Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hardware.m; sourceTree = "<group>"; };
 		0A2B26121F0E8DBB001497E7 /* MemoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryTest.swift; sourceTree = "<group>"; };
 		0A2B26141F0E9154001497E7 /* StorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageTest.swift; sourceTree = "<group>"; };
+		0A2B26161F0E93CF001497E7 /* HardwareTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardwareTest.swift; sourceTree = "<group>"; };
 		0A3BCD2E1EF317B4008EEC9B /* OperatingSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatingSystem.h; sourceTree = "<group>"; };
 		0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatingSystem.m; sourceTree = "<group>"; };
 		0A49CF931EF09AF0006B353E /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */,
 				0A2B26121F0E8DBB001497E7 /* MemoryTest.swift */,
 				0A2B26141F0E9154001497E7 /* StorageTest.swift */,
+				0A2B26161F0E93CF001497E7 /* HardwareTest.swift */,
 				0AA4CCEF1EE70BD400E86C24 /* Info.plist */,
 			);
 			path = FlyveMDMInventoryTests;
@@ -283,6 +286,7 @@
 				0A2B26131F0E8DBB001497E7 /* MemoryTest.swift in Sources */,
 				0AA4CCEE1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift in Sources */,
 				0A2B26151F0E9154001497E7 /* StorageTest.swift in Sources */,
+				0A2B26171F0E93CF001497E7 /* HardwareTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
