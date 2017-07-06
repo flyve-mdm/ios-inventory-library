@@ -5,6 +5,7 @@ xcode_scheme: FlyveMDMInventory
 
 script:
 - xcodebuild clean build -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory
+- xcodebuild test -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory -destination 'name=iPhone 6'
 
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
