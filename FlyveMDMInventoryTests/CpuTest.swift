@@ -39,9 +39,11 @@ class CpuTest: XCTestCase {
         XCTAssertNotNil(cpu.logicalCpu(), "Number logical of cpu not valid")
     }
     
+#if TARGET_IPHONE
     func testGetFrequency() {
         XCTAssertNotNil(cpu.frequency(), "CPU frequency not valid")
     }
+#endif
     
     func testGetBusFrequency() {
         XCTAssertNotNil(cpu.busFrequency(), "CPU bus frequency not valid")
