@@ -16,6 +16,7 @@
 		0A2B26171F0E93CF001497E7 /* HardwareTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B26161F0E93CF001497E7 /* HardwareTest.swift */; };
 		0A2B26191F0E9758001497E7 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B26181F0E9758001497E7 /* NetworkTest.swift */; };
 		0A2B261B1F0EA44A001497E7 /* BatteryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B261A1F0EA44A001497E7 /* BatteryTest.swift */; };
+		0A2B261D1F0EA5B7001497E7 /* CarrierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B261C1F0EA5B7001497E7 /* CarrierTest.swift */; };
 		0A3BCD301EF317B4008EEC9B /* OperatingSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3BCD2E1EF317B4008EEC9B /* OperatingSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3BCD311EF317B4008EEC9B /* OperatingSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */; };
 		0A49CF951EF09AF0006B353E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A49CF931EF09AF0006B353E /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +55,7 @@
 		0A2B26161F0E93CF001497E7 /* HardwareTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardwareTest.swift; sourceTree = "<group>"; };
 		0A2B26181F0E9758001497E7 /* NetworkTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 		0A2B261A1F0EA44A001497E7 /* BatteryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryTest.swift; sourceTree = "<group>"; };
+		0A2B261C1F0EA5B7001497E7 /* CarrierTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierTest.swift; sourceTree = "<group>"; };
 		0A3BCD2E1EF317B4008EEC9B /* OperatingSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatingSystem.h; sourceTree = "<group>"; };
 		0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatingSystem.m; sourceTree = "<group>"; };
 		0A49CF931EF09AF0006B353E /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				0A2B26181F0E9758001497E7 /* NetworkTest.swift */,
 				0A2B261A1F0EA44A001497E7 /* BatteryTest.swift */,
 				0AA4CCEF1EE70BD400E86C24 /* Info.plist */,
+				0A2B261C1F0EA5B7001497E7 /* CarrierTest.swift */,
 			);
 			path = FlyveMDMInventoryTests;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2B261D1F0EA5B7001497E7 /* CarrierTest.swift in Sources */,
 				0A2B26131F0E8DBB001497E7 /* MemoryTest.swift in Sources */,
 				0A2B261B1F0EA44A001497E7 /* BatteryTest.swift in Sources */,
 				0A2B26191F0E9758001497E7 /* NetworkTest.swift in Sources */,
