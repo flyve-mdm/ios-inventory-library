@@ -1,0 +1,4 @@
+disabled_rules: # rule identifiers to exclude from running
+  - function_body_length
+  - line_length
+  - identifier_name
