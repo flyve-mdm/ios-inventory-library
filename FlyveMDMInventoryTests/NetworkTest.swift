@@ -28,6 +28,8 @@ class NetworkTest: XCTestCase {
         XCTAssertNotNil(network.type(), "Network type not valid")
     }
     
+#if TARGET_IPHONE
+    
     func testGetSsid() {
         
         XCTAssertNotNil(network.ssid(), "Network ssid not valid")
@@ -47,6 +49,8 @@ class NetworkTest: XCTestCase {
         
         XCTAssertNotNil(network.broadcastAddress(), "Network broadcast address not valid")
     }
+    
+#endif
     
     func testGetMacAddress() {
         
