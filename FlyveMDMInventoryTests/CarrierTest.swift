@@ -23,6 +23,7 @@ class CarrierTest: XCTestCase {
         super.tearDown()
     }
     
+#if TARGET_IPHONE
     func testGetRadio() {
         XCTAssertNotNil(carrier.radio(), "radio access technology not valid")
     }
@@ -42,4 +43,5 @@ class CarrierTest: XCTestCase {
     func testGetIsAllowsVOIP() {
         XCTAssertNotNil(carrier.isAllowsVOIP(), "Carrier Allows VOIP not valid")
     }
+#endif
 }
