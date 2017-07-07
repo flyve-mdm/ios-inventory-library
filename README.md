@@ -54,6 +54,10 @@ Build with Xcode 8.3.2 / Swift 3.1
 
 ### CocoaPods
 
+> Less Hassle, More OSS
+
+<https://cocoapods.org/pods/FlyveMDMInventory>
+
 Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podfile:
 
 ````ruby
