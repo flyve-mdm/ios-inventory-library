@@ -36,10 +36,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flyve-mdm/flyve-mdm-web-ui.git"
+    "url": "git+https://github.com/flyve-mdm/flyve-mdm-ios-inventory.git"
   },
   "bugs": {
-    "url": "https://github.com/flyve-mdm/flyve-mdm-web-ui/issues"
+    "url": "https://github.com/flyve-mdm/flyve-mdm-ios-inventory/issues"
   },
   "private": true,
   "dependencies": {}
