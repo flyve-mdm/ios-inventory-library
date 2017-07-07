@@ -12,6 +12,7 @@
   "scripts": {
     "release": "standard-version --message 'chore(release): bump to %s and new CHANGELOG'"
   },
+  "source_files": "FlyveMDMInventory/*.{swift,h,m}",
   "keywords": [
     "flyve",
     "uhuru",
@@ -30,10 +31,22 @@
       "email": "asalas@teclib.com"
     }
   ],
+  "social_media_url": "https://twitter.com/FlyveMDM",
+  "platforms": {
+    "ios": "9.3"
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "3"
+  },
+  "pushed_with_swift_version": "3.0",
   "license": "AGPL-3.0",
   "ignore": [
     "**/.*"
   ],
+  "source": {
+    "git": "https://github.com/flyve-mdm/flyve-mdm-ios-inventory.git",
+    "tag": "1.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flyve-mdm/flyve-mdm-ios-inventory.git"
