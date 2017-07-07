@@ -107,13 +107,14 @@ It's easy to implement in your code
 ```swift
 import FlyveMDMInventory
 
-FlyveMDMInventory.create("Agent_v1.0").responseXML { result in
-    if let XML = result {
-        print("XML: \(XML)")
-    }
+let inventoryTask = InventoryTask()
+inventoryTask.execute("Agent_v1.0", tag:"1.0") { result in
+    print(result)
 }
 
 ```
+
+** _Tag is optional_
 
 ## Documentation
 
