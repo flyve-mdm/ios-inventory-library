@@ -1,6 +1,6 @@
 {
   "name": "@teclib/flyve-mdm-ios-inventory",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Inventory client library written in Swift for developing applications on iOS",
   "homepage": "https://flyve-mdm.com/",
   "devDependencies": {
