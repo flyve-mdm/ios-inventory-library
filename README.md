@@ -1,12 +1,10 @@
-<img style="width:100%;" src="https://user-images.githubusercontent.com/663460/26935464-54267e9c-4c6c-11e7-86df-8cfa6658133e.png">
+# Inventory Library for iOS
 
-# [Flyve MDM](https://flyve-mdm.com)
+![Flyve MDM banner](https://user-images.githubusercontent.com/663460/26935464-54267e9c-4c6c-11e7-86df-8cfa6658133e.png)
 
 Flyve MDM is a mobile device management software that enables you to secure and manage all the mobile devices of your business via a unique web-based console (MDM).
 
 To get started, check out <https://flyve-mdm.com/>!
-
-
 
 ## Table of contents
 
@@ -14,8 +12,9 @@ To get started, check out <https://flyve-mdm.com/>!
 * [Build Status](#build-status)
 * [Installation](#installation)
 * [Code Example](#code-example)
+* [Documentation](#documentation)
 * [Contributors](#contributors)
-* [License](#license)
+* [Copying](#copying)
 
 ## Synopsis
 
@@ -59,34 +58,40 @@ Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podf
 
 ````ruby
 use_frameworks! # Add this if you are targeting iOS 8+ or using Swift
-pod 'FlyveMDMInventory'  
+pod 'FlyveMDMInventory'
 ````
+
 Then, run the following command:
 
-```bash
-$ pod install
+```console
+pod install
 ```
 
 ### Carthage
 
 Install using [Carthage](https://github.com/Carthage/Carthage) by adding the following lines to your Cartfile:
 
-````
+```console
 github "flyve-mdm/flyve-mdm-ios-inventory" "master"
-````
+```
+
 Then, run the following command:
 
-```bash
-$ carthage update --platform iOS
+```console
+carthage update --platform iOS
 ```
 
-- On your application targets “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk.
+* On your application targets “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk.
 
-- On your application targets “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script with the following contents:
-`/usr/local/bin/carthage copy-frameworks`
+* On your application targets “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script with the following contents:
 
-- and add the paths to the frameworks you want to use under “Input Files”, e.g.:
+```console
+/usr/local/bin/carthage copy-frameworks
 ```
+
+* And add the paths to the frameworks you want to use under “Input Files”, e.g.:
+
+```console
 $(SRCROOT)/Carthage/Build/iOS/FlyveMDMInventory.framework
 
 ```
@@ -106,13 +111,18 @@ FlyveMDMInventory.create("Agent_v1.0").responseXML { result in
 
 ```
 
+## Documentation
+
+We share long-form content about the project in the [wiki](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/wiki).
+
 ## Contributors
 
 * [@hectorerb](https://github.com/hectorerb)
-* [@ajsb85 ](https://github.com/ajsb85)
+* [@ajsb85](https://github.com/ajsb85)
 
-## License
+## Copying
 
-The library is a Free Software under GPLv3 license.
-
-![GPLv3](https://www.gnu.org/graphics/gplv3-88x31.png "GPLv3")
+* **Name**: [Flyve MDM](https://flyve-mdm.com/) is a registered trademark of [Teclib'](http://www.teclib-edition.com/en/).
+* **Code**: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License ([GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)).
+* **Documentation**: released under Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
