@@ -60,7 +60,7 @@ public class InventoryTask {
      */
     private func createXML(_ versionClient: String, tag: String) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd H:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
         let dateLog = dateFormatter.string(from: Date())
         return "\(createDTD())" +
             createElement(
