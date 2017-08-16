@@ -262,18 +262,10 @@
         NSString *formattedBytes = nil;
         
         double numberBytes = 1.0 * space;
-        double totalGB = numberBytes / GB;
         double totalMB = numberBytes / MB;
         
-
-        if (totalGB >= 1.0) {
-            formattedBytes = [NSString stringWithFormat:@"%.2f GB", totalGB];
-        } else if (totalMB >= 1)
-            formattedBytes = [NSString stringWithFormat:@"%.2f MB", totalMB];
-        else {
-            formattedBytes = [self memoryToString:space];
-            formattedBytes = [formattedBytes stringByAppendingString:@" bytes"];
-        }
+        // show size in MB
+        formattedBytes = [NSString stringWithFormat:@"%.2f", totalMB];
         
         // Check for errors
         if (formattedBytes == nil || formattedBytes.length <= 0) {
