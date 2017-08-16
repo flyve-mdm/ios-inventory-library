@@ -334,7 +334,7 @@
         
         for(i = 0; i < num_of_mnts; i++) {
             
-            [partitionsDisk appendString:[NSString stringWithFormat:@"<DRIVES><LABEL>%s</LABEL><VOLUMN>%s</VOLUMN></DRIVES>", mntbufp[i].f_mntfromname, mntbufp[i].f_mntonname]];
+            [partitionsDisk appendString:[NSString stringWithFormat:@"<DRIVES><LABEL>%s</LABEL><VOLUMN>%s</VOLUMN><TOTAL>%@</TOTAL><FREE>%@</FREE></DRIVES>", mntbufp[i].f_mntfromname, mntbufp[i].f_mntonname, [self total], [self free:NO] ]];
         }
         
         return partitionsDisk;
