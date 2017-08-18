@@ -35,20 +35,13 @@ You can find more information here:
 **What's included?**
 
 * Hardware
-* Bios
 * Memory
-* Inputs
-* Sensors
 * Drives
 * Cpus
 * Simcards
 * Videos
 * Cameras
 * Networks
-* Envs
-* Jvm
-* Softwares
-* Usb
 * Battery
 
 ## Build Status
