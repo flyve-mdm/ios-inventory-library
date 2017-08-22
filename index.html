@@ -384,25 +384,33 @@ inventoryTask.execute("Agent_v1.0", tag:"1.0") { result in
             CocoaPods
           </h3>
           <div class="type-sh3">
-            Install using CocoaPods by adding this line to your Podfile:
+            You want to add pod <code>"FlyveMDMInventory", "~> 1.2"</code> similar to the following to your Podfile:
           </div>
 
 {% highlight swift %}
-use_frameworks! # Add this if you are targeting iOS 8+ or using Swift
-pod "FlyveMDMInventory"
+target "MyApp" do
+  pod "FlyveMDMInventory", "~> 1.2"
+end
 {% endhighlight %}
 
           <div class="type-sh3">
-            Then, run the following command:
+            Then run a <code>pod install</code> inside your terminal, or from CocoaPods.app.
           </div>
 
+          <hr/>
+
+          <div class="type-sh3">
+            Alternatively to give it a test run, run the command:
+          </div>
+
+          
 {% highlight swift %}
-pod install
+pod try FlyveMDMInventory
 {% endhighlight %}
 
           <div class="btn-group">
-            <a class="btn btn-primary" href="https://cocoapods.org/pods/FlyveMDMInventory">CocoaPods repository</a>
-            <!--<a class="btn btn-secondary" href="https://cocoapods.org/">JCenter</a>-->
+            <a class="btn btn-primary" href="https://cocoapods.org/pods/FlyveMDMInventory">Page on CocoaPods.org</a>
+            <a class="btn btn-secondary" href="http://cocoadocs.org/docsets/FlyveMDMInventory/">Documentation</a>
           </div>
         </div>
       </div>

@@ -53,7 +53,8 @@
 
   <body>
 
-    <header class="site-header" role="banner">
+
+      <header class="site-header" role="banner">
 
   <div class="wrapper">
   
@@ -195,7 +196,7 @@
     </div>
 </div>
 
-        <div class="page-header">
+      <div class="page-header">
     <div class="container">
         <div class="row">
             <div class="col-xs-24 col-sm-16">
@@ -321,9 +322,6 @@
         </div>
         <div class="collapse" id="list-item-bios">
           <div class="row">
-            <div class="col-md-24">
-              - GPU Vendor name
-            </div>
             <div class="col-md-24">
               - GPU Vendor name
             </div>
@@ -470,7 +468,7 @@
 
           <figure class="media row">
             <div class="media-img ratio-movie">
-                <img src="images/IPhone5.png" alt="" />
+                <img src="/flyve-mdm-ios-inventory/images/IPhone5.png" alt="" />
             </div>
             <a class="btn btn-default center-block" href="/flyve-mdm-ios-inventory/assets/blackBerry.xml" role="button" Download>Download</a>
             <figcaption class="media-caption">
@@ -489,12 +487,12 @@
 
           <figure class="media row">
             <div class="media-img ratio-movie">
-                <img src="images/ipad.png" alt="" />
+                <img src="/flyve-mdm-ios-inventory/images/ipad.png" alt="" />
             </div>
             <a class="btn btn-default center-block" href="/flyve-mdm-ios-inventory/assets/xperia.xml" role="button" Download>Download</a>
             <figcaption class="media-caption">
               <h4 class="media-header">
-                iPad
+                ipad
               </h4>
               <div class="media-subheader">
                  Is a line of tablet computers designed, developed and marketed by Apple Inc. which run the iOS mobile operating system. 
@@ -509,7 +507,7 @@
 
           <figure class="media row">
             <div class="media-img ratio-movie" >
-                <img src="images/ipodTouch.png" alt="" />
+                <img src="/flyve-mdm-ios-inventory/images/ipodTouch.png" alt="" />
             </div>
             <a class="btn btn-default center-block" href="/flyve-mdm-ios-inventory/assets/lenovo.xml" role="button" Download>Download</a>
             <figcaption class="media-caption">
@@ -591,21 +589,29 @@
             CocoaPods
           </h3>
           <div class="type-sh3">
-            Install using CocoaPods by adding this line to your Podfile:
+            You want to add pod <code>"FlyveMDMInventory", "~> 1.2"</code> similar to the following to your Podfile:
           </div>
 
-<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">use_frameworks</span><span class="o">!</span> <span class="err">#</span> <span class="kt">Add</span> <span class="n">this</span> <span class="k">if</span> <span class="n">you</span> <span class="n">are</span> <span class="n">targeting</span> <span class="n">iOS</span> <span class="mi">8</span><span class="o">+</span> <span class="n">or</span> <span class="n">using</span> <span class="kt">Swift</span>
-<span class="n">pod</span> <span class="s">"FlyveMDMInventory"</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">target</span> <span class="s">"MyApp"</span> <span class="k">do</span>
+  <span class="n">pod</span> <span class="s">"FlyveMDMInventory"</span><span class="p">,</span> <span class="s">"~&gt; 1.2"</span>
+<span class="n">end</span></code></pre></figure>
 
           <div class="type-sh3">
-            Then, run the following command:
+            Then run a <code>pod install</code> inside your terminal, or from CocoaPods.app.
           </div>
 
-<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">pod</span> <span class="n">install</span></code></pre></figure>
+          <hr/>
+
+          <div class="type-sh3">
+            Alternatively to give it a test run, run the command:
+          </div>
+
+          
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="n">pod</span> <span class="k">try</span> <span class="kt">FlyveMDMInventory</span></code></pre></figure>
 
           <div class="btn-group">
-            <a class="btn btn-primary" href="https://cocoapods.org/pods/FlyveMDMInventory">CocoaPods repository</a>
-            <!--<a class="btn btn-secondary" href="https://cocoapods.org/">JCenter</a>-->
+            <a class="btn btn-primary" href="https://cocoapods.org/pods/FlyveMDMInventory">Page on CocoaPods.org</a>
+            <a class="btn btn-secondary" href="http://cocoadocs.org/docsets/FlyveMDMInventory/">Documentation</a>
           </div>
         </div>
       </div>
@@ -668,6 +674,7 @@
           <span class="sr-only">Back to top</span>
       </a>
       <img src="/flyve-mdm-ios-inventory/images/logo2.png" class="logo hide">
+
       <footer class="bg-info">
     <div class="container">
         A solution powered by 
@@ -675,8 +682,11 @@
             <img class="logo" src="http://localhost:4000/flyve-mdm-ios-inventory/images/logo-teclib.png" alt="teclib">
         </a>
     </div>
-</footer>
+</footer>   
+
+
   </body>
+  
   <script src="/flyve-mdm-ios-inventory/js/bootstrap.min.js"></script>
   <script src="/flyve-mdm-ios-inventory/js/app.js"></script>
 

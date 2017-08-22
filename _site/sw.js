@@ -1,8 +1,8 @@
 self.addEventListener('install', function(e) { 
   
-  {% assign name = site.github.project_title | replace: "flyve-mdm-", "" %} 
+   
     
-  var CACHE_NAME = '{{name}}-version-1'
+  var CACHE_NAME = 'ios-inventory-version-3'
 
   caches.keys().then(function(cacheNames) {
     return Promise.all(
