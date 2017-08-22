@@ -1,5 +1,13 @@
 .screenshots {
     a img {
-        width: 180px;
+        width: 240px;
     }  
+    .element {
+        display: flex;
+        justify-content: center; 
+    }
+    .screen {
+        display: inline-block;
+        margin: auto;
+    }
 }
