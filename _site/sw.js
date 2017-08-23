@@ -2,7 +2,7 @@ self.addEventListener('install', function(e) {
   
    
     
-  var CACHE_NAME = 'ios-inventory-version-5'
+  var CACHE_NAME = 'ios-inventory-version-7'
 
   caches.keys().then(function(cacheNames) {
     return Promise.all(
