@@ -2,7 +2,7 @@ self.addEventListener('install', function(e) {
   
    
     
-  var CACHE_NAME = 'ios-inventory-version-7'
+  var CACHE_NAME = 'ios-inventory-version-8'
 
   caches.keys().then(function(cacheNames) {
     return Promise.all(
@@ -27,7 +27,7 @@ self.addEventListener('install', function(e) {
         '/flyve-mdm-ios-inventory/images/typo.png',
         '/flyve-mdm-ios-inventory/images/ipodTouch.png',
         '/flyve-mdm-ios-inventory/images/ipad.png',
-        '/flyve-mdm-ios-inventory/images/IPhone5.png',
+        '/flyve-mdm-ios-inventory/images/IPhone6.png',
         '/flyve-mdm-ios-inventory/images/logo.png',
         '/flyve-mdm-ios-inventory/js/app.js',
         '/flyve-mdm-ios-inventory/js/jquery.min.js',
