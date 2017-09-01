@@ -4,8 +4,8 @@ xcode_project: FlyveMDMInventory.xcodeproj
 xcode_scheme: FlyveMDMInventory
 
 script:
-- xcodebuild clean build -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory
-- xcodebuild test -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory -destination 'name=iPhone 6'
+- xcodebuild clean build -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- xcodebuild test -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination 'name=iPhone 6'
 
 deploy:
   provider: script
