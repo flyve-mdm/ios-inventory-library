@@ -268,24 +268,48 @@
     return [NSString stringWithFormat:@"%dx%d", format.highResolutionStillImageDimensions.width, format.highResolutionStillImageDimensions.height];
 }
 
-- (AVCaptureDevice *)cameraWithPosition:(AVCaptureDevicePosition) position
-{
-    NSArray *captureDeviceType = @[AVCaptureDeviceTypeBuiltInWideAngleCamera,
-                                   AVCaptureDeviceTypeBuiltInTelephotoCamera,
-                                   AVCaptureDeviceTypeBuiltInDualCamera];
-    
-    AVCaptureDeviceDiscoverySession *captureDevice = [AVCaptureDeviceDiscoverySession
-                                                      discoverySessionWithDeviceTypes:captureDeviceType
-                                                      mediaType:AVMediaTypeVideo
-                                                      position:AVCaptureDevicePositionUnspecified];
-    
-    NSArray *devices = captureDevice.devices;
+- (AVCaptureDevice *)cameraWithPosition:(AVCaptureDevicePosition) position {
 
-    for (AVCaptureDevice *device in devices) {
-        if ([device position] == position) {
-            return device;
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_10_2
+
+    @try {
+        NSArray *captureDeviceType = @[AVCaptureDeviceTypeBuiltInWideAngleCamera,
+                                       AVCaptureDeviceTypeBuiltInTelephotoCamera,
+                                       AVCaptureDeviceTypeBuiltInDualCamera];
+        AVCaptureDeviceDiscoverySession *captureDevice = [AVCaptureDeviceDiscoverySession
+                                                          discoverySessionWithDeviceTypes:captureDeviceType
+                                                          mediaType:AVMediaTypeVideo
+                                                          position:AVCaptureDevicePositionUnspecified];
+        
+        NSArray *devices = captureDevice.devices;
+        
+        for (AVCaptureDevice *device in devices) {
+            if ([device position] == position) {
+                return device;
+            }
         }
+    } @catch (NSException *exception) {
+        // Error
+        return nil;
     }
+
+#else
+    
+    @try {
+        NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+        for (AVCaptureDevice *device in devices) {
+            if ([device position] == position) {
+                return device;
+            }
+        }
+    
+    } @catch (NSException *exception) {
+        // Error
+        return nil;
+    }
+
+#endif
+
     return nil;
 }
 
