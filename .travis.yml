@@ -2,17 +2,16 @@ language: objective-c
 osx_image: xcode8.3
 xcode_project: FlyveMDMInventory.xcodeproj
 xcode_scheme: FlyveMDMInventory
-
+install:
+  - "./ci/install.sh"
 script:
-- xcodebuild clean build -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-- xcodebuild test -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination 'name=iPhone 6'
-
-deploy:
-  provider: script
-  script: ./scripts/push.sh
-  on:
-    tags: true
-    branch: master
-
+  - "./ci/script.sh"
+after_success:
+  - "./ci/deploy.sh"
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
+env:
+  global:
+  - APPNAME="FlyveMDMInventory"
+  - GH_USER=flyve-mdm-bot
+  
