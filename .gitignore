@@ -66,4 +66,15 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
+# Node.js
+
 node_modules/
+
+# Environment Variables
+
+.env
+
+# Documentation 
+
+_docs/
+coverage/
