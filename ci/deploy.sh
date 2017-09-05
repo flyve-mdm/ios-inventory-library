@@ -117,6 +117,8 @@ elif [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; th
         export GIT_TAG=$(jq -r ".version" package.json)
         # Update CFBundleShortVersionString
         /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString ${GIT_TAG}" ${PWD}/${APPNAME}/Info.plist
+        # Increment podspec version
+        podspec-bump -i ${GIT_TAG} -w
         # Add modified and delete files
         git add -u
         # Create commit
