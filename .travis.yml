@@ -8,6 +8,11 @@ script:
 - "./ci/script.sh"
 after_success:
 - "./ci/deploy.sh"
+deploy:
+  provider: script
+  script: ./ci/push.sh
+  on:
+    tags: true
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
 env:
