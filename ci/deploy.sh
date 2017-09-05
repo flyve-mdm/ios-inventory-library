@@ -67,8 +67,8 @@ if [[ "$TRAVIS_BRANCH" == "develop" && "$TRAVIS_PULL_REQUEST" == "false" ]]; the
         # Create commit, NOTICE: this commit is not sent
         git commit -m "ci(docs): generate **docs** for version ${GIT_TAG}"
 
-        # Run test
-        xcodebuild test -project ${APPNAME}.xcodeproj -scheme $APPNAME CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination 'name=iPhone 6'
+        # Run test with fastlane
+        fastlane test
 
         # Generate code coverage reporting with xcov
         xcov \
