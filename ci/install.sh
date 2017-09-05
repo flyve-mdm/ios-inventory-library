@@ -39,5 +39,7 @@ brew install jq
 npm i -g standard-version
 # Install conventional-github-releaser scope global
 npm install -g conventional-github-releaser
+# Install podspec-bump for increment podspec version
+npm install -g podspec-bump
 # Install libs from package.json
 npm install
