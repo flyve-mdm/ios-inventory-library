@@ -27,6 +27,8 @@
 
 # Update gem
 gem update --system
+# Install fastlane last version
+gem install fastlane --no-rdoc --no-ri --no-document --quiet
 # Clean Gem
 gem cleanup
 # Install jazzy for generate documentation
