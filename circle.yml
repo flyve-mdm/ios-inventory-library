@@ -1,0 +1,6 @@
+machine:
+  xcode:
+    version: 8.3
+compile:
+  override:
+    - xcodebuild clean build -project FlyveMDMInventory.xcodeproj -scheme FlyveMDMInventory CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
