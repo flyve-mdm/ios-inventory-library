@@ -50,7 +50,7 @@ Build with Xcode 8.3.2 / Swift 3.1
 
 | **Release channel** | **Beta channel** |
 |:---:|:---:|
-| [![Build Status](https://travis-ci.org/flyve-mdm/flyve-mdm-ios-inventory.svg?branch=master)](https://travis-ci.org/flyve-mdm/flyve-mdm-ios-inventory) | [![Build Status](https://travis-ci.org/flyve-mdm/flyve-mdm-ios-inventory.svg?branch=develop)](https://travis-ci.org/flyve-mdm/flyve-mdm-ios-inventory) |
+| [![Build Status](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/master.svg?style=svg)](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/master) | [![Build Status](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/develop.svg?style=svg)](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/develop) |
 
 ## Installation
 
