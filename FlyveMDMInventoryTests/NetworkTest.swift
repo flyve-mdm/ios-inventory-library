@@ -45,6 +45,7 @@ class NetworkTest: XCTestCase {
         XCTAssertNotNil(network.localIPAddress(), "Network local IP address not valid")
     }
 
+    /// Get the broadcoast address of the network
     func testGetBroadcastAddress() {
         XCTAssertNotNil(network.broadcastAddress(), "Network broadcast address not valid")
     }
