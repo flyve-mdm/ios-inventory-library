@@ -52,6 +52,7 @@ class NetworkTest: XCTestCase {
 
 #endif
 
+    /// Get the Media Access Control (MAC) address of the network
     func testGetMacAddress() {
         XCTAssertNotNil(network.type(), "Network MAC address not valid")
     }
