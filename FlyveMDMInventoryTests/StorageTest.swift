@@ -38,6 +38,7 @@ class StorageTest: XCTestCase {
         XCTAssertNotNil(storage.used(false), "Total used disk space used not valid")
     }
 
+    /// Get the partitions storage
     func testPartitionsStorage() {
         XCTAssertNotNil(storage.partitions(), "Partitions disk not valid")
     }
