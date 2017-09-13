@@ -30,6 +30,7 @@ class NetworkTest: XCTestCase {
 
 #if TARGET_IPHONE
 
+    /// Get the Service Set Identifier (SSID) of the network
     func testGetSsid() {
         XCTAssertNotNil(network.ssid(), "Network ssid not valid")
     }
