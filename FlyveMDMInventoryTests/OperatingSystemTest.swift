@@ -43,6 +43,7 @@ class OperatingSystemTest: XCTestCase {
         XCTAssertNotNil(os.build(), "Operating system build not valid")
     }
 
+    /// Get the kernel name of the operating system
     func testGetOSKernelName() {
         XCTAssertNotNil(os.kernelName(), "Operating system kernel name not valid")
     }
