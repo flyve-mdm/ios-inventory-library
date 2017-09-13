@@ -43,6 +43,7 @@ class CarrierTest: XCTestCase {
         XCTAssertNotNil(carrier.mobileNetworkCode(), "Mobile network code not valid")
     }
 
+    /// Get if the carrier allows VOIP
     func testGetIsAllowsVOIP() {
         XCTAssertNotNil(carrier.isAllowsVOIP(), "Carrier Allows VOIP not valid")
     }
