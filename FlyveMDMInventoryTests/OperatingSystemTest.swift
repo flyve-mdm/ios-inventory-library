@@ -38,6 +38,7 @@ class OperatingSystemTest: XCTestCase {
         XCTAssertNotNil(os.version(), "Operating system version not valid")
     }
 
+    /// Get the build of the operating system
     func testGetOSBuild() {
         XCTAssertNotNil(os.build(), "Operating system build not valid")
     }
