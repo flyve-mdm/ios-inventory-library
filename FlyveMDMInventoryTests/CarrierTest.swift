@@ -24,6 +24,8 @@ class CarrierTest: XCTestCase {
     }
 
 #if TARGET_IPHONE
+
+    /// Get the radio access technology of the carrier
     func testGetRadio() {
         XCTAssertNotNil(carrier.radio(), "radio access technology not valid")
     }
