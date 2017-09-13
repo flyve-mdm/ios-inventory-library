@@ -40,6 +40,7 @@ class NetworkTest: XCTestCase {
         XCTAssertNotNil(network.bssid(), "Network basic service set identifier not valid")
     }
 
+    /// Get the local IP address of the network
     func testGetLocalIPAddress() {
         XCTAssertNotNil(network.localIPAddress(), "Network local IP address not valid")
     }
