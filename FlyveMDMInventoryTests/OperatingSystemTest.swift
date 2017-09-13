@@ -23,6 +23,7 @@ class OperatingSystemTest: XCTestCase {
         super.tearDown()
     }
 
+    /// Get the name of the operating system
     func testGetOSName() {
         XCTAssertNotNil(os.name(), "Operating system name not valid")
     }
