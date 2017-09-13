@@ -32,6 +32,7 @@ class CarrierTest: XCTestCase {
         XCTAssertNotNil(carrier.name(), "Carrier name not valid")
     }
 
+    /// Get the country code of the carrier
     func testGetCountryCode() {
         XCTAssertNotNil(carrier.countryCode(), "Carrier country code not valid")
     }
