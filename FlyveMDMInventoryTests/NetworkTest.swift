@@ -35,6 +35,7 @@ class NetworkTest: XCTestCase {
         XCTAssertNotNil(network.ssid(), "Network ssid not valid")
     }
 
+    /// Get the Basi Service Set Identifier (BSSID) of the network
     func testGetBssid() {
         XCTAssertNotNil(network.bssid(), "Network basic service set identifier not valid")
     }
