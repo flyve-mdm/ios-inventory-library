@@ -33,6 +33,7 @@ class StorageTest: XCTestCase {
         XCTAssertNotNil(storage.free(false), "Total free disk space not valid")
     }
 
+    /// Get the used space in the disk
     func testUsedStorage() {
         XCTAssertNotNil(storage.used(false), "Total used disk space used not valid")
     }
