@@ -27,6 +27,7 @@ class HardwareTest: XCTestCase {
         XCTAssertNotNil(hardware.uuid(), "Device ID not valid")
     }
 
+    /// Get the name of the device
     func testGetName() {
         XCTAssertNotNil(hardware.name(), "Device name not valid")
     }
