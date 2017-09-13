@@ -33,6 +33,7 @@ class MemoryTest: XCTestCase {
         XCTAssertNotNil(memory.free(), "Memory free not valid")
     }
 
+    /// Get the used memory
     func testUsedMemory() {
         XCTAssertNotNil(memory.used(), "Memory used not valid")
     }
