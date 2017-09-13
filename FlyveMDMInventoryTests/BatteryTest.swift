@@ -23,6 +23,7 @@ class BatteryTest: XCTestCase {
         super.tearDown()
     }
 
+    /// Get the state of the battery
     func testGetState() {
         XCTAssertNotNil(battery.state(), "Battery state not valid")
     }
