@@ -23,6 +23,7 @@ class StorageTest: XCTestCase {
         super.tearDown()
     }
 
+    /// Get the total space of the disk
     func testTotalStorage() {
         XCTAssertNotNil(storage.total(), "Total disk space not valid")
     }
