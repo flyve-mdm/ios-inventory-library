@@ -28,6 +28,7 @@ class BatteryTest: XCTestCase {
         XCTAssertNotNil(battery.state(), "Battery state not valid")
     }
 
+    /// Get the level of the battery
     func testGetLevel() {
         XCTAssertNotNil(battery.level(), "Battery level not valid")
     }
