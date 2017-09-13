@@ -38,6 +38,7 @@ class MemoryTest: XCTestCase {
         XCTAssertNotNil(memory.used(), "Memory used not valid")
     }
 
+    /// Get the active memory
     func testActiveMemory() {
         XCTAssertNotNil(memory.active(), "Memory active not valid")
     }
