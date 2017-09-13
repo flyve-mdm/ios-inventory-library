@@ -23,6 +23,7 @@ class NetworkTest: XCTestCase {
         super.tearDown()
     }
 
+    /// Get the type of the network
     func testGetType() {
         XCTAssertNotNil(network.type(), "Network type not valid")
     }
