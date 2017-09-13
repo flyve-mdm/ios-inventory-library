@@ -48,6 +48,7 @@ class OperatingSystemTest: XCTestCase {
         XCTAssertNotNil(os.kernelName(), "Operating system kernel name not valid")
     }
 
+    /// Get the kernel version of the operating system
     func testGetOSKernelVersion() {
         XCTAssertNotNil(os.kernelVersion(), "Operating system kernel version not valid")
     }
