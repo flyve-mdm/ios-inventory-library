@@ -23,6 +23,7 @@ class MemoryTest: XCTestCase {
         super.tearDown()
     }
 
+    /// Get the total memory
     func testTotalMemory() {
         XCTAssertNotNil(memory.total(), "Memory total not valid")
     }
