@@ -32,6 +32,7 @@ class HardwareTest: XCTestCase {
         XCTAssertNotNil(hardware.name(), "Device name not valid")
     }
 
+    /// Get the model of the device
     func testGetModel() {
         XCTAssertNotNil(hardware.model(), "Model of device not valid")
     }
