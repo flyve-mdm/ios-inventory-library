@@ -33,6 +33,7 @@ class OperatingSystemTest: XCTestCase {
         XCTAssertNotNil(os.fullName(), "Operating system full name not valid")
     }
 
+    /// Get the version of the operating system
     func testGetOSVersion() {
         XCTAssertNotNil(os.version(), "Operating system version not valid")
     }
