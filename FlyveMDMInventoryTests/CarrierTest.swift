@@ -28,6 +28,7 @@ class CarrierTest: XCTestCase {
         XCTAssertNotNil(carrier.radio(), "radio access technology not valid")
     }
 
+    /// Get the name of the carrier
     func testGetName() {
         XCTAssertNotNil(carrier.name(), "Carrier name not valid")
     }
