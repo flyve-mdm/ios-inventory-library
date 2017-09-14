@@ -33,6 +33,7 @@ class CpuTest: XCTestCase {
         XCTAssertNotNil(cpu.vendor(), "Vendor of cpu not valid")
     }
 
+    /// Get the number of physical CPUs
     func testGetPhysicalCpu() {
         XCTAssertNotNil(cpu.physicalCpu(), "Number of cpus physical not valid")
     }
