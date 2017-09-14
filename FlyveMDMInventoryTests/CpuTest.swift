@@ -45,6 +45,7 @@ class CpuTest: XCTestCase {
 
 #if TARGET_IPHONE
 
+    /// Get the frequency of the CPU
     func testGetFrequency() {
         XCTAssertNotNil(cpu.frequency(), "CPU frequency not valid")
     }
