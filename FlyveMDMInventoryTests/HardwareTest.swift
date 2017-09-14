@@ -52,6 +52,7 @@ class HardwareTest: XCTestCase {
         XCTAssertNotNil(hardware.osVersion(), "Operating system version of device not valid")
     }
 
+    /// Get the name of the system architecture
     func testGetArchName() {
         XCTAssertNotNil(hardware.archName(), "System architecture name of device not valid")
     }
