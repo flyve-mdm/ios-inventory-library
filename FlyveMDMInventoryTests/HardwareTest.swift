@@ -63,6 +63,7 @@ class HardwareTest: XCTestCase {
         XCTAssertNotNil(hardware.gpuVendor(), "GPU vendor of device not valid")
     }
 
+    /// Get the version of the Graphics Processing Unit (GPU)
     func testGetGPUVersion() {
         XCTAssertNotNil(hardware.gpuVersion(), "GPU version of device not valid")
     }
