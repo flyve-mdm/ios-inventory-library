@@ -42,6 +42,7 @@ class HardwareTest: XCTestCase {
         XCTAssertNotNil(hardware.identifier(), "Identifier of device not valid")
     }
 
+    /// Get the type of the operating system
     func testGetOSType() {
         XCTAssertNotNil(hardware.osType(), "Operating system type of device not valid")
     }
