@@ -65,6 +65,7 @@ class HardwareTest: XCTestCase {
         XCTAssertNotNil(hardware.gpuVersion(), "GPU version of device not valid")
     }
 
+    /// Get the resolution size of the screen
     func testGetScreenResolution() {
         XCTAssertNotNil(hardware.screenResolution(), "Screen resolution size of device not valid")
     }
