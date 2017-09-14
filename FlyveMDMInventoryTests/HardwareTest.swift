@@ -23,6 +23,7 @@ class HardwareTest: XCTestCase {
         super.tearDown()
     }
 
+    /// Get the Universally Unique Identifier (UUID) of the device
     func testGetUuid() {
         XCTAssertNotNil(hardware.uuid(), "Device ID not valid")
     }
