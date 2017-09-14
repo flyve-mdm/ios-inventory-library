@@ -62,6 +62,7 @@ class CpuTest: XCTestCase {
         XCTAssertNotNil(cpu.l1dcache(), "L1 D cache of cpu not valid")
     }
 
+    /// Get the L1 Instruction cache of the CPU
     func testGetL1ICache() {
         XCTAssertNotNil(cpu.l1icache(), "L1 I cache of cpu not valid")
     }
