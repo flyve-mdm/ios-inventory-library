@@ -38,6 +38,7 @@ class CpuTest: XCTestCase {
         XCTAssertNotNil(cpu.physicalCpu(), "Number of cpus physical not valid")
     }
 
+    /// Get the number of logical CPUs
     func testGetLogicalCpu() {
         XCTAssertNotNil(cpu.logicalCpu(), "Number logical of cpu not valid")
     }
