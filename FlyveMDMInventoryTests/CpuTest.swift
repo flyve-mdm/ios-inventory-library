@@ -52,6 +52,7 @@ class CpuTest: XCTestCase {
 
 #endif
 
+    /// Get the bus frequency of the CPU
     func testGetBusFrequency() {
         XCTAssertNotNil(cpu.busFrequency(), "CPU bus frequency not valid")
     }
