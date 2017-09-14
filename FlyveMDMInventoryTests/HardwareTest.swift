@@ -58,6 +58,7 @@ class HardwareTest: XCTestCase {
         XCTAssertNotNil(hardware.archName(), "System architecture name of device not valid")
     }
 
+    /// Get the vendor of the Graphics Processing Unit (GPU)
     func testGetGPUVendor() {
         XCTAssertNotNil(hardware.gpuVendor(), "GPU vendor of device not valid")
     }
