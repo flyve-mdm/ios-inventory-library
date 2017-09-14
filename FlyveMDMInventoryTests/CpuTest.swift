@@ -28,6 +28,7 @@ class CpuTest: XCTestCase {
         XCTAssertNotNil(cpu.branch(), "Branch of cpu not valid")
     }
 
+    /// Get the vendor of the CPU
     func testGetVendor() {
         XCTAssertNotNil(cpu.vendor(), "Vendor of cpu not valid")
     }
