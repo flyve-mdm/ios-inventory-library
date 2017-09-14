@@ -57,6 +57,7 @@ class CpuTest: XCTestCase {
         XCTAssertNotNil(cpu.busFrequency(), "CPU bus frequency not valid")
     }
 
+    /// Get the L1 Data cache of the CPU
     func testGetL1DCache() {
         XCTAssertNotNil(cpu.l1dcache(), "L1 D cache of cpu not valid")
     }
