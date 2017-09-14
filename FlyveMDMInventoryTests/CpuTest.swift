@@ -23,6 +23,7 @@ class CpuTest: XCTestCase {
         super.tearDown()
     }
 
+    /// Get the branch of the CPU
     func testGetBranch() {
         XCTAssertNotNil(cpu.branch(), "Branch of cpu not valid")
     }
