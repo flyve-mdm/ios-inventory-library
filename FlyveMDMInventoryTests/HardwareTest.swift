@@ -69,6 +69,7 @@ class HardwareTest: XCTestCase {
         XCTAssertNotNil(hardware.screenResolution(), "Screen resolution size of device not valid")
     }
 
+    /// Get the resolution size of the front camera
     func testGetFrontCamera() {
         XCTAssertNotNil(hardware.frontCamera(), "Front camera resolution size of device not valid")
     }
