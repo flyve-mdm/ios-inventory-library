@@ -11,18 +11,22 @@
 
 # This is the minimum version number required.
 # Update this, if you use features of a newer version
-fastlane_version "2.55.0"
+fastlane_version "2.56.0"
 
 default_platform :ios
 
 platform :ios do
+  $lane_active = ""
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    skip_docs
   end
 
   desc "Runs all the tests"
   lane :test do
+    $lane_active = "Test"
     scan(
+      project: "FlyveMDMInventory.xcodeproj",
       scheme: "FlyveMDMInventory",
       clean: true,
       code_coverage: true
@@ -31,26 +35,29 @@ platform :ios do
 
   desc "Run code coverage with xcov"
   lane :coverage do
+    $lane_active = "Coverage"
     xcov(
       project: "FlyveMDMInventory.xcodeproj",
       scheme: "FlyveMDMInventory",
       output_directory: "coverage",
+      html_report: false,
       json_report: true,
       only_project_targets: true
     )
+    xcov_report    
   end
 
   after_all do |lane|
     telegram(
         url_horn: ENV["TELEGRAM_WEBHOOKS"],
-        message: "Fastlane is OK"
+        message: $lane_active + " Fastlane is OK"
     )
   end
 
   error do |lane, exception|
     telegram(
         url_horn: ENV["TELEGRAM_WEBHOOKS"],
-        message: "`ERROR` Fastlane FAIL"
+        message: "`ERROR` " + $lane_active + " Fastlane FAIL"
     )
   end
 end
