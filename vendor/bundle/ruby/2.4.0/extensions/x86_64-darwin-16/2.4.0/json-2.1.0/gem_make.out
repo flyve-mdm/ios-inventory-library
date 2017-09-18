@@ -1,0 +1,13 @@
+current directory: /Users/mac2/Develop/iOS/Teclib/flyve-mdm-ios-inventory/vendor/bundle/ruby/2.4.0/gems/json-2.1.0/ext/json
+/usr/local/opt/ruby/bin/ruby -r ./siteconf20170918-3452-1um584q.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mac2/Develop/iOS/Teclib/flyve-mdm-ios-inventory/vendor/bundle/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/mac2/Develop/iOS/Teclib/flyve-mdm-ios-inventory/vendor/bundle/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/mac2/Develop/iOS/Teclib/flyve-mdm-ios-inventory/vendor/bundle/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" install
