@@ -2,15 +2,11 @@
   "name": "@teclib/flyve-mdm-ios-inventory",
   "version": "1.2.0",
   "description": "Inventory client library written in Swift for developing applications on iOS",
-  "homepage": "https://flyve-mdm.com/",
-  "devDependencies": {
-    "standard-version": "^4.2.0"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
+  "homepage": "https://github.com/flyve-mdm/flyve-mdm-ios-inventory-agent#readme",
+  "main": "index.js",
   "scripts": {
-    "release": "standard-version --message 'chore(release): bump to %s and new CHANGELOG'"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "keywords": [
     "flyve",
@@ -30,10 +26,22 @@
       "email": "asalas@teclib.com"
     }
   ],
-  "license": "AGPL-3.0",
+  "license": "GPL-3.0",
+  "social_media_url": "https://twitter.com/FlyveMDM",
+  "platforms": {
+    "ios": "9.3"
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "3"
+  },
+  "pushed_with_swift_version": "3.0",
   "ignore": [
     "**/.*"
   ],
+  "source": {
+    "git": "https://github.com/flyve-mdm/flyve-mdm-ios-inventory.git",
+    "tag": "1.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flyve-mdm/flyve-mdm-ios-inventory.git"
@@ -42,5 +50,10 @@
     "url": "https://github.com/flyve-mdm/flyve-mdm-ios-inventory/issues"
   },
   "private": true,
-  "dependencies": {}
+  "devDependencies": {
+    "standard-version": "^4.2.0"
+  },
+  "dependencies": {
+    "conventional-github-releaser": "^1.1.12"
+  }
 }

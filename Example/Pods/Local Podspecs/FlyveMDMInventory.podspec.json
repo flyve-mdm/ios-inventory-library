@@ -1,6 +1,6 @@
 {
   "name": "FlyveMDMInventory",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "summary": "Inventory client library written in Swift for developing applications on iOS",
   "homepage": "https://flyve-mdm.com",
   "license": {
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/flyve-mdm/flyve-mdm-ios-inventory.git",
-    "tag": "1.1.0"
+    "tag": "1.2.0"
   },
   "source_files": "FlyveMDMInventory/*.{swift,h,m}",
   "pod_target_xcconfig": {
