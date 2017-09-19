@@ -43,6 +43,8 @@ npm i -g standard-version
 npm install -g conventional-github-releaser
 # Install podspec-bump for increment podspec version
 npm install -g podspec-bump
+# Install node-github-release to create and edit releases on Github
+npm install -g node-github-release
 # Install libs from package.json
 npm install
 # Install gems from Gemfile
