@@ -50,7 +50,14 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
 
     # Create zip example code
     zip -r $CIRCLE_ARTIFACTS/app_example_code.zip Example/*
-
+    # Create release with github-release
+    github-release release \
+    --user $CIRCLE_PROJECT_USERNAME \
+    --repo $CIRCLE_PROJECT_REPONAME \
+    --tag ${GIT_TAG} \
+    --name "Inventory Engine v${GIT_TAG}" \
+    --description "Inventory Engine v${GIT_TAG}"
+    
     # Update CHANGELOG.md on gh-pages
     git branch -D gh-pages
     git fetch origin gh-pages
