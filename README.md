@@ -128,8 +128,8 @@ We share long-form content about the project in the [wiki](https://github.com/fl
 ## Contact
 
 For notices about major changes and general discussion of Flyve MDM development, subscribe to the [/r/FlyveMDM](http://www.reddit.com/r/FlyveMDM) subreddit.
-You can also chat with us via IRC in [#flyve-mdm on freenode](http://webchat.freenode.net/?channels=flyve-mdm]).
-Ping me @hectorerb in the IRC chatroom if you get stuck.
+You can also chat with us via IRC in [#flyve-mdm on freenode](http://webchat.freenode.net/?channels=flyve-mdm]) or [Telegram](https://t.me/flyvemdmdev).
+Ping me @hectorerb in the IRC chatroom or in the Telegram Dev Group if you get stuck.
 
 ## Contribute
 
