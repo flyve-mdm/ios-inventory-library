@@ -2,19 +2,18 @@
 
 ![Flyve MDM banner](https://user-images.githubusercontent.com/663460/26935464-54267e9c-4c6c-11e7-86df-8cfa6658133e.png)
 
-[![License](https://img.shields.io/github/license/flyve-mdm/flyve-mdm-ios-inventory.svg?&label=License)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/blob/master/LICENSE.md)
+[![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/FlyveMDMInventory/badge.png)](https://cocoadocs.org/docsets/FlyveMDMInventory)
+[![Badge w/ Platform](https://cocoapod-badges.herokuapp.com/p/FlyveMDMInventory/badge.svg)](https://cocoadocs.org/docsets/FlyveMDMInventory)
 [![Follow twitter](https://img.shields.io/twitter/follow/FlyveMDM.svg?style=social&label=Twitter&style=flat-square)](https://twitter.com/FlyveMDM)
 [![Telegram Community](https://img.shields.io/badge/Telegram-Community-blue.svg)](https://t.me/flyvemdm)
 [![Telegram Contributors](https://img.shields.io/badge/Telegram-Contributors-blue.svg)](https://t.me/flyvemdmdev)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![GitHub release](https://img.shields.io/github/release/flyve-mdm/flyve-mdm-ios-inventory.svg)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/releases)
-[![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/FlyveMDMInventory/badge.png)](https://cocoadocs.org/docsets/FlyveMDMInventory)
-[![Badge w/ Platform](https://cocoapod-badges.herokuapp.com/p/FlyveMDMInventory/badge.svg)](https://cocoadocs.org/docsets/FlyveMDMInventory)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/master.svg?style=shield)](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/master)
+[![License](https://img.shields.io/github/license/flyve-mdm/flyve-mdm-ios-inventory.svg?&label=License)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/blob/master/LICENSE.md)
 
-
-Flyve MDM is a mobile device management software that enables you to secure and manage all the mobile devices of your business via a unique web-based console (MDM).
+[Flyve MDM](https://flyve-mdm.com) is a mobile device management software that enables you to secure and manage all the mobile devices of your business via a unique web-based console (MDM).
 
 To get started, check out <https://flyve-mdm.com/>!
 
