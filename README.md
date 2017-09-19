@@ -30,7 +30,7 @@ To get started, check out <https://flyve-mdm.com/>!
 This library help you to create a complete inventory of your iOS devices: both hardware and software informations are collected. You get the data about processor, memory, drives, sensors, etc. and also the list and description of installed application on any devices in a beautifull XML as protocol compatible with FusionInventory for GLPI.
 
 You can find more information here:
-<http://fusioninventory.org/documentation/dev/spec/protocol/inventory.html>
+<https://github.com/flyve-mdm/flyve-mdm-ios-inventory/wiki/inventory-specifications>
 
 **What's included?**
 
