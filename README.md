@@ -123,7 +123,7 @@ inventoryTask.execute("Agent_v1.0", tag:"1.0") { result in
 
 ## Documentation
 
-We share long-form content about the project in the [wiki](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/wiki).
+We share long-form content about the project in the [wiki](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/wiki) and in the [project site](http://flyve.org/flyve-mdm-ios-inventory/).
 
 ## Contact
 
