@@ -10,6 +10,8 @@
 [![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/FlyveMDMInventory/badge.png)](https://cocoadocs.org/docsets/FlyveMDMInventory)
 [![Badge w/ Platform](https://cocoapod-badges.herokuapp.com/p/FlyveMDMInventory/badge.svg)](https://cocoadocs.org/docsets/FlyveMDMInventory)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Build Status](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/master.svg?style=shield)](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/master)
+
 
 Flyve MDM is a mobile device management software that enables you to secure and manage all the mobile devices of your business via a unique web-based console (MDM).
 
