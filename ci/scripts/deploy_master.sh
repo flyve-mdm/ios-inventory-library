@@ -48,6 +48,9 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
     # Push commits and tags to origin branch
     git push --follow-tags origin $CIRCLE_BRANCH
 
+    # Create zip example code
+    zip -r $CIRCLE_ARTIFACTS/app_example_code.zip Example/*
+
     # Update CHANGELOG.md on gh-pages
     git branch -D gh-pages
     git fetch origin gh-pages
