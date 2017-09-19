@@ -78,5 +78,5 @@ _docs/
 coverage/
 
 # Bundler
-vendor/
-.bundle/
+# vendor/
+# .bundle/
