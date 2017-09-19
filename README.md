@@ -4,7 +4,8 @@
 
 [![License](https://img.shields.io/github/license/flyve-mdm/flyve-mdm-ios-inventory.svg?&label=License)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/blob/master/LICENSE.md)
 [![Follow twitter](https://img.shields.io/twitter/follow/FlyveMDM.svg?style=social&label=Twitter&style=flat-square)](https://twitter.com/FlyveMDM)
-[![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/flyvemdm)
+[![Telegram Community](https://img.shields.io/badge/Telegram-Community-blue.svg)](https://t.me/flyvemdm)
+[![Telegram Contributors](https://img.shields.io/badge/Telegram-Contributors-blue.svg)](https://t.me/flyvemdmdev)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![GitHub release](https://img.shields.io/github/release/flyve-mdm/flyve-mdm-ios-inventory.svg)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/releases)
 [![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/FlyveMDMInventory/badge.png)](https://cocoadocs.org/docsets/FlyveMDMInventory)
