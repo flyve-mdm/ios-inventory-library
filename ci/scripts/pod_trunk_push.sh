@@ -25,8 +25,12 @@
 # @link      https://flyve-mdm.com
 # ------------------------------------------------------------------------------
 
-echo -----------------------Pod Trunk---------------------------
-# Update cocoapods repo
-pod trunk push
-# Clean sessions
-pod trunk me clean-sessions --all
+GH_COMMIT_MESSAGE=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
+
+if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* && $GH_COMMIT_MESSAGE != *"ci(build): release version"* ]]; then
+    echo -----------------------Pod Trunk---------------------------
+    # Update cocoapods repo
+    pod trunk push
+    # Clean sessions
+    pod trunk me clean-sessions --all
+fi
