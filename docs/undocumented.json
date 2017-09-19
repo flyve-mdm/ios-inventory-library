@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 31,
+      "symbol": "InventoryTask",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 33,
+      "symbol": "InventoryTask.memory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 34,
+      "symbol": "InventoryTask.storage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 35,
+      "symbol": "InventoryTask.hardware",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 36,
+      "symbol": "InventoryTask.os",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 37,
+      "symbol": "InventoryTask.battery",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 38,
+      "symbol": "InventoryTask.cpu",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 39,
+      "symbol": "InventoryTask.network",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 40,
+      "symbol": "InventoryTask.carrier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/flyve-mdm-ios-inventory/FlyveMDMInventory/InventoryTask.swift",
+      "line": 42,
+      "symbol": "InventoryTask.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/distiller/flyve-mdm-ios-inventory"
+}
