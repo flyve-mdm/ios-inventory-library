@@ -31,8 +31,6 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
 
     # Generate CHANGELOG.md and increment version
     npm run release -- -t '' -m "ci(release): generate CHANGELOG.md for version %s"
-    # Push tag to github
-    # conventional-github-releaser -t $GH_TOKEN -r 0
     # Get version number from package.json
     export GIT_TAG=$(jq -r ".version" package.json)
     # Update CFBundleShortVersionString
@@ -47,16 +45,10 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
     git commit -m "ci(build): release version ${GIT_TAG}"
     # Push commits and tags to origin branch
     git push --follow-tags origin $CIRCLE_BRANCH
-
+    # Create release with conventional-github-releaser
+    conventional-github-releaser -t $GH_TOKEN
     # Create zip example code
     zip -r $CIRCLE_ARTIFACTS/app_example_code.zip Example/*
-    # Create release with github-release
-    github-release release \
-    --user $CIRCLE_PROJECT_USERNAME \
-    --repo $CIRCLE_PROJECT_REPONAME \
-    --tag ${GIT_TAG} \
-    --name "Inventory Engine v${GIT_TAG}" \
-    --description "Inventory Engine v${GIT_TAG}"
     # Upload example code release
     github-release upload \
     --user $CIRCLE_PROJECT_USERNAME \
