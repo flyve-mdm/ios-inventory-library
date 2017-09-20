@@ -49,6 +49,12 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
     conventional-github-releaser -t $GH_TOKEN
     # Create zip example code
     zip -r $CIRCLE_ARTIFACTS/app_example_code.zip Example/*
+    # Update release name
+    github-release edit \
+    --user $CIRCLE_PROJECT_USERNAME \
+    --repo $CIRCLE_PROJECT_REPONAME \
+    --tag ${GIT_TAG} \
+    --name "Inventory Engine v${GIT_TAG}" \
     # Upload example code release
     github-release upload \
     --user $CIRCLE_PROJECT_USERNAME \
