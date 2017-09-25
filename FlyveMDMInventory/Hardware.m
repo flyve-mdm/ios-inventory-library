@@ -246,7 +246,7 @@
     AVCaptureDevice *captureDevice = [self cameraWithPosition:AVCaptureDevicePositionFront];
     
     NSArray* availFormat=captureDevice.formats;
-    AVCaptureDeviceFormat *format = [[AVCaptureDeviceFormat alloc] init];
+    AVCaptureDeviceFormat *format = [AVCaptureDeviceFormat alloc];
     format = availFormat[availFormat.count-1];
 
     return [NSString stringWithFormat:@"%dx%d", format.highResolutionStillImageDimensions.width, format.highResolutionStillImageDimensions.height];
@@ -262,7 +262,7 @@
     AVCaptureDevice *captureDevice = [self cameraWithPosition:AVCaptureDevicePositionBack];
 
     NSArray* availFormat=captureDevice.formats;
-    AVCaptureDeviceFormat *format = [[AVCaptureDeviceFormat alloc] init];
+    AVCaptureDeviceFormat *format = [AVCaptureDeviceFormat alloc];
     format = availFormat[availFormat.count-1];
     
     return [NSString stringWithFormat:@"%dx%d", format.highResolutionStillImageDimensions.width, format.highResolutionStillImageDimensions.height];
