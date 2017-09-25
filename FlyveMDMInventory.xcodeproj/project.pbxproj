@@ -29,6 +29,8 @@
 		0AA4CCEE1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */; };
 		0AA4CCF01EE70BD400E86C24 /* FlyveMDMInventory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA4CDA71EEAF50600E86C24 /* InventoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4CDA61EEAF50600E86C24 /* InventoryTask.swift */; };
+		0AAF9BD51F798F71006533DC /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAF9BD31F798F70006533DC /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AAF9BD61F798F71006533DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF9BD41F798F70006533DC /* Reachability.m */; };
 		0AC91A8C1EEEE2F700108E2B /* Memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC91A8A1EEEE2F700108E2B /* Memory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AC91A8D1EEEE2F700108E2B /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC91A8B1EEEE2F700108E2B /* Memory.m */; };
 		0AC91A8F1EEEFA8A00108E2B /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC91A8E1EEEFA8A00108E2B /* Storage.m */; };
@@ -73,6 +75,8 @@
 		0AA4CCED1EE70BD400E86C24 /* FlyveMDMInventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyveMDMInventoryTests.swift; sourceTree = "<group>"; };
 		0AA4CCEF1EE70BD400E86C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA4CDA61EEAF50600E86C24 /* InventoryTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTask.swift; sourceTree = "<group>"; };
+		0AAF9BD31F798F70006533DC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0AAF9BD41F798F70006533DC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		0AC91A8A1EEEE2F700108E2B /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
 		0AC91A8B1EEEE2F700108E2B /* Memory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Memory.m; sourceTree = "<group>"; };
 		0AC91A8E1EEEFA8A00108E2B /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */,
 				0AF0EAE71EF4131000B2B16C /* Cpu.h */,
 				0AF0EAE81EF4131000B2B16C /* Cpu.m */,
+				0AAF9BD31F798F70006533DC /* Reachability.h */,
+				0AAF9BD41F798F70006533DC /* Reachability.m */,
 				0AA4CCE31EE70BD400E86C24 /* Info.plist */,
 			);
 			path = FlyveMDMInventory;
@@ -177,6 +183,7 @@
 				0AF0EAE91EF4131000B2B16C /* Cpu.h in Headers */,
 				0AC91A911EEF2F4A00108E2B /* Storage.h in Headers */,
 				0A00D9051EF1D131009377A6 /* Carrier.h in Headers */,
+				0AAF9BD51F798F71006533DC /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +311,7 @@
 				0A49CF961EF09AF0006B353E /* Network.m in Sources */,
 				0A00D9061EF1D131009377A6 /* Carrier.m in Sources */,
 				0AA4CDA71EEAF50600E86C24 /* InventoryTask.swift in Sources */,
+				0AAF9BD61F798F71006533DC /* Reachability.m in Sources */,
 				0AF0EAEA1EF4131000B2B16C /* Cpu.m in Sources */,
 				0AC91A8F1EEEFA8A00108E2B /* Storage.m in Sources */,
 				0A12FD461EF01847006B5B6E /* Hardware.m in Sources */,
