@@ -1,5 +1,5 @@
 PODS:
-  - FlyveMDMInventory (1.2.0)
+  - FlyveMDMInventory (1.2.1)
 
 DEPENDENCIES:
   - FlyveMDMInventory (from `../../flyve-mdm-ios-inventory`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../../flyve-mdm-ios-inventory"
 
 SPEC CHECKSUMS:
-  FlyveMDMInventory: bfe4cce7c8ffb3d65a74359f3f0d178939fc8665
+  FlyveMDMInventory: 88132f532b4362f24cb1214a2d32fa68b2006509
 
-PODFILE CHECKSUM: 5af05d72581be8ba14584f5b6172a513c853ef91
+PODFILE CHECKSUM: ab0f9b29e16096e67b4ad62da46ef4de150c86e0
 
 COCOAPODS: 1.2.1
