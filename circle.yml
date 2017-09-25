@@ -35,8 +35,8 @@ deployment:
       - source "${SCRIPT_PATH}/deploy_develop.sh"
       - source "${SCRIPT_PATH}/keychain_remove.sh"
   deploy_master:
-    branch: master
+    branch: feature/fix-xcode
     commands:
       - source "${SCRIPT_PATH}/deploy_master.sh"
-      - source "${SCRIPT_PATH}/pod_trunk_push.sh"
+      # - source "${SCRIPT_PATH}/pod_trunk_push.sh"
       - source "${SCRIPT_PATH}/keychain_remove.sh"

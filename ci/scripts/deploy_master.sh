@@ -40,13 +40,14 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
     # Increment podspec version
     podspec-bump -i ${GIT_TAG} -w
     # Add modified and delete files
-    git add -u
-    # Create commit
-    git commit -m "ci(build): release version ${GIT_TAG}"
+    # git add -u
+    # # Create commit
+    # git commit -m "ci(build): release version ${GIT_TAG}"
     # Push commits and tags to origin branch
-    git push --follow-tags origin $CIRCLE_BRANCH
+    git push origin ${GIT_TAG}
+    # git push --follow-tags origin $CIRCLE_BRANCH
     # Create release with conventional-github-releaser
-    conventional-github-releaser -t $GH_TOKEN
+    conventional-github-releaser -p angular -t $GH_TOKEN
     # Create zip example code
     zip -r $CIRCLE_ARTIFACTS/app_example_code.zip Example/*
     # Update release name
@@ -63,28 +64,28 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
     --name "example.zip" \
     --file $CIRCLE_ARTIFACTS/app_example_code.zip
 
-    # Update CHANGELOG.md on gh-pages
-    git branch -D gh-pages
-    git fetch origin gh-pages
-    git checkout gh-pages
-    git checkout $CIRCLE_BRANCH CHANGELOG.md
+    # # Update CHANGELOG.md on gh-pages
+    # git branch -D gh-pages
+    # git fetch origin gh-pages
+    # git checkout gh-pages
+    # git checkout $CIRCLE_BRANCH CHANGELOG.md
 
-    # Create header content
-    HEADER="---\nlayout: modal\ntitle: changelog\n---\n"
-    # Duplicate CHANGELOG.md
-    cp CHANGELOG.md CHANGELOG_COPY.md
-    # Add header to CHANGELOG.md
-    (echo $HEADER ; cat CHANGELOG_COPY.md) > CHANGELOG.md
-    # Remove CHANGELOG_COPY.md
-    rm CHANGELOG_COPY.md
+    # # Create header content
+    # HEADER="---\nlayout: modal\ntitle: changelog\n---\n"
+    # # Duplicate CHANGELOG.md
+    # cp CHANGELOG.md CHANGELOG_COPY.md
+    # # Add header to CHANGELOG.md
+    # (echo $HEADER ; cat CHANGELOG_COPY.md) > CHANGELOG.md
+    # # Remove CHANGELOG_COPY.md
+    # rm CHANGELOG_COPY.md
 
-    # Add CHANGELOG.md
-    git add CHANGELOG.md
-    # Create commit
-    git commit -m "ci(docs): generate CHANGELOG.md for version ${GIT_TAG}"
-    # Push commit to origin gh-pages branch
-    git push origin gh-pages
+    # # Add CHANGELOG.md
+    # git add CHANGELOG.md
+    # # Create commit
+    # git commit -m "ci(docs): generate CHANGELOG.md for version ${GIT_TAG}"
+    # # Push commit to origin gh-pages branch
+    # git push origin gh-pages
 
-    # Checkout to release branch
-    git checkout $CIRCLE_BRANCH -f
+    # # Checkout to release branch
+    # git checkout $CIRCLE_BRANCH -f
 fi
