@@ -10,7 +10,7 @@ machine:
     GH_REPO_SLUG: flyve-mdm/flyve-mdm-ios-inventory
     TRANSIFEX_USER: api
   xcode:
-    version: 8.3
+    version: 9.0
 checkout:
   post:
     - git tag | xargs git tag -d
