@@ -355,7 +355,18 @@ inventoryTask.execute("Agent_v1.0", tag:"1.0") { result in
 
 <p><strong><i>Tag is optional</i></strong></p>
           <div class="btn-group">
-            <a class="btn btn-primary" href="{{ site.github.releases[0].assets[0].browser_download_url }}" download>Download demo</a>
+            <a class="btn btn-primary" 
+              {% for asset in site.github.releases[0].assets %}
+                {% if asset.name == 'example.zip' %}
+                  href="{{ site.github.releases[0].assets[0].browser_download_url }}"
+                  download
+                {% endif %}
+                {% else %}
+                href="#"
+              {% endfor %}
+             >
+              Download demo
+            </a>
             <a class="btn btn-secondary" href="{{ site.github.wiki_url }}">Read more</a>
           </div>
         </div>
