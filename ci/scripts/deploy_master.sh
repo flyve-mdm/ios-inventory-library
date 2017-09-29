@@ -48,7 +48,7 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
     # Push commits and tags to origin branch
     git push --follow-tags origin $CIRCLE_BRANCH
     # Create release with conventional-github-releaser
-    conventional-github-releaser -t $GH_TOKEN
+    conventional-github-releaser -p angular -t $GH_TOKEN
     # Create zip example code
     zip -r $CIRCLE_ARTIFACTS/app_example_code.zip Example/*
     # Update release name
