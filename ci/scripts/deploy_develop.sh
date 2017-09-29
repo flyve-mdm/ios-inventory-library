@@ -47,7 +47,12 @@ jazzy \
 --author_url https://flyve-mdm.com \
 --github_url $CIRCLE_REPOSITORY_URL \
 --output docs \
---theme jazzy/themeFlyve
+--theme jazzy/themeFlyve \
+--min-acl private \
+--objc \
+--umbrella-header FlyveMDMInventory/FlyveMDMInventory.h \
+--framework-root . \
+--sdk iphonesimulator
 
 # Add docs folder
 git add docs -f
