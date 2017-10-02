@@ -49,9 +49,9 @@ public class InventoryTask {
      - parameter versionClient: Cliente app identifier
      - returns: completion: (_ result: String) -> Void The XML String
      */
-    public func execute(_ versionClient: String, tag: String = "", completion: (_ result: String) -> Void) {
+    public func execute(_ versionClient: String, tag: String = "", json: Bool = false, completion: (_ result: String) -> Void) {
 
-        completion(self.createXML(versionClient, tag: tag))
+        completion(self.createXML(versionClient, tag: tag, json: json))
     }
 
     /**
@@ -60,11 +60,11 @@ public class InventoryTask {
      - parameter versionClient: Cliente app identifier
      - returns: The XML String
      */
-    private func createXML(_ versionClient: String, tag: String) -> String {
+    private func createXML(_ versionClient: String, tag: String, json: Bool) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
         let dateLog = dateFormatter.string(from: Date())
-        return "\(createDTD())" +
+        let xml = "\(createDTD())" +
             createElement(
                 tag: "REQUEST",
                 value:
@@ -142,6 +142,21 @@ public class InventoryTask {
                         )
                 )
         )
+        
+        if json {
+            do {
+                let xmlDictionary = try XMLReader.dictionary(xml)
+                let jsonData = try JSONSerialization.data(withJSONObject: xmlDictionary, options: .prettyPrinted)
+                let jsonString = String(data: jsonData, encoding: .utf8)
+                
+                return jsonString ?? ""
+                
+            } catch {
+                return error.localizedDescription
+            }
+        } else {
+            return xml
+        }
     }
 
     /**
