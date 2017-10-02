@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         button.layer.backgroundColor = UIColor.init(red: 6.0/255.0, green: 135.0/255.0, blue: 133.0/255.0, alpha: 1.0).cgColor
         button.setTitle("XML", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
-        button.addTarget(self, action: #selector(self.generateXML), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.generateInventory), for: .touchUpInside)
         return button
     }()
     
@@ -87,36 +87,37 @@ class ViewController: UIViewController {
         messageLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
     }
     
-    @objc func generateXML() {
+    @objc func generateInventory() {
         messageLabel.text = ""
         loadingIndicatorView.startAnimating()
         let inventoryTask = InventoryTask()
-        inventoryTask.execute("Agent_v1.0") { result in
-            createXmlFile(result)
+        inventoryTask.execute("Agent_v1.0", json: true) { result in
+            createFile(result, json: true)
         }
     }
     
-    func createXmlFile(_ xml: String) {
-        let fileName = "inventory.xml"
+    func createFile(_ inventory: String, json: Bool) {
+        
+        let fileName = json ? "inventory.json" : "inventory.xml"
+
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             
             let path = dir.appendingPathComponent(fileName)
             
-            print(path)
-            
             do {
-                try xml.write(to: path, atomically: false, encoding: String.Encoding.utf8)
+                try inventory.write(to: path, atomically: false, encoding: String.Encoding.utf8)
                 
-                messageLabel.text = "inventory.xml file created successfully\n\(path)"
+                messageLabel.text = "\(fileName) file created successfully\n\(path)"
             } catch {
-                debugPrint("Error output xml")
+                debugPrint("Error output file")
             }
             
             //reading
             do {
-                let text2 = try String(contentsOf: path, encoding: String.Encoding.utf8)
+                _ = try String(contentsOf: path, encoding: String.Encoding.utf8)
                 
-                print(text2)
+                print(try String(contentsOf: path, encoding: String.Encoding.utf8))
+                
             } catch {/* error handling here */}
         }
         

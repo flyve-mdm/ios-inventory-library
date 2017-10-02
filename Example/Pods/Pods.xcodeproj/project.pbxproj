@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0170D362849E918F2481D115997C9669 /* Pods-ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E47265EB6FA6DD4F40CD496F613370B /* Pods-ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FC8F31D7C93146E252193879237173 /* Pods-ExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A01DA5EE78439C3D5078724BA45513D5 /* Pods-ExampleUITests-dummy.m */; };
+		0A052B6C1F826E84004292CA /* XMLRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A052B6B1F826E84004292CA /* XMLRead.swift */; };
 		0A1340A21F79716400CC0137 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1340A01F79716400CC0137 /* Reachability.m */; };
 		0A1340A31F79727000CC0137 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1340A11F79716400CC0137 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D3A1191E47C79D70B3A7079710F7AAB /* Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A32236DD2666F5F2A21B57A45DCED0 /* Hardware.m */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		03760A2D869F548572C6A05C879ABDA1 /* Cpu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Cpu.m; sourceTree = "<group>"; };
+		0A052B6B1F826E84004292CA /* XMLRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLRead.swift; sourceTree = "<group>"; };
 		0A1340A01F79716400CC0137 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		0A1340A11F79716400CC0137 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		0E47265EB6FA6DD4F40CD496F613370B /* Pods-ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleTests-umbrella.h"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		10CC16D785D41B0F3F019B899845309D /* FlyveMDMInventory */ = {
 			isa = PBXGroup;
 			children = (
+				0A052B6B1F826E84004292CA /* XMLRead.swift */,
 				D8FB8D8FB3FC663C93E7FDF3DABD9D7A /* Battery.h */,
 				178B63000797EEC482991E4CA847B831 /* Battery.m */,
 				10DC1BFF29C6E7401669331DFFFA7E41 /* Carrier.h */,
@@ -496,6 +499,7 @@
 				0D3A1191E47C79D70B3A7079710F7AAB /* Hardware.m in Sources */,
 				EE912E5551558A052154CF2870A454F1 /* InventoryTask.swift in Sources */,
 				270C07A18635F6480A621D0F3D6786A2 /* Memory.m in Sources */,
+				0A052B6C1F826E84004292CA /* XMLRead.swift in Sources */,
 				13663F8CFB12CBB583D744093FCBB2BE /* Network.m in Sources */,
 				77AE4B00AAA41CF6B30CB73E3C88F306 /* OperatingSystem.m in Sources */,
 				C55B711B90847DCAD46277DB0A71F08C /* Storage.m in Sources */,
