@@ -23,6 +23,7 @@
 		0A3BCD311EF317B4008EEC9B /* OperatingSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */; };
 		0A49CF951EF09AF0006B353E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A49CF931EF09AF0006B353E /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A49CF961EF09AF0006B353E /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A49CF941EF09AF0006B353E /* Network.m */; };
+		0A6CCA6B1F82FC7C00BD7814 /* XMLRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6CCA6A1F82FC7C00BD7814 /* XMLRead.swift */; };
 		0A972ED61EF18CEB009A9780 /* Battery.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A972ED41EF18CEB009A9780 /* Battery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A972ED71EF18CEB009A9780 /* Battery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A972ED51EF18CEB009A9780 /* Battery.m */; };
 		0AA4CCE91EE70BD400E86C24 /* FlyveMDMInventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA4CCDF1EE70BD400E86C24 /* FlyveMDMInventory.framework */; };
@@ -66,6 +67,7 @@
 		0A3BCD2F1EF317B4008EEC9B /* OperatingSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatingSystem.m; sourceTree = "<group>"; };
 		0A49CF931EF09AF0006B353E /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		0A49CF941EF09AF0006B353E /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		0A6CCA6A1F82FC7C00BD7814 /* XMLRead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLRead.swift; sourceTree = "<group>"; };
 		0A972ED41EF18CEB009A9780 /* Battery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battery.h; sourceTree = "<group>"; };
 		0A972ED51EF18CEB009A9780 /* Battery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Battery.m; sourceTree = "<group>"; };
 		0AA4CCDF1EE70BD400E86C24 /* FlyveMDMInventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlyveMDMInventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		0AA4CCE11EE70BD400E86C24 /* FlyveMDMInventory */ = {
 			isa = PBXGroup;
 			children = (
+				0A6CCA6A1F82FC7C00BD7814 /* XMLRead.swift */,
 				0AA4CDA61EEAF50600E86C24 /* InventoryTask.swift */,
 				0AA4CCE21EE70BD400E86C24 /* FlyveMDMInventory.h */,
 				0AC91A8A1EEEE2F700108E2B /* Memory.h */,
@@ -313,6 +316,7 @@
 				0AA4CDA71EEAF50600E86C24 /* InventoryTask.swift in Sources */,
 				0AAF9BD61F798F71006533DC /* Reachability.m in Sources */,
 				0AF0EAEA1EF4131000B2B16C /* Cpu.m in Sources */,
+				0A6CCA6B1F82FC7C00BD7814 /* XMLRead.swift in Sources */,
 				0AC91A8F1EEEFA8A00108E2B /* Storage.m in Sources */,
 				0A12FD461EF01847006B5B6E /* Hardware.m in Sources */,
 				0A3BCD311EF317B4008EEC9B /* OperatingSystem.m in Sources */,
