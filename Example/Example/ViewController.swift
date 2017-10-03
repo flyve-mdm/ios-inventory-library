@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.backgroundColor = UIColor.init(red: 6.0/255.0, green: 135.0/255.0, blue: 133.0/255.0, alpha: 1.0).cgColor
-        button.setTitle("XML", for: .normal)
+        button.setTitle("Generate Inventory", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.addTarget(self, action: #selector(self.generateInventory), for: .touchUpInside)
         return button
@@ -91,12 +91,16 @@ class ViewController: UIViewController {
         messageLabel.text = ""
         loadingIndicatorView.startAnimating()
         let inventoryTask = InventoryTask()
+        inventoryTask.execute("Agent_v1.0") { result in
+            createFile(result)
+        }
+        
         inventoryTask.execute("Agent_v1.0", json: true) { result in
             createFile(result, json: true)
         }
     }
     
-    func createFile(_ inventory: String, json: Bool) {
+    func createFile(_ inventory: String, json: Bool = false) {
         
         let fileName = json ? "inventory.json" : "inventory.xml"
 
@@ -107,7 +111,7 @@ class ViewController: UIViewController {
             do {
                 try inventory.write(to: path, atomically: false, encoding: String.Encoding.utf8)
                 
-                messageLabel.text = "\(fileName) file created successfully\n\(path)"
+                messageLabel.text = "\(messageLabel.text ?? "")\(fileName) file created successfully\n"
             } catch {
                 debugPrint("Error output file")
             }
@@ -115,8 +119,6 @@ class ViewController: UIViewController {
             //reading
             do {
                 _ = try String(contentsOf: path, encoding: String.Encoding.utf8)
-                
-                print(try String(contentsOf: path, encoding: String.Encoding.utf8))
                 
             } catch {/* error handling here */}
         }
