@@ -8,7 +8,7 @@ layout: coverage
         <h2>Coverage</h2>
     </div>
     <div class="col-md-4 text-right">
-        <h2 class="text-right">50.11%</h2>
+        <h2 class="text-right">46.36%</h2>
     </div>
 </div>
     
@@ -18,7 +18,7 @@ layout: coverage
                 <h4>FlyveMDMInventory</h4>
             </div>
             <div class="col-md-4 text-right">
-                <h4>50.11%</h4>
+                <h4>46.36%</h4>
             </div>
         </div>
         
@@ -33,7 +33,7 @@ layout: coverage
                                         <i class="glyph glyph-remove"></i>
                                     </div>
                                     <div class="col-md-8">
-                                        <a>InventoryTask.swift</a>
+                                        <a>XMLRead.swift</a>
                                     </div>
                                     <div class="col-md-6">
                                         swift
@@ -48,7 +48,7 @@ layout: coverage
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
-                                        FlyveMDMInventory.InventoryTask.__allocating_init() -&gt; FlyveMDMInventory.InventoryTask
+                                        FlyveMDMInventory.XMLReader.__allocating_init() -&gt; FlyveMDMInventory.XMLReader
                                         </div>
                                         <div class="col-md-4 text-right">
                                             0.0%
@@ -57,7 +57,7 @@ layout: coverage
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
-                                        FlyveMDMInventory.InventoryTask.execute(Swift.String, tag: Swift.String, completion: (Swift.String) -&gt; ()) -&gt; ()
+                                        static FlyveMDMInventory.XMLReader.dictionary(data: Foundation.Data) throws -&gt; __ObjC.NSDictionary
                                         </div>
                                         <div class="col-md-4 text-right">
                                             0.0%
@@ -66,7 +66,7 @@ layout: coverage
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
-                                        FlyveMDMInventory.InventoryTask.(createXML in _BE893131991C770DE363E18D3CC739E3)(Swift.String, tag: Swift.String) -&gt; Swift.String
+                                        static FlyveMDMInventory.XMLReader.dictionary(Swift.String) throws -&gt; __ObjC.NSDictionary
                                         </div>
                                         <div class="col-md-4 text-right">
                                             0.0%
@@ -75,7 +75,7 @@ layout: coverage
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
-                                        FlyveMDMInventory.InventoryTask.(createDTD in _BE893131991C770DE363E18D3CC739E3)() -&gt; Swift.String
+                                        FlyveMDMInventory.XMLReader.object(data: Foundation.Data, options: FlyveMDMInventory.XMLReaderOptions) throws -&gt; Swift.Optional&lt;__ObjC.NSDictionary&gt;
                                         </div>
                                         <div class="col-md-4 text-right">
                                             0.0%
@@ -84,7 +84,43 @@ layout: coverage
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
-                                        FlyveMDMInventory.InventoryTask.(createElement in _BE893131991C770DE363E18D3CC739E3)(tag: Swift.String, value: Swift.String) -&gt; Swift.String
+                                        FlyveMDMInventory.XMLReader.parser(__ObjC.XMLParser, didStartElement: Swift.String, namespaceURI: Swift.Optional&lt;Swift.String&gt;, qualifiedName: Swift.Optional&lt;Swift.String&gt;, attributes: Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.XMLReader.parser(__ObjC.XMLParser, didEndElement: Swift.String, namespaceURI: Swift.Optional&lt;Swift.String&gt;, qualifiedName: Swift.Optional&lt;Swift.String&gt;) -&gt; ()
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.XMLReader.parser(__ObjC.XMLParser, foundCharacters: Swift.String) -&gt; ()
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.XMLReader.parser(__ObjC.XMLParser, parseErrorOccurred: Swift.Error) -&gt; ()
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.XMLReader.createTag(Swift.String) -&gt; Swift.String
                                         </div>
                                         <div class="col-md-4 text-right">
                                             0.0%
@@ -177,6 +213,78 @@ layout: coverage
                                         <i class="glyph glyph-remove"></i>
                                     </div>
                                     <div class="col-md-8">
+                                        <a>InventoryTask.swift</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        swift
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        0.0%
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="collapse" id="list-item-line-3">
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.InventoryTask.__allocating_init() -&gt; FlyveMDMInventory.InventoryTask
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.InventoryTask.execute(Swift.String, tag: Swift.String, json: Swift.Bool, completion: (Swift.String) -&gt; ()) -&gt; ()
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.InventoryTask.(createXML in _BE893131991C770DE363E18D3CC739E3)(Swift.String, tag: Swift.String, json: Swift.Bool) -&gt; Swift.String
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.InventoryTask.(createDTD in _BE893131991C770DE363E18D3CC739E3)() -&gt; Swift.String
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row functions">
+                                        <div class="col-md-18 col-md-offset-2">
+                                        FlyveMDMInventory.InventoryTask.(createElement in _BE893131991C770DE363E18D3CC739E3)(tag: Swift.String, value: Swift.String) -&gt; Swift.String
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            0.0%
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </li>
+                    </ol>
+        
+        
+                    <ol class="list-items">
+                        <li class="list-items-row">
+                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-4">
+                                <div class="row">
+                                    <div class="col-md-2 col-md-offset-2">
+                                        <i class="glyph glyph-add"></i>
+                                        <i class="glyph glyph-remove"></i>
+                                    </div>
+                                    <div class="col-md-8">
                                         <a>Network.m</a>
                                     </div>
                                     <div class="col-md-6">
@@ -188,7 +296,7 @@ layout: coverage
                                 </div>
                             </div>
                     
-                            <div class="collapse" id="list-item-line-3">
+                            <div class="collapse" id="list-item-line-4">
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
@@ -251,7 +359,7 @@ layout: coverage
         
                     <ol class="list-items">
                         <li class="list-items-row">
-                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-4">
+                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-5">
                                 <div class="row">
                                     <div class="col-md-2 col-md-offset-2">
                                         <i class="glyph glyph-add"></i>
@@ -269,7 +377,7 @@ layout: coverage
                                 </div>
                             </div>
                     
-                            <div class="collapse" id="list-item-line-4">
+                            <div class="collapse" id="list-item-line-5">
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
@@ -377,7 +485,7 @@ layout: coverage
         
                     <ol class="list-items">
                         <li class="list-items-row">
-                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-5">
+                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-6">
                                 <div class="row">
                                     <div class="col-md-2 col-md-offset-2">
                                         <i class="glyph glyph-add"></i>
@@ -395,7 +503,7 @@ layout: coverage
                                 </div>
                             </div>
                     
-                            <div class="collapse" id="list-item-line-5">
+                            <div class="collapse" id="list-item-line-6">
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
@@ -476,7 +584,7 @@ layout: coverage
         
                     <ol class="list-items">
                         <li class="list-items-row">
-                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-6">
+                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-7">
                                 <div class="row">
                                     <div class="col-md-2 col-md-offset-2">
                                         <i class="glyph glyph-add"></i>
@@ -494,7 +602,7 @@ layout: coverage
                                 </div>
                             </div>
                     
-                            <div class="collapse" id="list-item-line-6">
+                            <div class="collapse" id="list-item-line-7">
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
@@ -521,7 +629,7 @@ layout: coverage
         
                     <ol class="list-items">
                         <li class="list-items-row">
-                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-7">
+                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-8">
                                 <div class="row">
                                     <div class="col-md-2 col-md-offset-2">
                                         <i class="glyph glyph-add"></i>
@@ -539,7 +647,7 @@ layout: coverage
                                 </div>
                             </div>
                     
-                            <div class="collapse" id="list-item-line-7">
+                            <div class="collapse" id="list-item-line-8">
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
@@ -674,7 +782,7 @@ layout: coverage
         
                     <ol class="list-items">
                         <li class="list-items-row">
-                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-8">
+                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-9">
                                 <div class="row">
                                     <div class="col-md-2 col-md-offset-2">
                                         <i class="glyph glyph-add"></i>
@@ -692,7 +800,7 @@ layout: coverage
                                 </div>
                             </div>
                     
-                            <div class="collapse" id="list-item-line-8">
+                            <div class="collapse" id="list-item-line-9">
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
@@ -800,7 +908,7 @@ layout: coverage
         
                     <ol class="list-items">
                         <li class="list-items-row">
-                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-9">
+                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-10">
                                 <div class="row">
                                     <div class="col-md-2 col-md-offset-2">
                                         <i class="glyph glyph-add"></i>
@@ -818,7 +926,7 @@ layout: coverage
                                 </div>
                             </div>
                     
-                            <div class="collapse" id="list-item-line-9">
+                            <div class="collapse" id="list-item-line-10">
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
@@ -872,7 +980,7 @@ layout: coverage
         
                     <ol class="list-items">
                         <li class="list-items-row">
-                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-10">
+                            <div data-toggle="collapse" aria-expanded="false" data-target="#list-item-line-11">
                                 <div class="row">
                                     <div class="col-md-2 col-md-offset-2">
                                         <i class="glyph glyph-add"></i>
@@ -890,7 +998,7 @@ layout: coverage
                                 </div>
                             </div>
                     
-                            <div class="collapse" id="list-item-line-10">
+                            <div class="collapse" id="list-item-line-11">
                                 
                                     <div class="row functions">
                                         <div class="col-md-18 col-md-offset-2">
