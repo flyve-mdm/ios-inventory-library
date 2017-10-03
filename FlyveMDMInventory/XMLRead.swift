@@ -81,7 +81,6 @@ public class XMLReader: NSObject {
         
         // Return the stack's root dictionary on success
         if success {
-            print(self.dictionaryStack)
             let resultDict: NSDictionary = self.dictionaryStack
             return resultDict
         }
@@ -100,9 +99,30 @@ extension XMLReader: XMLParserDelegate {
         
         if self.dictionaryStack.count > 0 {
             let child = NSMutableDictionary()
-            child[tag] = NSMutableDictionary()
-            self.dictionaryStack.setValue(child, forKeyPath: self.arrayTemp.componentsJoined(by: "."))
-            
+            let childArray = NSMutableArray()
+
+            if self.arrayTemp.count > 2 && self.arrayTemp[self.arrayTemp.count-2] as! String == "CONTENT".lowercased() {
+
+                if (self.dictionaryStack.value(forKeyPath: self.arrayTemp.componentsJoined(by: ".")) != nil) {
+                    
+                    if let array: NSMutableArray = self.dictionaryStack.value(forKeyPath: self.arrayTemp.componentsJoined(by: ".")) as? NSMutableArray {
+                        let arrayTempParent: NSMutableArray = array.mutableCopy() as! NSMutableArray
+                        arrayTempParent.insert(NSMutableDictionary(), at: arrayTempParent.count)
+
+                        self.dictionaryStack.setValue(arrayTempParent, forKeyPath: self.arrayTemp.componentsJoined(by: "."))
+                    }
+                    
+                } else {
+                    childArray.add(child)
+                    self.dictionaryStack.setValue(childArray, forKeyPath: self.arrayTemp.componentsJoined(by: "."))
+                }
+            } else if self.arrayTemp.count > 3 {
+                
+            } else {
+                child[tag] = NSMutableDictionary()
+                self.dictionaryStack.setValue(child, forKeyPath: self.arrayTemp.componentsJoined(by: "."))
+            }
+
         } else {
             self.dictionaryStack[tag] = NSMutableDictionary()
         }
@@ -114,11 +134,21 @@ extension XMLReader: XMLParserDelegate {
             let keyPath = self.arrayTemp.componentsJoined(by: ".")
             
             if !self.textInProgress.isEmpty {
-                self.dictionaryStack.setValue(self.textInProgress, forKeyPath: keyPath)
+
+                if self.arrayTemp.count > 2 {
+                    
+                    let keyPathParent = ((self.arrayTemp.subarray(with: NSMakeRange(0, 3)) as NSArray).mutableCopy() as AnyObject).componentsJoined(by: ".")
+
+                    let dictionary = (self.dictionaryStack.value(forKeyPath: keyPathParent) as? NSMutableArray ?? NSMutableArray()).lastObject as? NSMutableDictionary ?? NSMutableDictionary()
+                    dictionary.setValue(self.textInProgress, forKey: tag)
+
+                } else {
+                    self.dictionaryStack.setValue(self.textInProgress, forKeyPath: keyPath)
+                }
+
             } else {
                 let child: NSMutableDictionary = self.dictionaryStack.value(forKeyPath: keyPath) as? NSMutableDictionary ?? NSMutableDictionary()
                 child.removeObject(forKey: tag)
-                self.dictionaryStack.setValue(child, forKeyPath: keyPath)
             }
 
             self.arrayTemp.remove(tag)
