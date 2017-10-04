@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/compare/1.2.1...v1.3.0) (2017-10-04)
+
+
+### Bug Fixes
+
+* **camera:** fix initialization AVCaptureDeviceFormat ([c77feda](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/commit/c77feda))
+* **network:** get network type from reachability class ([2083e14](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/commit/2083e14))
+
+
+### Features
+
+* **inventory:** get inventory as JSON ([878f2f3](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/commit/878f2f3))
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/compare/1.2.1...v1.2.2) (2017-09-25)
 
