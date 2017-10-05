@@ -1,6 +1,9 @@
+title: ios inventory
 email: ml-flyvemdm@teclib.com
-baseurl: "/flyve-mdm-ios-inventory" 
-url: "http://flyve.org"
+twitter: flyvemdm
+baseurl: "/flyve-mdm-ios-inventory"
+url: "http://flyve.org"   
+image: http://flyve.org/flyve-mdm-ios-inventory/images/logo2.png
 
 # Build settings
 markdown: kramdown
