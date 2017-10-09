@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FlyveMDMInventory"
-  s.version      = "1.3.0"
+  s.version      = "1.3.1"
   s.summary      = "Inventory client library written in Swift for developing applications on iOS"
 
   # This description is used to generate tags and improve search results.
