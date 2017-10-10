@@ -30,15 +30,18 @@ To get started, check out <https://flyve-mdm.com/>!
 
 ## Synopsis
 
-This library help you to create a complete inventory of your iOS devices: both hardware and software informations are collected. You get the data about processor, memory, drives, sensors, etc. and also the list and description of installed application on any devices in a beautifull XML as protocol compatible with FusionInventory for GLPI.
+This library helps you to create a complete inventory of your iOS devices: both hardware and software informations are collected. You get the data about networks, memory, drives, etc., in a beautifull XML as protocol compatible with FusionInventory for GLPI.
 
-You can find more information here:
+You can find more information about the Inventory Protocol here:
 <https://github.com/flyve-mdm/flyve-mdm-ios-inventory/wiki/inventory-specifications>
 
 **What's included?**
 
 * Hardware
+* Bios
+* Operating System
 * Memory
+* Storages
 * Drives
 * Cpus
 * Simcards
@@ -46,6 +49,8 @@ You can find more information here:
 * Cameras
 * Networks
 * Battery
+
+Visit our [website](http://flyve.org/flyve-mdm-ios-inventory/) for more information.
 
 ## Build Status
 
@@ -61,13 +66,13 @@ Build with Xcode 8.3.2 / Swift 3.1
 
 > Less Hassle, More OSS
 
-<https://cocoapods.org/pods/FlyveMDMInventory>
-
 Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podfile:
 
 ````ruby
-use_frameworks! # Add this if you are targeting iOS 8+ or using Swift
-pod 'FlyveMDMInventory'
+target "MyApp" do
+  use_frameworks! # Add this if you are targeting iOS 8+ or using Swift  
+  pod "FlyveMDMInventory", "~> 1.2"
+end  
 ````
 
 Then, run the following command:
@@ -75,6 +80,8 @@ Then, run the following command:
 ```console
 pod install
 ```
+
+You can find more information of Inventory Library for iOS [on Cocoapods](https://cocoapods.org/pods/FlyveMDMInventory).
 
 ### Carthage
 
@@ -123,7 +130,7 @@ inventoryTask.execute("Agent_v1.0", tag:"1.0") { result in
 
 ## Documentation
 
-We share long-form content about the project in the [wiki](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/wiki) and in the [project site](http://flyve.org/flyve-mdm-ios-inventory/).
+We maintain a detailed documentation of the project on its [website](http://flyve.org/flyve-mdm-ios-inventory/).
 
 ## Contact
 
