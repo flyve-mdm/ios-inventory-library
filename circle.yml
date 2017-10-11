@@ -1,7 +1,7 @@
 machine:
   environment:
     APPNAME: FlyveMDMInventory
-    XCODE_SCHEME: FlyveMDMInventorFlyveMDMInventoryyAgent
+    XCODE_SCHEME: FlyveMDMInventory
     XCODE_PROJECT: FlyveMDMInventory.xcodeproj
     KEYCHAIN_NAME: ios-app.keychain
     SCRIPT_PATH: ./ci/scripts
