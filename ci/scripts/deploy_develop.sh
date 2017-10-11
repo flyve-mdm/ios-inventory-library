@@ -43,18 +43,7 @@ git add ${APPNAME}/Info.plist
 git commit -m "ci(beta): generate **beta** for version ${GIT_TAG}"
 
 # Generate documentation with jazzy
-jazzy \
---clean \
---author Flyve MDM \
---author_url https://flyve-mdm.com \
---github_url $CIRCLE_REPOSITORY_URL \
---output docs \
---theme jazzy/themeFlyve \
---min-acl private \
---objc \
---umbrella-header FlyveMDMInventory/FlyveMDMInventory.h \
---framework-root . \
---sdk iphonesimulator
+jazzy
 
 # Add docs folder
 git add docs -f

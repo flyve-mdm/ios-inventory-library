@@ -1,0 +1,10 @@
+clean: true
+author: Flyve MDM
+author_url: https://flyve-mdm.com
+github_url: $CIRCLE_REPOSITORY_URL
+output: docs
+theme: ./jazzy/themeFlyve
+min_acl: private
+objc: true
+sdk: iphonesimulator
+umbrella_header: ./FlyveMDMInventory/FlyveMDMInventory.h
