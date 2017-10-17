@@ -115,7 +115,7 @@ if [[ $GITHUB_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version
     git fetch origin develop
     git checkout develop
     # Merge master on develop
-    git merge master
+    git rebase master
     git push origin develop
 
     # Checkout to release branch
