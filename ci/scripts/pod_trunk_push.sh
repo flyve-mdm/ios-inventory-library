@@ -27,9 +27,9 @@
 # @link      https://flyve-mdm.com
 # ------------------------------------------------------------------------------
 
-GH_COMMIT_MESSAGE=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
+GITHUB_COMMIT_MESSAGE=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
 
-if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* && $GH_COMMIT_MESSAGE != *"ci(build): release version"* ]]; then
+if [[ $GITHUB_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* && $GITHUB_COMMIT_MESSAGE != *"ci(build): release version"* ]]; then
     echo -----------------------Pod Trunk---------------------------
     # Update cocoapods repo
     pod trunk push
