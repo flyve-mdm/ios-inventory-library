@@ -27,9 +27,9 @@
 # @link      https://flyve-mdm.com
 # ------------------------------------------------------------------------------
 
-GH_COMMIT_MESSAGE=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
+GITHUB_COMMIT_MESSAGE=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
 
-if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* && $GH_COMMIT_MESSAGE != *"ci(build): release version"* ]]; then
+if [[ $GITHUB_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* && $GITHUB_COMMIT_MESSAGE != *"ci(build): release version"* ]]; then
 
     # Generate CHANGELOG.md and increment version
     npm run release -- -t '' -m "ci(release): generate CHANGELOG.md for version %s"
@@ -48,7 +48,7 @@ if [[ $GH_COMMIT_MESSAGE != *"ci(release): generate CHANGELOG.md for version"* &
     # Push commits and tags to origin branch
     git push --follow-tags origin $CIRCLE_BRANCH
     # Create release with conventional-github-releaser
-    conventional-github-releaser -p angular -t $GH_TOKEN
+    conventional-github-releaser -p angular -t $GITHUB_TOKEN
     # Create zip example code
     zip -r $CIRCLE_ARTIFACTS/app_example_code.zip Example/*
     # Update release name

@@ -3,12 +3,8 @@ machine:
     APPNAME: FlyveMDMInventory
     XCODE_SCHEME: FlyveMDMInventory
     XCODE_PROJECT: FlyveMDMInventory.xcodeproj
-    KEYCHAIN_NAME: ios-app.keychain
     SCRIPT_PATH: ./ci/scripts
-    CERTIFICATES_PATH: ./ci/cert
-    GH_USER: flyve-mdm-bot
-    GH_REPO_SLUG: flyve-mdm/flyve-mdm-ios-inventory
-    TRANSIFEX_USER: api
+    GITHUB_REPO_SLUG: flyve-mdm/flyve-mdm-ios-inventory
   xcode:
     version: 9.0
 checkout:
