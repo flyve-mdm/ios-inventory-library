@@ -1,6 +1,6 @@
 ---
+cache_version: 69a8ffe926e0e459282caab07c813662423efe2e
 ---
-self.addEventListener('install', function(e) { 
   
   {% assign name = site.github.project_title | replace: "flyve-mdm-", "" %} 
     
