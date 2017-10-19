@@ -147,5 +147,5 @@ guidelines for [contributing](./CONTRIBUTING.md) and then check out one of our i
 
 * **Name**: [Flyve MDM](https://flyve-mdm.com/) is a registered trademark of [Teclib'](http://www.teclib-edition.com/en/).
 * **Code**: you can redistribute it and/or modify
-    it under the terms of the [Apache License v2.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+    it under the terms of the [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0).
 * **Documentation**: released under Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
