@@ -11,7 +11,7 @@
 [![GitHub release](https://img.shields.io/github/release/flyve-mdm/flyve-mdm-ios-inventory.svg)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/releases)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/master.svg?style=shield)](https://circleci.com/gh/flyve-mdm/flyve-mdm-ios-inventory/tree/master)
-[![License](https://img.shields.io/github/license/flyve-mdm/flyve-mdm-ios-inventory.svg?&label=License)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/blob/master/LICENSE.md)
+[![License](https://img.shields.io/badge/license-Apache_v2.0-blue.svg)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/blob/master/LICENSE.md)
 
 [Flyve MDM](https://flyve-mdm.com) is a mobile device management software that enables you to secure and manage all the mobile devices of your business via a unique web-based console (MDM).
 
@@ -147,5 +147,5 @@ guidelines for [contributing](./CONTRIBUTING.md) and then check out one of our i
 
 * **Name**: [Flyve MDM](https://flyve-mdm.com/) is a registered trademark of [Teclib'](http://www.teclib-edition.com/en/).
 * **Code**: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License ([GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)).
+    it under the terms of the [Apache License v2.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 * **Documentation**: released under Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
