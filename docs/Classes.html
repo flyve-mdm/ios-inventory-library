@@ -309,6 +309,64 @@ layout: jazzy
 
                       <a href="Classes/OperatingSystem.html" class="slightly-smaller">See more</a>
                     </div>
+                    <div class="declaration">
+                      <h4>Declaration</h4>
+                      <div class="language">
+                        <p class="aside-title">Objective-C</p>
+                        <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">OperatingSystem</span><span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="cm">/**
+ Operating System Name
+ 
+ - returns: Operating system name of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">name</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Full Name
+ 
+ - returns: Operating system full name of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">fullName</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Version
+ 
+ - returns: Operating system version of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">version</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Build
+ 
+ - returns: Operating system build of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">build</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Kernel Name
+ 
+ - returns: Operating system kernel name of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">kernelName</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Kernel Version
+ 
+ - returns: Operating system kernel version of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">kernelVersion</span><span class="p">;</span>
+
+
+<span class="k">@end</span></code></pre>
+
+                      </div>
+                      <div class="language">
+                        <p class="aside-title">Swift</p>
+                        <pre class="highlight"><code><span class="kd">class</span> <span class="kt">OperatingSystem</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                      </div>
+                    </div>
                   </section>
                 </div>
               </li>
@@ -339,6 +397,54 @@ layout: jazzy
                       <p>Undocumented</p>
 
                       <a href="Classes/Reachability.html" class="slightly-smaller">See more</a>
+                    </div>
+                    <div class="declaration">
+                      <h4>Declaration</h4>
+                      <div class="language">
+                        <p class="aside-title">Objective-C</p>
+                        <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">Reachability</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="cm">/*!
+ * Use to check the reachability of a given host name.
+ */</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">reachabilityWithHostName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">hostName</span><span class="p">;</span>
+
+<span class="cm">/*!
+ * Use to check the reachability of a given IP address.
+ */</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">reachabilityWithAddress</span><span class="p">:(</span><span class="k">const</span> <span class="k">struct</span> <span class="n"><a href="Structs.html#/c:@S@sockaddr">sockaddr</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">hostAddress</span><span class="p">;</span>
+
+<span class="cm">/*!
+ * Checks whether the default route is available. Should be used by applications that do not connect to a particular host.
+ */</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">reachabilityForInternetConnection</span><span class="p">;</span>
+
+
+<span class="cp">#pragma mark reachabilityForLocalWiFi
+</span><span class="c1">//reachabilityForLocalWiFi has been removed from the sample.  See ReadMe.md for more information.
+//+ (instancetype)reachabilityForLocalWiFi;
+</span>
+<span class="cm">/*!
+ * Start listening for reachability notifications on the current run loop.
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">startNotifier</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stopNotifier</span><span class="p">;</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n"><a href="Type Definitions/NetworkStatus.html">NetworkStatus</a></span><span class="p">)</span><span class="n">currentReachabilityStatus</span><span class="p">;</span>
+
+<span class="cm">/*!
+ * WWAN may be available, but not active until a connection has been established. WiFi may require a connection for VPN on Demand.
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">connectionRequired</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                      </div>
+                      <div class="language">
+                        <p class="aside-title">Swift</p>
+                        <pre class="highlight"><code><span class="kd">class</span> <span class="kt">Reachability</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                      </div>
                     </div>
                   </section>
                 </div>
