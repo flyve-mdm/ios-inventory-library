@@ -1,7 +1,7 @@
 repository:
-  name: flyve-mdm-ios-inventory
+  name: ios-inventory-library
   description: Inventory client library written in Swift for developing applications on iOS
-  homepage: http://flyve.org/flyve-mdm-ios-inventory/
+  homepage: http://flyve.org/ios-inventory-library/
   topics: flyve-mdm, ios, inventory, library
   private: false
   has_issues: true
