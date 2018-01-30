@@ -1,7 +1,5 @@
 # Inventory Library for iOS
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/flyve-mdm/flyve-mdm-ios-inventory.svg)](https://greenkeeper.io/)
-
 ![Flyve MDM banner](https://user-images.githubusercontent.com/663460/26935464-54267e9c-4c6c-11e7-86df-8cfa6658133e.png)
 
 [![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/FlyveMDMInventory/badge.png)](https://cocoadocs.org/docsets/FlyveMDMInventory)
@@ -10,7 +8,8 @@
 [![Telegram Community](https://img.shields.io/badge/Telegram-Community-blue.svg)](https://t.me/flyvemdm)
 [![Telegram Contributors](https://img.shields.io/badge/Telegram-Contributors-blue.svg)](https://t.me/flyvemdmdev)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![GitHub release](https://img.shields.io/github/release/flyve-mdm/ios-inventory-library.svg)](https://github.com/flyve-mdm/ios-inventory-library/releases)
+[![Greenkeeper badge](https://badges.greenkeeper.io/flyve-mdm/flyve-mdm-ios-inventory.svg)](https://greenkeeper.io/)
+[![GitHub release](https://img.shields.io/github/release/flyve-mdm/flyve-mdm-ios-inventory.svg)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/releases)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://circleci.com/gh/flyve-mdm/ios-inventory-library/tree/master.svg?style=shield)](https://circleci.com/gh/flyve-mdm/ios-inventory-library/tree/master)
 [![License](https://img.shields.io/badge/license-Apache_v2.0-blue.svg)](https://github.com/flyve-mdm/ios-inventory-library/blob/master/LICENSE.md)
