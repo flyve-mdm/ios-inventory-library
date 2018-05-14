@@ -2,17 +2,17 @@
 
 ![Flyve MDM banner](https://user-images.githubusercontent.com/663460/26935464-54267e9c-4c6c-11e7-86df-8cfa6658133e.png)
 
+[![License](https://img.shields.io/badge/license-Apache_v2.0-blue.svg)](https://github.com/flyve-mdm/ios-inventory-library/blob/master/LICENSE.md)
 [![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/FlyveMDMInventory/badge.png)](https://cocoadocs.org/docsets/FlyveMDMInventory)
 [![Badge w/ Platform](https://cocoapod-badges.herokuapp.com/p/FlyveMDMInventory/badge.svg)](https://cocoadocs.org/docsets/FlyveMDMInventory)
 [![Follow twitter](https://img.shields.io/twitter/follow/FlyveMDM.svg?style=social&label=Twitter&style=flat-square)](https://twitter.com/FlyveMDM)
+[![IRC Chat](https://img.shields.io/badge/IRC-%23flyvemdm-green.svg)](http://webchat.freenode.net/?channels=flyve-mdm)
 [![Telegram Community](https://img.shields.io/badge/Telegram-Community-blue.svg)](https://t.me/flyvemdm)
-[![Telegram Contributors](https://img.shields.io/badge/Telegram-Contributors-blue.svg)](https://t.me/flyvemdmdev)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Greenkeeper badge](https://badges.greenkeeper.io/flyve-mdm/flyve-mdm-ios-inventory.svg)](https://greenkeeper.io/)
 [![GitHub release](https://img.shields.io/github/release/flyve-mdm/flyve-mdm-ios-inventory.svg)](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/releases)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://circleci.com/gh/flyve-mdm/ios-inventory-library/tree/master.svg?style=shield)](https://circleci.com/gh/flyve-mdm/ios-inventory-library/tree/master)
-[![License](https://img.shields.io/badge/license-Apache_v2.0-blue.svg)](https://github.com/flyve-mdm/ios-inventory-library/blob/master/LICENSE.md)
 
 Flyve MDM is a mobile device management software that enables you to secure and manage all the mobile devices of your business via a unique web-based console (MDM).
 
@@ -57,7 +57,7 @@ Visit our [website](http://flyve.org/ios-inventory-library/) for more informatio
 
 Build with Xcode 8.3.2 / Swift 3.1
 
-| **Release channel** | **Beta channel** |
+| **LTS** | **Bleeding Edge** |
 |:---:|:---:|
 | [![Build Status](https://circleci.com/gh/flyve-mdm/ios-inventory-library/tree/master.svg?style=svg)](https://circleci.com/gh/flyve-mdm/ios-inventory-library/tree/master) | [![Build Status](https://circleci.com/gh/flyve-mdm/ios-inventory-library/tree/develop.svg?style=svg)](https://circleci.com/gh/flyve-mdm/ios-inventory-library/tree/develop) |
 
@@ -131,12 +131,12 @@ inventoryTask.execute("Agent_v1.0", tag:"1.0") { result in
 
 ## Documentation
 
-We maintain a detailed documentation of the project on its [website](http://flyve.org/ios-inventory-library/).
+We maintain a detailed documentation of the project on the website, check the [How-tos](http://flyve.org/ios-inventory-library/howtos/) and [Development](http://flyve.org/ios-inventory-library/) section.
 
 ## Contact
 
 For notices about major changes and general discussion of Flyve MDM development, subscribe to the [/r/FlyveMDM](http://www.reddit.com/r/FlyveMDM) subreddit.
-You can also chat with us via IRC in [#flyve-mdm on freenode](http://webchat.freenode.net/?channels=flyve-mdm) or [@flyvemdmdev on Telegram](https://t.me/flyvemdmdev).
+You can also chat with us via IRC in [#flyve-mdm on freenode](http://webchat.freenode.net/?channels=flyve-mdm) or [@flyvemdm on Telegram](https://t.me/flyvemdm).
 Ping me @hectorerb in the IRC chatroom or in the Telegram Dev Group if you get stuck.
 
 ## Contribute
