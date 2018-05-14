@@ -27,6 +27,7 @@ To get started, check out [Flyve MDM](https://flyve-mdm.com)!
 * [Documentation](#documentation)
 * [Contribute](#contribute)
 * [Contact](#contact)
+* [Professional Services](#professional-services)
 * [Copying](#copying)
 
 ## Synopsis
@@ -73,7 +74,7 @@ Install using [CocoaPods](http://cocoapods.org) by adding this line to your Podf
 target "MyApp" do
   use_frameworks! # Add this if you are targeting iOS 8+ or using Swift  
   pod "FlyveMDMInventory", "~> 1.2"
-end  
+end
 ````
 
 Then, run the following command:
@@ -133,16 +134,22 @@ inventoryTask.execute("Agent_v1.0", tag:"1.0") { result in
 
 We maintain a detailed documentation of the project on the website, check the [How-tos](http://flyve.org/ios-inventory-library/howtos/) and [Development](http://flyve.org/ios-inventory-library/) section.
 
+## Contribute
+
+Want to file a bug, contribute some code, or improve documentation? Excellent! Read up on our
+guidelines for [contributing](./CONTRIBUTING.md) and then check out one of our issues in the [Issues Dashboard](https://github.com/flyve-mdm/ios-inventory-library/issues).
+
 ## Contact
 
 For notices about major changes and general discussion of Flyve MDM development, subscribe to the [/r/FlyveMDM](http://www.reddit.com/r/FlyveMDM) subreddit.
 You can also chat with us via IRC in [#flyve-mdm on freenode](http://webchat.freenode.net/?channels=flyve-mdm) or [@flyvemdm on Telegram](https://t.me/flyvemdm).
 Ping me @hectorerb in the IRC chatroom or in the Telegram Dev Group if you get stuck.
 
-## Contribute
+## Professional Services
 
-Want to file a bug, contribute some code, or improve documentation? Excellent! Read up on our
-guidelines for [contributing](./CONTRIBUTING.md) and then check out one of our issues in the [Issues Dashboard](https://github.com/flyve-mdm/ios-inventory-library/issues).
+The Flyve MDM and GLPI Network services are available through our [Partner's Network](http://www.teclib-edition.com/en/partners/). We provide special training, bug fixes with editor subscription, contributions for new features, and more.
+
+Obtain a personalized service experience, associated with benefits and opportunities.
 
 ## Copying
 
