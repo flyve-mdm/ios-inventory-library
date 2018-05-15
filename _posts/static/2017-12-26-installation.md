@@ -5,6 +5,8 @@ published: true
 title: Installation
 permalink: howtos/installation
 description: Get it now
+category: user
+date: 2017-12-30
 ---
 There are two ways to install the Inventory Library for iOS:
 
