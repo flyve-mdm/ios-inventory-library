@@ -1,10 +1,10 @@
 {
-  "name": "flyve-mdm-ios-inventory",
+  "name": "ios-inventory-library",
   "version": "1.0.0",
   "description": "Branch created with the intention of functioning as an introduction web site of the project, a small point of entry where anyone can find out what it is about and to be able to get relevant information.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flyve-mdm/flyve-mdm-ios-inventory.git"
+    "url": "git+https://github.com/flyve-mdm/ios-inventory-library.git"
   },
   "sasslintConfig": ".sass-lint.yml",
   "scripts": {
@@ -18,9 +18,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/flyve-mdm/flyve-mdm-ios-inventory/issues"
+    "url": "https://github.com/flyve-mdm/ios-inventory-library/issues"
   },
-  "homepage": "https://github.com/flyve-mdm/flyve-mdm-ios-inventory#readme",
+  "homepage": "http://flyve.org/ios-inventory-library/",
   "devDependencies": {
     "eslint": "^4.7.2",
     "eslint-config-google": "^0.9.1",
