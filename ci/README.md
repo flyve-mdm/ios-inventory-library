@@ -42,3 +42,22 @@ Here is placed files and bash script required to build, test and deploy the app 
 - Update CHANGELOG.md on gh-pages branch (scripts/deploy_master.sh)
 - Deploy release version to App Store (scripts/deploy_master.sh)
 - Remove keychain (scripts/keychain_remove.sh)
+
+#### Environment variables
+
+On this project we use the following environment variables:
+
+- COCOAPODS_TRUNK_TOKEN  -> Token to upload the library to Cocoa Pods
+- TELEGRAM_WEBHOOKS      -> Used to send notifications to Telegram
+- GITHUB_EMAIL           -> GitHub Email
+- GITHUB_USER            -> GitHub User
+- GITHUB_TOKEN           -> GitHub Token
+
+## Libraries
+
+We use the following:
+
+- [conventional-github-releaser](https://github.com/conventional-changelog/releaser-tools)
+- [gh-pages](https://github.com/tschaub/gh-pages)
+- [node-github-releaser](https://github.com/miyajan/node-github-release)
+- [standard-version](https://github.com/conventional-changelog/standard-version)
