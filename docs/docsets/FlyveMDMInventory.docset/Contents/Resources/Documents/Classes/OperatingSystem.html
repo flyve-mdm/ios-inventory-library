@@ -1,0 +1,347 @@
+---
+layout: jazzy
+---
+
+<a name="//apple_ref/objc/Class/OperatingSystem" class="dashAnchor"></a>
+<a title="OperatingSystem Class Reference"></a>
+<header>
+  <div class="content-wrapper">
+    <p><a href="../index.html">FlyveMDMInventory Docs</a> (71% documented)</p>
+    <p class="header-right"><a href="$CIRCLE_REPOSITORY_URL"><img src="../img/gh.png"/>View on GitHub</a></p>
+  </div>
+</header>
+<div class="content-wrapper">
+  <p id="breadcrumbs">
+    <a href="../index.html">FlyveMDMInventory Reference</a>
+    <img id="carat" src="../img/carat.png" />
+    OperatingSystem Class Reference
+  </p>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <a class="btn btn-lightweight no-outline navigation-btn">Index</a>
+        <ul role="navigation" id="sidenav-small" class="nav side-navigation side-navigation-small theme-default">
+            <button type="button" class="close" data-dismiss="side-navigation" aria-label="close">
+                <i class="glyph glyph-cancel"></i>
+            </button>
+            
+              <li class="active side-nav-c2">
+                  <a href="../Classes.html">Classes</a>
+                  <ul class="nav collapse in" id="father-john-misty">
+                        <li><a href="../Classes/Battery.html">Battery</a></li>
+                        <li><a href="../Classes/Carrier.html">Carrier</a></li>
+                        <li><a href="../Classes/Cpu.html">Cpu</a></li>
+                        <li><a href="../Classes/Hardware.html">Hardware</a></li>
+                        <li><a href="../Classes/Memory.html">Memory</a></li>
+                        <li><a href="../Classes/Network.html">Network</a></li>
+                        <li><a href="../Classes/OperatingSystem.html">OperatingSystem</a></li>
+                        <li><a href="../Classes/Reachability.html">Reachability</a></li>
+                        <li><a href="../Classes/Storage.html">Storage</a></li>
+                  </ul>
+              </li>
+              <li class="active side-nav-c2">
+                  <a href="../Constants.html">Constants</a>
+                  <ul class="nav collapse in" id="father-john-misty">
+                        <li><a href="../Constants.html#/c:@FlyveMDMInventoryVersionNumber">FlyveMDMInventoryVersionNumber</a></li>
+                        <li><a href="../Constants.html#/c:@FlyveMDMInventoryVersionString">FlyveMDMInventoryVersionString</a></li>
+                        <li><a href="../Constants.html#/c:@kReachabilityChangedNotification">kReachabilityChangedNotification</a></li>
+                  </ul>
+              </li>
+              <li class="active side-nav-c2">
+                  <a href="../Type Definitions.html">Type Definitions</a>
+                  <ul class="nav collapse in" id="father-john-misty">
+                        <li><a href="../Type Definitions/NetworkStatus.html">NetworkStatus</a></li>
+                  </ul>
+              </li>
+              <li class="active side-nav-c2">
+                  <a href="../Structures.html">Structures</a>
+                  <ul class="nav collapse in" id="father-john-misty">
+                        <li><a href="../Structs.html#/c:@S@sockaddr">sockaddr</a></li>
+                  </ul>
+              </li>
+  </div>
+  <div class="col-md-18 navigation-section">
+    <article class="main-content">
+      <section>
+        <section class="">
+          <h2>OperatingSystem</h2>
+            <div class="declaration">
+              <div class="language">
+                <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">OperatingSystem</span><span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="cm">/**
+ Operating System Name
+ 
+ - returns: Operating system name of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">name</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Full Name
+ 
+ - returns: Operating system full name of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">fullName</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Version
+ 
+ - returns: Operating system version of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">version</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Build
+ 
+ - returns: Operating system build of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">build</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Kernel Name
+ 
+ - returns: Operating system kernel name of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">kernelName</span><span class="p">;</span>
+
+<span class="cm">/**
+ Operating System Kernel Version
+ 
+ - returns: Operating system kernel version of Device string
+ */</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">kernelVersion</span><span class="p">;</span>
+
+
+<span class="k">@end</span></code></pre>
+
+              </div>
+            </div>
+          <p>Undocumented</p>
+
+        </section>
+        <section class="section task-group-section">
+          <div class="task-group">
+            <ul>
+              <li class="item">
+                <div>
+                  <code>
+                  <a name="/c:objc(cs)OperatingSystem(im)name"></a>
+                  <a name="//apple_ref/objc/Method/-name" class="dashAnchor"></a>
+                  <a class="token" href="#/c:objc(cs)OperatingSystem(im)name">-name</a>
+                  </code>
+                </div>
+                <div class="height-container">
+                  <div class="pointer-container"></div>
+                  <section class="section">
+                    <div class="pointer"></div>
+                    <div class="abstract">
+                      <p>Operating System Name</p>
+
+                    </div>
+                    <div class="declaration">
+                      <h4>Declaration</h4>
+                      <div class="language">
+                        <p class="aside-title">Objective-C</p>
+                        <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">name</span><span class="p">;</span></code></pre>
+
+                      </div>
+                      <div class="language">
+                        <p class="aside-title">Swift</p>
+                        <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">name</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h4>Return Value</h4>
+                      <p>Operating system name of Device string</p>
+                    </div>
+                  </section>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <code>
+                  <a name="/c:objc(cs)OperatingSystem(im)fullName"></a>
+                  <a name="//apple_ref/objc/Method/-fullName" class="dashAnchor"></a>
+                  <a class="token" href="#/c:objc(cs)OperatingSystem(im)fullName">-fullName</a>
+                  </code>
+                </div>
+                <div class="height-container">
+                  <div class="pointer-container"></div>
+                  <section class="section">
+                    <div class="pointer"></div>
+                    <div class="abstract">
+                      <p>Operating System Full Name</p>
+
+                    </div>
+                    <div class="declaration">
+                      <h4>Declaration</h4>
+                      <div class="language">
+                        <p class="aside-title">Objective-C</p>
+                        <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">fullName</span><span class="p">;</span></code></pre>
+
+                      </div>
+                      <div class="language">
+                        <p class="aside-title">Swift</p>
+                        <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fullName</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h4>Return Value</h4>
+                      <p>Operating system full name of Device string</p>
+                    </div>
+                  </section>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <code>
+                  <a name="/c:objc(cs)OperatingSystem(im)version"></a>
+                  <a name="//apple_ref/objc/Method/-version" class="dashAnchor"></a>
+                  <a class="token" href="#/c:objc(cs)OperatingSystem(im)version">-version</a>
+                  </code>
+                </div>
+                <div class="height-container">
+                  <div class="pointer-container"></div>
+                  <section class="section">
+                    <div class="pointer"></div>
+                    <div class="abstract">
+                      <p>Operating System Version</p>
+
+                    </div>
+                    <div class="declaration">
+                      <h4>Declaration</h4>
+                      <div class="language">
+                        <p class="aside-title">Objective-C</p>
+                        <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">version</span><span class="p">;</span></code></pre>
+
+                      </div>
+                      <div class="language">
+                        <p class="aside-title">Swift</p>
+                        <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">version</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h4>Return Value</h4>
+                      <p>Operating system version of Device string</p>
+                    </div>
+                  </section>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <code>
+                  <a name="/c:objc(cs)OperatingSystem(im)build"></a>
+                  <a name="//apple_ref/objc/Method/-build" class="dashAnchor"></a>
+                  <a class="token" href="#/c:objc(cs)OperatingSystem(im)build">-build</a>
+                  </code>
+                </div>
+                <div class="height-container">
+                  <div class="pointer-container"></div>
+                  <section class="section">
+                    <div class="pointer"></div>
+                    <div class="abstract">
+                      <p>Operating System Build</p>
+
+                    </div>
+                    <div class="declaration">
+                      <h4>Declaration</h4>
+                      <div class="language">
+                        <p class="aside-title">Objective-C</p>
+                        <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">build</span><span class="p">;</span></code></pre>
+
+                      </div>
+                      <div class="language">
+                        <p class="aside-title">Swift</p>
+                        <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">build</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h4>Return Value</h4>
+                      <p>Operating system build of Device string</p>
+                    </div>
+                  </section>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <code>
+                  <a name="/c:objc(cs)OperatingSystem(im)kernelName"></a>
+                  <a name="//apple_ref/objc/Method/-kernelName" class="dashAnchor"></a>
+                  <a class="token" href="#/c:objc(cs)OperatingSystem(im)kernelName">-kernelName</a>
+                  </code>
+                </div>
+                <div class="height-container">
+                  <div class="pointer-container"></div>
+                  <section class="section">
+                    <div class="pointer"></div>
+                    <div class="abstract">
+                      <p>Operating System Kernel Name</p>
+
+                    </div>
+                    <div class="declaration">
+                      <h4>Declaration</h4>
+                      <div class="language">
+                        <p class="aside-title">Objective-C</p>
+                        <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">kernelName</span><span class="p">;</span></code></pre>
+
+                      </div>
+                      <div class="language">
+                        <p class="aside-title">Swift</p>
+                        <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">kernelName</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h4>Return Value</h4>
+                      <p>Operating system kernel name of Device string</p>
+                    </div>
+                  </section>
+                </div>
+              </li>
+              <li class="item">
+                <div>
+                  <code>
+                  <a name="/c:objc(cs)OperatingSystem(im)kernelVersion"></a>
+                  <a name="//apple_ref/objc/Method/-kernelVersion" class="dashAnchor"></a>
+                  <a class="token" href="#/c:objc(cs)OperatingSystem(im)kernelVersion">-kernelVersion</a>
+                  </code>
+                </div>
+                <div class="height-container">
+                  <div class="pointer-container"></div>
+                  <section class="section">
+                    <div class="pointer"></div>
+                    <div class="abstract">
+                      <p>Operating System Kernel Version</p>
+
+                    </div>
+                    <div class="declaration">
+                      <h4>Declaration</h4>
+                      <div class="language">
+                        <p class="aside-title">Objective-C</p>
+                        <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">kernelVersion</span><span class="p">;</span></code></pre>
+
+                      </div>
+                      <div class="language">
+                        <p class="aside-title">Swift</p>
+                        <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">kernelVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                      </div>
+                    </div>
+                    <div>
+                      <h4>Return Value</h4>
+                      <p>Operating system kernel version of Device string</p>
+                    </div>
+                  </section>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </article>
+  </div>
+</div>

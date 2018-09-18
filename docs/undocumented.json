@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/FlyveMDMInventory.h",
+      "line": 43,
+      "symbol": "FlyveMDMInventoryVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/FlyveMDMInventory.h",
+      "line": 46,
+      "symbol": "FlyveMDMInventoryVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/OperatingSystem.h",
+      "line": 33,
+      "symbol": "OperatingSystem",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 14,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 14,
+      "symbol": "NetworkStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 14,
+      "symbol": "NetworkStatus.",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 15,
+      "symbol": ".NotReachable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 15,
+      "symbol": "NetworkStatus..NotReachable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 16,
+      "symbol": ".ReachableViaWiFi",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 16,
+      "symbol": "NetworkStatus..ReachableViaWiFi",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 17,
+      "symbol": ".ReachableViaWWAN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 17,
+      "symbol": "NetworkStatus..ReachableViaWWAN",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 24,
+      "symbol": "kReachabilityChangedNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 27,
+      "symbol": "Reachability",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 32,
+      "symbol": "Reachability.+reachabilityWithHostName:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 37,
+      "symbol": "Reachability.+reachabilityWithAddress:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 37,
+      "symbol": "sockaddr",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 42,
+      "symbol": "Reachability.+reachabilityForInternetConnection",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 52,
+      "symbol": "Reachability.-startNotifier",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 53,
+      "symbol": "Reachability.-stopNotifier",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 55,
+      "symbol": "Reachability.-currentReachabilityStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/ios-inventory-library/FlyveMDMInventory/Reachability.h",
+      "line": 60,
+      "symbol": "Reachability.-connectionRequired",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/distiller/ios-inventory-library"
+}
