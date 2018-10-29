@@ -93,7 +93,7 @@ public class XMLReader: NSObject {
 
 extension XMLReader: XMLParserDelegate {
     
-    public func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
+    public func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String: String] = [:]) {
         let tag = createTag(elementName)
         self.arrayTemp.insert(tag, at: arrayTemp.count)
         
@@ -101,12 +101,12 @@ extension XMLReader: XMLParserDelegate {
             let child = NSMutableDictionary()
             let childArray = NSMutableArray()
 
-            if self.arrayTemp.count > 2 && self.arrayTemp[self.arrayTemp.count-2] as! String == "CONTENT".lowercased() {
+            if self.arrayTemp.count > 2 && (self.arrayTemp[self.arrayTemp.count-2] as? String)! == "CONTENT".lowercased() {
 
-                if (self.dictionaryStack.value(forKeyPath: self.arrayTemp.componentsJoined(by: ".")) != nil) {
+                if self.dictionaryStack.value(forKeyPath: self.arrayTemp.componentsJoined(by: ".")) != nil {
                     
                     if let array: NSMutableArray = self.dictionaryStack.value(forKeyPath: self.arrayTemp.componentsJoined(by: ".")) as? NSMutableArray {
-                        let arrayTempParent: NSMutableArray = array.mutableCopy() as! NSMutableArray
+                        let arrayTempParent: NSMutableArray = (array.mutableCopy() as? NSMutableArray)!
                         arrayTempParent.insert(NSMutableDictionary(), at: arrayTempParent.count)
 
                         self.dictionaryStack.setValue(arrayTempParent, forKeyPath: self.arrayTemp.componentsJoined(by: "."))
@@ -137,7 +137,7 @@ extension XMLReader: XMLParserDelegate {
 
                 if self.arrayTemp.count > 2 {
                     
-                    let keyPathParent = ((self.arrayTemp.subarray(with: NSMakeRange(0, 3)) as NSArray).mutableCopy() as AnyObject).componentsJoined(by: ".")
+                    let keyPathParent: String = ((self.arrayTemp.subarray(with: NSMakeRange(0, 3)) as NSArray).mutableCopy() as AnyObject).componentsJoined(by: ".")
 
                     let dictionary = (self.dictionaryStack.value(forKeyPath: keyPathParent) as? NSMutableArray ?? NSMutableArray()).lastObject as? NSMutableDictionary ?? NSMutableDictionary()
                     dictionary.setValue(self.textInProgress, forKey: tag)
