@@ -7,7 +7,7 @@ target 'Example' do
 
   # Pods for Example
 
-  pod 'FlyveMDMInventory', :path => '../../flyve-mdm-ios-inventory'
+  pod 'FlyveMDMInventory', :path => '../../ios-inventory-library'
 
   target 'ExampleTests' do
     inherit! :search_paths
