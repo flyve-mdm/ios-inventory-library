@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     }()
     
     let loadingIndicatorView: UIActivityIndicatorView = {
-        let loading = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let loading = UIActivityIndicatorView(style: .gray)
         loading.translatesAutoresizingMaskIntoConstraints = false
         loading.hidesWhenStopped = true
         return loading
@@ -91,12 +91,14 @@ class ViewController: UIViewController {
         messageLabel.text = ""
         loadingIndicatorView.startAnimating()
         let inventoryTask = InventoryTask()
-        inventoryTask.execute("Agent_v1.0") { result in
-            createFile(result)
-        }
+//        inventoryTask.execute("Agent_v1.0") { result in
+//            print(result)
+////            createFile(result)
+//        }
         
         inventoryTask.execute("Agent_v1.0", json: true) { result in
-            createFile(result, json: true)
+            print(result)
+//            createFile(result, json: true)
         }
     }
     
