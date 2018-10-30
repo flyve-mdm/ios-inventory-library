@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.2"></a>
+## 1.3.2 (2018-10-30)
+
+
+### Bug Fixes
+
+* **package:** update conventional-github-releaser to version 3.0.0 ([bd71557](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/commit/bd71557))
+* fix vulnerable dependencies with npm audit. ([7147206](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/commit/7147206))
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/flyve-mdm/flyve-mdm-ios-inventory/compare/1.3.0...v1.3.1) (2017-10-09)
 
