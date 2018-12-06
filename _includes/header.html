@@ -77,7 +77,7 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a href="{{ '/development/code-documentation/develop' | absolute_url }}">Develop</a></li>
-                      <li><a href="{{ '/development/code-documentation/master' | absolute_url }}">Master</a></li>
+                      <!-- <li><a href="{{ '/development/code-documentation/master' | absolute_url }}">Master</a></li> -->
                       {% for version in site.data.whitelist_version %}
                         <li>
                           <a href="{{ 'development/code-documentation/support/' | absolute_url }}{{ version }}">{{ version }}</a>
@@ -97,7 +97,7 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a href="{{ '/development/coverage/develop' | absolute_url }}">Develop</a></li>
-                        <li><a href="{{ '/development/coverage/master' | absolute_url }}">Master</a></li>
+                        <!-- <li><a href="{{ '/development/coverage/master' | absolute_url }}">Master</a></li> -->
                         {% for version in site.data.whitelist_version %}
                           <li>
                             <a href="{{ 'development/coverage/support/' | absolute_url | append: version }}">{{ version }}</a>
@@ -117,7 +117,7 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a href="{{ '/development/test-report/develop' | absolute_url }}">Develop</a></li>
-                      <li><a href="{{ '/development/test-report/master' | absolute_url }}">Master</a></li>
+                      <!-- <li><a href="{{ '/development/test-report/master' | absolute_url }}">Master</a></li> -->
                       {% for version in site.data.whitelist_version %}
                         <li>
                           <a href="{{ 'development/test-report/support/' | absolute_url }}{{ version }}">{{ version }}</a>
